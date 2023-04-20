@@ -67,9 +67,10 @@ Partial Class Menuutama_user_
         Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Controls.Add(Me.Button3)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 35)
+        Me.Panel2.Location = New System.Drawing.Point(0, 43)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1394, 68)
+        Me.Panel2.Size = New System.Drawing.Size(1859, 84)
         Me.Panel2.TabIndex = 1
         '
         'Button6
@@ -77,9 +78,10 @@ Partial Class Menuutama_user_
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(1203, 18)
+        Me.Button6.Location = New System.Drawing.Point(1604, 22)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(179, 38)
+        Me.Button6.Size = New System.Drawing.Size(239, 47)
         Me.Button6.TabIndex = 6
         Me.Button6.Text = "keluar"
         Me.Button6.UseVisualStyleBackColor = True
@@ -89,9 +91,10 @@ Partial Class Menuutama_user_
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(801, 18)
+        Me.Button5.Location = New System.Drawing.Point(1068, 22)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(179, 38)
+        Me.Button5.Size = New System.Drawing.Size(239, 47)
         Me.Button5.TabIndex = 5
         Me.Button5.Text = "Transaksi"
         Me.Button5.UseVisualStyleBackColor = True
@@ -101,9 +104,10 @@ Partial Class Menuutama_user_
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(605, 18)
+        Me.Button4.Location = New System.Drawing.Point(807, 22)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(179, 38)
+        Me.Button4.Size = New System.Drawing.Size(239, 47)
         Me.Button4.TabIndex = 4
         Me.Button4.Text = "Genre Buku"
         Me.Button4.UseVisualStyleBackColor = True
@@ -113,9 +117,10 @@ Partial Class Menuutama_user_
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(447, 18)
+        Me.Button2.Location = New System.Drawing.Point(596, 22)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(123, 38)
+        Me.Button2.Size = New System.Drawing.Size(164, 47)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Profile"
         Me.Button2.UseVisualStyleBackColor = True
@@ -127,8 +132,9 @@ Partial Class Menuutama_user_
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Location = New System.Drawing.Point(0, 0)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 68)
+        Me.Button3.Size = New System.Drawing.Size(100, 84)
         Me.Button3.TabIndex = 0
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -139,8 +145,9 @@ Partial Class Menuutama_user_
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1394, 35)
+        Me.Panel1.Size = New System.Drawing.Size(1859, 43)
         Me.Panel1.TabIndex = 2
         '
         'Button1
@@ -151,9 +158,10 @@ Partial Class Menuutama_user_
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(1360, 0)
+        Me.Button1.Location = New System.Drawing.Point(1814, 0)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(34, 35)
+        Me.Button1.Size = New System.Drawing.Size(45, 43)
         Me.Button1.TabIndex = 1
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -162,9 +170,10 @@ Partial Class Menuutama_user_
         Me.Button11.FlatAppearance.BorderSize = 0
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button11.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(220, 307)
+        Me.Button11.Location = New System.Drawing.Point(293, 378)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(92, 27)
+        Me.Button11.Size = New System.Drawing.Size(123, 33)
         Me.Button11.TabIndex = 8
         Me.Button11.Text = "Horror"
         Me.Button11.UseVisualStyleBackColor = True
@@ -174,9 +183,10 @@ Partial Class Menuutama_user_
         Me.Button12.FlatAppearance.BorderSize = 0
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(447, 307)
+        Me.Button12.Location = New System.Drawing.Point(596, 378)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(92, 27)
+        Me.Button12.Size = New System.Drawing.Size(123, 33)
         Me.Button12.TabIndex = 9
         Me.Button12.Text = "Misteri"
         Me.Button12.UseVisualStyleBackColor = True
@@ -186,9 +196,10 @@ Partial Class Menuutama_user_
         Me.Button14.FlatAppearance.BorderSize = 0
         Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button14.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button14.Location = New System.Drawing.Point(878, 307)
+        Me.Button14.Location = New System.Drawing.Point(1171, 378)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(92, 27)
+        Me.Button14.Size = New System.Drawing.Size(123, 33)
         Me.Button14.TabIndex = 13
         Me.Button14.Text = "Musik"
         Me.Button14.UseVisualStyleBackColor = True
@@ -198,9 +209,10 @@ Partial Class Menuutama_user_
         Me.Button16.FlatAppearance.BorderSize = 0
         Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button16.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button16.Location = New System.Drawing.Point(646, 307)
+        Me.Button16.Location = New System.Drawing.Point(861, 378)
+        Me.Button16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(145, 38)
+        Me.Button16.Size = New System.Drawing.Size(193, 47)
         Me.Button16.TabIndex = 11
         Me.Button16.Text = "Petualangan"
         Me.Button16.UseVisualStyleBackColor = True
@@ -210,9 +222,10 @@ Partial Class Menuutama_user_
         Me.Button18.FlatAppearance.BorderSize = 0
         Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button18.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button18.Location = New System.Drawing.Point(1081, 307)
+        Me.Button18.Location = New System.Drawing.Point(1441, 378)
+        Me.Button18.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(92, 27)
+        Me.Button18.Size = New System.Drawing.Size(123, 33)
         Me.Button18.TabIndex = 15
         Me.Button18.Text = "Sejarah"
         Me.Button18.UseVisualStyleBackColor = True
@@ -222,9 +235,10 @@ Partial Class Menuutama_user_
         Me.Button20.FlatAppearance.BorderSize = 0
         Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button20.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button20.Location = New System.Drawing.Point(1055, 519)
+        Me.Button20.Location = New System.Drawing.Point(1407, 639)
+        Me.Button20.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(146, 38)
+        Me.Button20.Size = New System.Drawing.Size(195, 47)
         Me.Button20.TabIndex = 25
         Me.Button20.Text = "Ensiklopedia"
         Me.Button20.UseVisualStyleBackColor = True
@@ -234,9 +248,10 @@ Partial Class Menuutama_user_
         Me.Button22.FlatAppearance.BorderSize = 0
         Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button22.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button22.Location = New System.Drawing.Point(869, 519)
+        Me.Button22.Location = New System.Drawing.Point(1159, 639)
+        Me.Button22.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(111, 27)
+        Me.Button22.Size = New System.Drawing.Size(148, 33)
         Me.Button22.TabIndex = 23
         Me.Button22.Text = "Romansa"
         Me.Button22.UseVisualStyleBackColor = True
@@ -246,9 +261,10 @@ Partial Class Menuutama_user_
         Me.Button24.FlatAppearance.BorderSize = 0
         Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button24.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button24.Location = New System.Drawing.Point(646, 519)
+        Me.Button24.Location = New System.Drawing.Point(861, 639)
+        Me.Button24.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(138, 27)
+        Me.Button24.Size = New System.Drawing.Size(184, 33)
         Me.Button24.TabIndex = 21
         Me.Button24.Text = "Fiksi Ilmiah"
         Me.Button24.UseVisualStyleBackColor = True
@@ -258,9 +274,10 @@ Partial Class Menuutama_user_
         Me.Button26.FlatAppearance.BorderSize = 0
         Me.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button26.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button26.Location = New System.Drawing.Point(447, 519)
+        Me.Button26.Location = New System.Drawing.Point(596, 639)
+        Me.Button26.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button26.Name = "Button26"
-        Me.Button26.Size = New System.Drawing.Size(92, 27)
+        Me.Button26.Size = New System.Drawing.Size(123, 33)
         Me.Button26.TabIndex = 19
         Me.Button26.Text = "Fiksi"
         Me.Button26.UseVisualStyleBackColor = True
@@ -270,9 +287,10 @@ Partial Class Menuutama_user_
         Me.Button28.FlatAppearance.BorderSize = 0
         Me.Button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button28.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button28.Location = New System.Drawing.Point(220, 519)
+        Me.Button28.Location = New System.Drawing.Point(293, 639)
+        Me.Button28.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button28.Name = "Button28"
-        Me.Button28.Size = New System.Drawing.Size(92, 32)
+        Me.Button28.Size = New System.Drawing.Size(123, 39)
         Me.Button28.TabIndex = 17
         Me.Button28.Text = "Drama"
         Me.Button28.UseVisualStyleBackColor = True
@@ -284,9 +302,10 @@ Partial Class Menuutama_user_
         Me.Button21.FlatAppearance.BorderSize = 0
         Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button21.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button21.Location = New System.Drawing.Point(1072, 409)
+        Me.Button21.Location = New System.Drawing.Point(1429, 503)
+        Me.Button21.Margin = New System.Windows.Forms.Padding(4)
         Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(111, 104)
+        Me.Button21.Size = New System.Drawing.Size(148, 128)
         Me.Button21.TabIndex = 26
         Me.Button21.UseVisualStyleBackColor = True
         '
@@ -297,9 +316,10 @@ Partial Class Menuutama_user_
         Me.Button23.FlatAppearance.BorderSize = 0
         Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button23.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button23.Location = New System.Drawing.Point(869, 394)
+        Me.Button23.Location = New System.Drawing.Point(1159, 485)
+        Me.Button23.Margin = New System.Windows.Forms.Padding(4)
         Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(126, 119)
+        Me.Button23.Size = New System.Drawing.Size(168, 146)
         Me.Button23.TabIndex = 24
         Me.Button23.UseVisualStyleBackColor = True
         '
@@ -310,9 +330,10 @@ Partial Class Menuutama_user_
         Me.Button25.FlatAppearance.BorderSize = 0
         Me.Button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button25.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button25.Location = New System.Drawing.Point(656, 409)
+        Me.Button25.Location = New System.Drawing.Point(875, 503)
+        Me.Button25.Margin = New System.Windows.Forms.Padding(4)
         Me.Button25.Name = "Button25"
-        Me.Button25.Size = New System.Drawing.Size(111, 104)
+        Me.Button25.Size = New System.Drawing.Size(148, 128)
         Me.Button25.TabIndex = 22
         Me.Button25.UseVisualStyleBackColor = True
         '
@@ -323,9 +344,10 @@ Partial Class Menuutama_user_
         Me.Button27.FlatAppearance.BorderSize = 0
         Me.Button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button27.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button27.Location = New System.Drawing.Point(438, 394)
+        Me.Button27.Location = New System.Drawing.Point(584, 485)
+        Me.Button27.Margin = New System.Windows.Forms.Padding(4)
         Me.Button27.Name = "Button27"
-        Me.Button27.Size = New System.Drawing.Size(111, 119)
+        Me.Button27.Size = New System.Drawing.Size(148, 146)
         Me.Button27.TabIndex = 20
         Me.Button27.UseVisualStyleBackColor = True
         '
@@ -336,9 +358,10 @@ Partial Class Menuutama_user_
         Me.Button29.FlatAppearance.BorderSize = 0
         Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button29.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button29.Location = New System.Drawing.Point(211, 409)
+        Me.Button29.Location = New System.Drawing.Point(281, 503)
+        Me.Button29.Margin = New System.Windows.Forms.Padding(4)
         Me.Button29.Name = "Button29"
-        Me.Button29.Size = New System.Drawing.Size(111, 104)
+        Me.Button29.Size = New System.Drawing.Size(148, 128)
         Me.Button29.TabIndex = 18
         Me.Button29.UseVisualStyleBackColor = True
         '
@@ -349,9 +372,10 @@ Partial Class Menuutama_user_
         Me.Button19.FlatAppearance.BorderSize = 0
         Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button19.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button19.Location = New System.Drawing.Point(1072, 197)
+        Me.Button19.Location = New System.Drawing.Point(1429, 242)
+        Me.Button19.Margin = New System.Windows.Forms.Padding(4)
         Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(111, 104)
+        Me.Button19.Size = New System.Drawing.Size(148, 128)
         Me.Button19.TabIndex = 16
         Me.Button19.UseVisualStyleBackColor = True
         '
@@ -362,9 +386,10 @@ Partial Class Menuutama_user_
         Me.Button15.FlatAppearance.BorderSize = 0
         Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button15.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.Location = New System.Drawing.Point(869, 197)
+        Me.Button15.Location = New System.Drawing.Point(1159, 242)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(4)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(111, 104)
+        Me.Button15.Size = New System.Drawing.Size(148, 128)
         Me.Button15.TabIndex = 14
         Me.Button15.UseVisualStyleBackColor = True
         '
@@ -375,9 +400,10 @@ Partial Class Menuutama_user_
         Me.Button17.FlatAppearance.BorderSize = 0
         Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button17.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button17.Location = New System.Drawing.Point(656, 197)
+        Me.Button17.Location = New System.Drawing.Point(875, 242)
+        Me.Button17.Margin = New System.Windows.Forms.Padding(4)
         Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(111, 104)
+        Me.Button17.Size = New System.Drawing.Size(148, 128)
         Me.Button17.TabIndex = 12
         Me.Button17.UseVisualStyleBackColor = True
         '
@@ -388,9 +414,10 @@ Partial Class Menuutama_user_
         Me.Button13.FlatAppearance.BorderSize = 0
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button13.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.Location = New System.Drawing.Point(438, 197)
+        Me.Button13.Location = New System.Drawing.Point(584, 242)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(4)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(111, 104)
+        Me.Button13.Size = New System.Drawing.Size(148, 128)
         Me.Button13.TabIndex = 10
         Me.Button13.UseVisualStyleBackColor = True
         '
@@ -401,9 +428,10 @@ Partial Class Menuutama_user_
         Me.Button10.FlatAppearance.BorderSize = 0
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(211, 197)
+        Me.Button10.Location = New System.Drawing.Point(281, 242)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(111, 104)
+        Me.Button10.Size = New System.Drawing.Size(148, 128)
         Me.Button10.TabIndex = 8
         Me.Button10.UseVisualStyleBackColor = True
         '
@@ -414,9 +442,10 @@ Partial Class Menuutama_user_
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(12, 3)
+        Me.Button7.Location = New System.Drawing.Point(16, 4)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(63, 58)
+        Me.Button7.Size = New System.Drawing.Size(84, 71)
         Me.Button7.TabIndex = 7
         Me.Button7.UseVisualStyleBackColor = True
         '
@@ -427,9 +456,10 @@ Partial Class Menuutama_user_
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(1315, -1)
+        Me.Button9.Location = New System.Drawing.Point(1753, -1)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(35, 36)
+        Me.Button9.Size = New System.Drawing.Size(47, 44)
         Me.Button9.TabIndex = 9
         Me.Button9.UseVisualStyleBackColor = True
         '
@@ -440,18 +470,19 @@ Partial Class Menuutama_user_
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(1356, 0)
+        Me.Button8.Location = New System.Drawing.Point(1808, 0)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(35, 36)
+        Me.Button8.Size = New System.Drawing.Size(47, 44)
         Me.Button8.TabIndex = 8
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Menuutama_user_
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1394, 682)
+        Me.ClientSize = New System.Drawing.Size(1859, 839)
         Me.Controls.Add(Me.Button20)
         Me.Controls.Add(Me.Button21)
         Me.Controls.Add(Me.Button22)
@@ -474,6 +505,7 @@ Partial Class Menuutama_user_
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Menuutama_user_"
         Me.Text = "Menuutama_user_"
         Me.Panel2.ResumeLayout(False)

@@ -80,10 +80,29 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menuutama%28admin%29.Designer.vb">
+      <DependentUpon>Menuutama%28admin%29.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menuutama%28admin%29.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menuutama%28user%29.Designer.vb">
+      <DependentUpon>Menuutama%28user%29.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menuutama%28user%29.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -97,6 +116,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menuutama%28admin%29.resx">
+      <DependentUpon>Menuutama%28admin%29.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menuutama%28user%29.resx">
+      <DependentUpon>Menuutama%28user%29.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -115,6 +143,24 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scream.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-shop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-sign1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scream1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\love-books2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
