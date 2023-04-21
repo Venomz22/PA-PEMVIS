@@ -73,23 +73,35 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="AdminProfile.Designer.vb">
+      <DependentUpon>AdminProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProfile.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Buku.Designer.vb">
+      <DependentUpon>Buku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Buku.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="EditBuku.Designer.vb">
+      <DependentUpon>EditBuku.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="EditBuku.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menuutama%28admin%29.Designer.vb">
-      <DependentUpon>Menuutama%28admin%29.vb</DependentUpon>
+    <Compile Include="MenuAdmin.vb">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menuutama%28admin%29.vb">
+    <Compile Include="MenuAdmin.Designer.vb">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUser.Designer.vb">
+      <DependentUpon>AdminUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menuutama%28user%29.Designer.vb">
@@ -116,11 +128,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="AdminProfile.resx">
+      <DependentUpon>AdminProfile.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menuutama%28admin%29.resx">
-      <DependentUpon>Menuutama%28admin%29.vb</DependentUpon>
+    <EmbeddedResource Include="AdminUser.resx">
+      <DependentUpon>AdminUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buku.resx">
+      <DependentUpon>Buku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBuku.resx">
+      <DependentUpon>EditBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menuutama%28user%29.resx">
       <DependentUpon>Menuutama%28user%29.vb</DependentUpon>
