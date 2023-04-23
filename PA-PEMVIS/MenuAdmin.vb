@@ -1,5 +1,5 @@
 ﻿Public Class MenuAdmin
-    Private Sub Button30_Click(sender As Object, e As EventArgs) Handles btnUser.Click
+    Private Sub Button30_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -11,11 +11,15 @@
 
     End Sub
 
-    Private Sub Button31_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
+    Private Sub Button31_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button6_Click_1(sender As Object, e As EventArgs) Handles Button6.Click
 
     End Sub
 End Class
