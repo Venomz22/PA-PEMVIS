@@ -91,6 +91,12 @@
     <Compile Include="EditBuku.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,18 @@
     <Compile Include="Menuutama%28user%29.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="menuutamaasliadmin.Designer.vb">
+      <DependentUpon>menuutamaasliadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menuutamaasliadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuutamaasliuser.Designer.vb">
+      <DependentUpon>menuutamaasliuser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menuutamaasliuser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -126,6 +144,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="pembelian.Designer.vb">
+      <DependentUpon>pembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.vb">
+      <DependentUpon>register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="register.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AdminProfile.resx">
@@ -140,17 +170,32 @@
     <EmbeddedResource Include="EditBuku.resx">
       <DependentUpon>EditBuku.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuAdmin.resx">
       <DependentUpon>MenuAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menuutama%28user%29.resx">
       <DependentUpon>Menuutama%28user%29.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="menuutamaasliadmin.resx">
+      <DependentUpon>menuutamaasliadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuutamaasliuser.resx">
+      <DependentUpon>menuutamaasliuser.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pembelian.resx">
+      <DependentUpon>pembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +250,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recruitment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-shop2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-shop3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

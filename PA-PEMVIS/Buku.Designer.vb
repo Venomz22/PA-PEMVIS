@@ -25,6 +25,7 @@ Partial Class Buku
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button32 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -45,6 +46,11 @@ Partial Class Buku
         Me.harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.terjual = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtterjual = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtHarga = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.txtthun = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtID = New System.Windows.Forms.TextBox()
@@ -59,14 +65,8 @@ Partial Class Buku
         Me.txtPenerbit = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtHarga = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtterjual = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnHapus = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.btnTambah = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -84,19 +84,19 @@ Partial Class Buku
         Me.Panel2.Controls.Add(Me.Button6)
         Me.Panel2.Controls.Add(Me.Button3)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 43)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel2.Location = New System.Drawing.Point(0, 35)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1482, 70)
+        Me.Panel2.Size = New System.Drawing.Size(1112, 57)
         Me.Panel2.TabIndex = 112
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Stencil", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(140, 19)
+        Me.Label1.Location = New System.Drawing.Point(105, 15)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(102, 33)
+        Me.Label1.Size = New System.Drawing.Size(81, 26)
         Me.Label1.TabIndex = 72
         Me.Label1.Text = "Admin"
         '
@@ -105,23 +105,34 @@ Partial Class Buku
         Me.Button32.FlatAppearance.BorderSize = 0
         Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button32.Location = New System.Drawing.Point(1439, 8)
-        Me.Button32.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button32.Location = New System.Drawing.Point(1079, 6)
         Me.Button32.Name = "Button32"
         Me.Button32.Size = New System.Drawing.Size(0, 0)
         Me.Button32.TabIndex = 71
         Me.Button32.Text = "keluar"
         Me.Button32.UseVisualStyleBackColor = True
         '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(22, 0)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(63, 58)
+        Me.Button7.TabIndex = 7
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Button6
         '
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(1292, 12)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button6.Location = New System.Drawing.Point(969, 10)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(183, 47)
+        Me.Button6.Size = New System.Drawing.Size(137, 38)
         Me.Button6.TabIndex = 6
         Me.Button6.Text = "Logout"
         Me.Button6.UseVisualStyleBackColor = True
@@ -133,9 +144,8 @@ Partial Class Buku
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Location = New System.Drawing.Point(0, 0)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 70)
+        Me.Button3.Size = New System.Drawing.Size(75, 57)
         Me.Button3.TabIndex = 0
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -144,9 +154,8 @@ Partial Class Buku
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1482, 43)
+        Me.Panel1.Size = New System.Drawing.Size(1112, 35)
         Me.Panel1.TabIndex = 114
         '
         'Button1
@@ -157,10 +166,9 @@ Partial Class Buku
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(1437, 0)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(1078, 0)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(45, 43)
+        Me.Button1.Size = New System.Drawing.Size(34, 35)
         Me.Button1.TabIndex = 1
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -172,9 +180,10 @@ Partial Class Buku
         Me.FlowLayoutPanel1.Controls.Add(Me.btnBuku)
         Me.FlowLayoutPanel1.Controls.Add(Me.btnTransaksi)
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 113)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 92)
+        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(212, 687)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(159, 558)
         Me.FlowLayoutPanel1.TabIndex = 118
         '
         'btnprofile
@@ -183,10 +192,9 @@ Partial Class Buku
         Me.btnprofile.FlatAppearance.BorderSize = 0
         Me.btnprofile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnprofile.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnprofile.Location = New System.Drawing.Point(4, 4)
-        Me.btnprofile.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnprofile.Location = New System.Drawing.Point(3, 3)
         Me.btnprofile.Name = "btnprofile"
-        Me.btnprofile.Size = New System.Drawing.Size(212, 47)
+        Me.btnprofile.Size = New System.Drawing.Size(159, 38)
         Me.btnprofile.TabIndex = 3
         Me.btnprofile.Text = "Profile"
         Me.btnprofile.UseVisualStyleBackColor = False
@@ -197,10 +205,9 @@ Partial Class Buku
         Me.btnUser.FlatAppearance.BorderSize = 0
         Me.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUser.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUser.Location = New System.Drawing.Point(4, 59)
-        Me.btnUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnUser.Location = New System.Drawing.Point(3, 47)
         Me.btnUser.Name = "btnUser"
-        Me.btnUser.Size = New System.Drawing.Size(208, 47)
+        Me.btnUser.Size = New System.Drawing.Size(156, 38)
         Me.btnUser.TabIndex = 8
         Me.btnUser.Text = "Data User"
         Me.btnUser.UseVisualStyleBackColor = False
@@ -211,10 +218,9 @@ Partial Class Buku
         Me.btnBuku.FlatAppearance.BorderSize = 0
         Me.btnBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBuku.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuku.Location = New System.Drawing.Point(4, 114)
-        Me.btnBuku.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBuku.Location = New System.Drawing.Point(3, 91)
         Me.btnBuku.Name = "btnBuku"
-        Me.btnBuku.Size = New System.Drawing.Size(208, 47)
+        Me.btnBuku.Size = New System.Drawing.Size(156, 38)
         Me.btnBuku.TabIndex = 4
         Me.btnBuku.Text = "BUKU"
         Me.btnBuku.UseVisualStyleBackColor = False
@@ -224,10 +230,9 @@ Partial Class Buku
         Me.btnTransaksi.FlatAppearance.BorderSize = 0
         Me.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTransaksi.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTransaksi.Location = New System.Drawing.Point(4, 169)
-        Me.btnTransaksi.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTransaksi.Location = New System.Drawing.Point(3, 135)
         Me.btnTransaksi.Name = "btnTransaksi"
-        Me.btnTransaksi.Size = New System.Drawing.Size(220, 47)
+        Me.btnTransaksi.Size = New System.Drawing.Size(165, 38)
         Me.btnTransaksi.TabIndex = 9
         Me.btnTransaksi.Text = "H. Transaksi"
         Me.btnTransaksi.UseVisualStyleBackColor = True
@@ -236,11 +241,12 @@ Partial Class Buku
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_buku, Me.Judul, Me.TahunTerbit, Me.Pengarang, Me.Penerbit, Me.JenisBuku, Me.Jumlah, Me.harga, Me.terjual})
-        Me.DataGridView1.Location = New System.Drawing.Point(283, 148)
+        Me.DataGridView1.Location = New System.Drawing.Point(212, 120)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1063, 158)
+        Me.DataGridView1.Size = New System.Drawing.Size(797, 128)
         Me.DataGridView1.TabIndex = 119
         '
         'ID_buku
@@ -329,117 +335,180 @@ Partial Class Buku
         Me.Panel3.Controls.Add(Me.Label4)
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.Panel3.Location = New System.Drawing.Point(329, 338)
+        Me.Panel3.Location = New System.Drawing.Point(247, 275)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(978, 432)
+        Me.Panel3.Size = New System.Drawing.Size(734, 351)
         Me.Panel3.TabIndex = 120
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Stencil", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(314, 15)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(154, 26)
+        Me.Label10.TabIndex = 73
+        Me.Label10.Text = "Detail Buku"
+        '
+        'txtterjual
+        '
+        Me.txtterjual.Location = New System.Drawing.Point(511, 262)
+        Me.txtterjual.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtterjual.Name = "txtterjual"
+        Me.txtterjual.Size = New System.Drawing.Size(136, 20)
+        Me.txtterjual.TabIndex = 114
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(374, 254)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(135, 26)
+        Me.Label9.TabIndex = 113
+        Me.Label9.Text = "Jumlah Terjual"
+        '
+        'txtHarga
+        '
+        Me.txtHarga.Location = New System.Drawing.Point(511, 202)
+        Me.txtHarga.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtHarga.Name = "txtHarga"
+        Me.txtHarga.Size = New System.Drawing.Size(136, 20)
+        Me.txtHarga.TabIndex = 112
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(374, 195)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(113, 26)
+        Me.Label8.TabIndex = 111
+        Me.Label8.Text = "Harga Buku"
         '
         'txtthun
         '
-        Me.txtthun.Location = New System.Drawing.Point(248, 249)
+        Me.txtthun.Location = New System.Drawing.Point(186, 202)
+        Me.txtthun.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtthun.Name = "txtthun"
-        Me.txtthun.Size = New System.Drawing.Size(180, 22)
+        Me.txtthun.Size = New System.Drawing.Size(136, 20)
         Me.txtthun.TabIndex = 110
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(66, 314)
+        Me.Label7.Location = New System.Drawing.Point(50, 255)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(123, 31)
+        Me.Label7.Size = New System.Drawing.Size(99, 26)
         Me.Label7.TabIndex = 109
         Me.Label7.Text = "Pengarang"
         '
         'txtID
         '
-        Me.txtID.Location = New System.Drawing.Point(248, 96)
+        Me.txtID.Location = New System.Drawing.Point(186, 78)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtID.Name = "txtID"
-        Me.txtID.Size = New System.Drawing.Size(180, 22)
+        Me.txtID.Size = New System.Drawing.Size(136, 20)
         Me.txtID.TabIndex = 107
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(66, 88)
+        Me.Label6.Location = New System.Drawing.Point(50, 72)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(100, 31)
+        Me.Label6.Size = New System.Drawing.Size(84, 26)
         Me.Label6.TabIndex = 106
         Me.Label6.Text = "ID Buku"
         '
         'txtjudul
         '
-        Me.txtjudul.Location = New System.Drawing.Point(248, 168)
+        Me.txtjudul.Location = New System.Drawing.Point(186, 136)
+        Me.txtjudul.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtjudul.Name = "txtjudul"
-        Me.txtjudul.Size = New System.Drawing.Size(180, 22)
+        Me.txtjudul.Size = New System.Drawing.Size(136, 20)
         Me.txtjudul.TabIndex = 97
         '
         'txtPengarang
         '
-        Me.txtPengarang.Location = New System.Drawing.Point(248, 314)
+        Me.txtPengarang.Location = New System.Drawing.Point(186, 255)
+        Me.txtPengarang.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtPengarang.Name = "txtPengarang"
-        Me.txtPengarang.Size = New System.Drawing.Size(180, 22)
+        Me.txtPengarang.Size = New System.Drawing.Size(136, 20)
         Me.txtPengarang.TabIndex = 105
         '
         'Nama
         '
         Me.Nama.AutoSize = True
         Me.Nama.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Nama.Location = New System.Drawing.Point(66, 160)
+        Me.Nama.Location = New System.Drawing.Point(50, 130)
+        Me.Nama.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Nama.Name = "Nama"
-        Me.Nama.Size = New System.Drawing.Size(130, 31)
+        Me.Nama.Size = New System.Drawing.Size(107, 26)
         Me.Nama.TabIndex = 96
         Me.Nama.Text = "Judul Buku"
         '
         'txtjumlah
         '
-        Me.txtjumlah.Location = New System.Drawing.Point(681, 184)
+        Me.txtjumlah.Location = New System.Drawing.Point(511, 150)
+        Me.txtjumlah.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtjumlah.Name = "txtjumlah"
-        Me.txtjumlah.Size = New System.Drawing.Size(180, 22)
+        Me.txtjumlah.Size = New System.Drawing.Size(136, 20)
         Me.txtjumlah.TabIndex = 104
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(499, 95)
+        Me.Label2.Location = New System.Drawing.Point(374, 77)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(123, 31)
+        Me.Label2.Size = New System.Drawing.Size(102, 26)
         Me.Label2.TabIndex = 98
         Me.Label2.Text = "Jenis Buku"
         '
         'txtJenisBuku
         '
-        Me.txtJenisBuku.Location = New System.Drawing.Point(681, 103)
+        Me.txtJenisBuku.Location = New System.Drawing.Point(511, 84)
+        Me.txtJenisBuku.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtJenisBuku.Name = "txtJenisBuku"
-        Me.txtJenisBuku.Size = New System.Drawing.Size(180, 22)
+        Me.txtJenisBuku.Size = New System.Drawing.Size(136, 20)
         Me.txtJenisBuku.TabIndex = 103
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(499, 175)
+        Me.Label3.Location = New System.Drawing.Point(374, 142)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(88, 31)
+        Me.Label3.Size = New System.Drawing.Size(72, 26)
         Me.Label3.TabIndex = 99
         Me.Label3.Text = "Jumlah"
         '
         'txtPenerbit
         '
-        Me.txtPenerbit.Location = New System.Drawing.Point(248, 382)
+        Me.txtPenerbit.Location = New System.Drawing.Point(186, 310)
+        Me.txtPenerbit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtPenerbit.Name = "txtPenerbit"
-        Me.txtPenerbit.Size = New System.Drawing.Size(180, 22)
+        Me.txtPenerbit.Size = New System.Drawing.Size(136, 20)
         Me.txtPenerbit.TabIndex = 102
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(66, 240)
+        Me.Label4.Location = New System.Drawing.Point(50, 195)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(145, 31)
+        Me.Label4.Size = New System.Drawing.Size(120, 26)
         Me.Label4.TabIndex = 100
         Me.Label4.Text = "Tahun Terbit"
         '
@@ -447,53 +516,21 @@ Partial Class Buku
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(66, 373)
+        Me.Label5.Location = New System.Drawing.Point(50, 303)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(99, 31)
+        Me.Label5.Size = New System.Drawing.Size(81, 26)
         Me.Label5.TabIndex = 101
         Me.Label5.Text = "Penerbit"
-        '
-        'txtHarga
-        '
-        Me.txtHarga.Location = New System.Drawing.Point(681, 249)
-        Me.txtHarga.Name = "txtHarga"
-        Me.txtHarga.Size = New System.Drawing.Size(180, 22)
-        Me.txtHarga.TabIndex = 112
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(499, 240)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(138, 31)
-        Me.Label8.TabIndex = 111
-        Me.Label8.Text = "Harga Buku"
-        '
-        'txtterjual
-        '
-        Me.txtterjual.Location = New System.Drawing.Point(681, 322)
-        Me.txtterjual.Name = "txtterjual"
-        Me.txtterjual.Size = New System.Drawing.Size(180, 22)
-        Me.txtterjual.TabIndex = 114
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(499, 313)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(164, 31)
-        Me.Label9.TabIndex = 113
-        Me.Label9.Text = "Jumlah Terjual"
         '
         'btnEdit
         '
         Me.btnEdit.BackColor = System.Drawing.Color.SkyBlue
         Me.btnEdit.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEdit.Location = New System.Drawing.Point(1351, 484)
+        Me.btnEdit.Location = New System.Drawing.Point(1013, 393)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(99, 37)
+        Me.btnEdit.Size = New System.Drawing.Size(88, 30)
         Me.btnEdit.TabIndex = 115
         Me.btnEdit.Text = "Edit"
         Me.btnEdit.UseVisualStyleBackColor = False
@@ -502,54 +539,32 @@ Partial Class Buku
         '
         Me.btnHapus.BackColor = System.Drawing.Color.SkyBlue
         Me.btnHapus.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHapus.Location = New System.Drawing.Point(1351, 565)
+        Me.btnHapus.Location = New System.Drawing.Point(1013, 459)
+        Me.btnHapus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnHapus.Name = "btnHapus"
-        Me.btnHapus.Size = New System.Drawing.Size(99, 37)
+        Me.btnHapus.Size = New System.Drawing.Size(88, 30)
         Me.btnHapus.TabIndex = 121
         Me.btnHapus.Text = "Hapus"
         Me.btnHapus.UseVisualStyleBackColor = False
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Stencil", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(418, 19)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(194, 33)
-        Me.Label10.TabIndex = 73
-        Me.Label10.Text = "Detail Buku"
-        '
-        'Button7
-        '
-        Me.Button7.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(30, 0)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(84, 71)
-        Me.Button7.TabIndex = 7
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'btnTambah
         '
         Me.btnTambah.BackColor = System.Drawing.Color.SkyBlue
         Me.btnTambah.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTambah.Location = New System.Drawing.Point(1352, 211)
+        Me.btnTambah.Location = New System.Drawing.Point(1014, 171)
+        Me.btnTambah.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnTambah.Name = "btnTambah"
-        Me.btnTambah.Size = New System.Drawing.Size(118, 37)
+        Me.btnTambah.Size = New System.Drawing.Size(88, 30)
         Me.btnTambah.TabIndex = 122
         Me.btnTambah.Text = "Tambah"
         Me.btnTambah.UseVisualStyleBackColor = False
         '
         'Buku
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Lavender
-        Me.ClientSize = New System.Drawing.Size(1482, 800)
+        Me.ClientSize = New System.Drawing.Size(1112, 650)
         Me.Controls.Add(Me.btnTambah)
         Me.Controls.Add(Me.btnHapus)
         Me.Controls.Add(Me.btnEdit)
@@ -559,6 +574,7 @@ Partial Class Buku
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Buku"
         Me.Text = "Form1"
         Me.Panel2.ResumeLayout(False)
