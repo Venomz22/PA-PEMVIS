@@ -48,6 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="mysql.data">
+      <HintPath>C:\Users\LENOVO\Downloads\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -73,22 +76,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminProfile.Designer.vb">
-      <DependentUpon>AdminProfile.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AdminProfile.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Buku.Designer.vb">
-      <DependentUpon>Buku.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Buku.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="EditBuku.Designer.vb">
       <DependentUpon>EditBuku.vb</DependentUpon>
     </Compile>
     <Compile Include="EditBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileAdmin.Designer.vb">
+      <DependentUpon>ProfileAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadBuku.Designer.vb">
+      <DependentUpon>ReadBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReadBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBuku.Designer.vb">
+      <DependentUpon>AddBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddBuku.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login.Designer.vb">
@@ -128,6 +137,7 @@
     <Compile Include="menuutamaasliuser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -158,17 +168,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AdminProfile.resx">
-      <DependentUpon>AdminProfile.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdminUser.resx">
       <DependentUpon>AdminUser.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Buku.resx">
-      <DependentUpon>Buku.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EditBuku.resx">
       <DependentUpon>EditBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileAdmin.resx">
+      <DependentUpon>ProfileAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadBuku.resx">
+      <DependentUpon>ReadBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBuku.resx">
+      <DependentUpon>AddBuku.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>

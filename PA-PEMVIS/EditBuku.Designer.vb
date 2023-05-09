@@ -22,7 +22,6 @@ Partial Class EditBuku
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnClear = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.labelBuku = New System.Windows.Forms.Label()
         Me.txtterjual = New System.Windows.Forms.TextBox()
@@ -63,17 +62,6 @@ Partial Class EditBuku
         Me.Panel1.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'btnClear
-        '
-        Me.btnClear.BackColor = System.Drawing.Color.SkyBlue
-        Me.btnClear.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(720, 604)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(99, 37)
-        Me.btnClear.TabIndex = 128
-        Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = False
         '
         'Panel3
         '
@@ -467,7 +455,6 @@ Partial Class EditBuku
         Me.ClientSize = New System.Drawing.Size(1482, 653)
         Me.Controls.Add(Me.btnBatal)
         Me.Controls.Add(Me.FlowLayoutPanel1)
-        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.btnSimpan)
         Me.Controls.Add(Me.Panel2)
@@ -484,8 +471,6 @@ Partial Class EditBuku
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents btnClear As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents labelBuku As Label
     Friend WithEvents txtterjual As TextBox
