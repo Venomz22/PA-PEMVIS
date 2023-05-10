@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mysql.data">
-      <HintPath>C:\Users\LENOVO\Downloads\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+      <HintPath>D:\Praktikum Semester 4\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
