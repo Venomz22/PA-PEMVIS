@@ -5,9 +5,9 @@ Imports System.Windows.Forms.DataFormats
 Public Class belibuku
 
     Public jenis As String
+    Public id As String
 
     Private Sub belibuku_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        MsgBox(jenis)
     End Sub
 
     Sub TampilJenis()
@@ -63,5 +63,28 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
         txtHarga.Clear()
         txtterjual.Clear()
         txtthun.Clear()
+    End Sub
+
+    Private Sub btnbeli_Click(sender As Object, e As EventArgs) Handles btnbeli.Click
+
+        Dim i As Integer
+        i = Me.dgv1.CurrentRow.Index
+
+        With dgv1.Rows.Item(i)
+            txtID.Text = .Cells(0).Value
+            txtjudul.Text = .Cells(1).Value
+            txtthun.Text = .Cells(2).Value
+            txtPengarang.Text = .Cells(3).Value
+            txtPenerbit.Text = .Cells(4).Value
+            cmbjenis.Text = .Cells(5).Value
+            txtjumlah.Text = .Cells(6).Value
+            txtHarga.Text = .Cells(7).Value
+            txtterjual.Text = .Cells(8).Value
+            id = .Cells(0).Value
+        End With
+        pembelian.buku = id
+        pembelian.Show()
+        Me.Hide()
+
     End Sub
 End Class

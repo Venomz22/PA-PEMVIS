@@ -31,6 +31,7 @@ Partial Class belibuku
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtthun = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnbeli = New System.Windows.Forms.Button()
         Me.txtID = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtjudul = New System.Windows.Forms.TextBox()
@@ -66,7 +67,6 @@ Partial Class belibuku
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnbeli = New System.Windows.Forms.Button()
         Me.Panel4.SuspendLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -182,6 +182,18 @@ Partial Class belibuku
         Me.Label7.Size = New System.Drawing.Size(99, 26)
         Me.Label7.TabIndex = 109
         Me.Label7.Text = "Pengarang"
+        '
+        'btnbeli
+        '
+        Me.btnbeli.BackColor = System.Drawing.Color.SkyBlue
+        Me.btnbeli.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnbeli.Location = New System.Drawing.Point(530, 310)
+        Me.btnbeli.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnbeli.Name = "btnbeli"
+        Me.btnbeli.Size = New System.Drawing.Size(88, 30)
+        Me.btnbeli.TabIndex = 139
+        Me.btnbeli.Text = "BELI"
+        Me.btnbeli.UseVisualStyleBackColor = False
         '
         'txtID
         '
@@ -546,18 +558,6 @@ Partial Class belibuku
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(988, 70)
         Me.Panel3.TabIndex = 135
-        '
-        'btnbeli
-        '
-        Me.btnbeli.BackColor = System.Drawing.Color.SkyBlue
-        Me.btnbeli.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnbeli.Location = New System.Drawing.Point(530, 310)
-        Me.btnbeli.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnbeli.Name = "btnbeli"
-        Me.btnbeli.Size = New System.Drawing.Size(88, 30)
-        Me.btnbeli.TabIndex = 139
-        Me.btnbeli.Text = "BELI"
-        Me.btnbeli.UseVisualStyleBackColor = False
         '
         'belibuku
         '
