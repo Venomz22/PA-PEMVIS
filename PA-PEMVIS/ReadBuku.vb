@@ -3,7 +3,6 @@ Imports System.Windows.Forms.DataFormats
 Imports MySql.Data.MySqlClient
 
 Public Class ReadBuku
-    Dim jenis As String
 
     Sub TampilJenis()
         da = New MySqlDataAdapter("Select * From tbbuku", con)

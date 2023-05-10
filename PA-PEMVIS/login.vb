@@ -7,6 +7,7 @@ Imports System.Data.SqlClient
 Public Class login
     Dim role As String
 
+
     Private Sub loginuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
