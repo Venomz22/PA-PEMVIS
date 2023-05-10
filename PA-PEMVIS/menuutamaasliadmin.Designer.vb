@@ -28,7 +28,6 @@ Partial Class menuutamaasliadmin
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnHome = New System.Windows.Forms.Button()
         Me.btnprofile = New System.Windows.Forms.Button()
         Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.btnBook = New System.Windows.Forms.Button()
@@ -40,6 +39,7 @@ Partial Class menuutamaasliadmin
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
+        Me.btnHome = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -130,20 +130,6 @@ Partial Class menuutamaasliadmin
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(213, 755)
         Me.Panel2.TabIndex = 114
-        '
-        'btnHome
-        '
-        Me.btnHome.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.home
-        Me.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnHome.FlatAppearance.BorderSize = 0
-        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHome.Location = New System.Drawing.Point(55, 28)
-        Me.btnHome.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(96, 91)
-        Me.btnHome.TabIndex = 16
-        Me.btnHome.UseVisualStyleBackColor = True
         '
         'btnprofile
         '
@@ -294,6 +280,20 @@ Partial Class menuutamaasliadmin
         Me.Button7.TabIndex = 16
         Me.Button7.UseVisualStyleBackColor = True
         '
+        'btnHome
+        '
+        Me.btnHome.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop1
+        Me.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnHome.FlatAppearance.BorderSize = 0
+        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHome.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHome.Location = New System.Drawing.Point(55, 19)
+        Me.btnHome.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(104, 92)
+        Me.btnHome.TabIndex = 78
+        Me.btnHome.UseVisualStyleBackColor = True
+        '
         'menuutamaasliadmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -331,8 +331,8 @@ Partial Class menuutamaasliadmin
     Friend WithEvents Button32 As System.Windows.Forms.Button
     Friend WithEvents Button30 As System.Windows.Forms.Button
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents Button12 As System.Windows.Forms.Button
     Friend WithEvents Button11 As System.Windows.Forms.Button
+    Friend WithEvents btnHome As Button
 End Class

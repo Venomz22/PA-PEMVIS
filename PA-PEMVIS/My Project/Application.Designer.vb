@@ -25,14 +25,14 @@ Namespace My
         Public Sub New()
             MyBase.New(Global.Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows)
             Me.IsSingleInstance = true
-            Me.EnableVisualStyles = true
+            Me.EnableVisualStyles = false
             Me.SaveMySettingsOnExit = true
             Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.PA_PEMVIS.menuutamaasliuser
+            Me.MainForm = Global.PA_PEMVIS.login
         End Sub
     End Class
 End Namespace

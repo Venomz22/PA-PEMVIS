@@ -2,10 +2,11 @@
 Imports System.Windows
 Imports System.Data.Odbc
 Imports System.Data.SqlClient
-
+Imports System.Security.Cryptography.X509Certificates
 
 Public Class login
-    Dim role As String
+    Public role As String
+    Public idlogin As String
 
     Private Sub loginuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -13,7 +14,6 @@ Public Class login
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Call koneksi()
-
         Dim un As String = lname.Text
         Dim pw As String = lpass.Text
 
@@ -22,9 +22,11 @@ Public Class login
         rd.Read()
         If rd.HasRows Then
             role = rd("role")
+            idlogin = rd("id")
+            rd.Close()
 
-            If role = "admin" Then
 
+            If role = "Admin" Then
                 menuutamaasliadmin.Show()
                 Me.Visible = False
             Else

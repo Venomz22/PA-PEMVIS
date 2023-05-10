@@ -3,7 +3,6 @@ Imports System.Windows.Forms.DataFormats
 Imports MySql.Data.MySqlClient
 
 Public Class ReadBuku
-    Dim jenis As String
 
     Sub TampilJenis()
         da = New MySqlDataAdapter("Select * From tbbuku", con)
@@ -107,5 +106,21 @@ WHERE idbuku = '" & txtID.Text & "';"
 
 
         End If
+    End Sub
+
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        menuutamaasliadmin.Show()
+        Me.Close()
+
+    End Sub
+
+    Private Sub btnprofile_Click(sender As Object, e As EventArgs) Handles btnprofile.Click
+        ProfileAdmin.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
+        ReadUser.Show()
+        Me.Close()
     End Sub
 End Class
