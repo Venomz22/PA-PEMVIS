@@ -55,18 +55,21 @@ Partial Class belibuku
         Me.harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button32 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button31 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+<<<<<<< HEAD
+=======
+        Me.Button32 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+>>>>>>> 19bb3e10af2322b2e465a4a0bd48592ed1366524
         Me.Panel4.SuspendLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -401,19 +404,6 @@ Partial Class belibuku
         Me.Button12.Text = "HI Admin !"
         Me.Button12.UseVisualStyleBackColor = True
         '
-        'Button32
-        '
-        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button32.FlatAppearance.BorderSize = 0
-        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button32.Location = New System.Drawing.Point(920, 7)
-        Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(48, 50)
-        Me.Button32.TabIndex = 30
-        Me.Button32.UseVisualStyleBackColor = True
-        '
         'Panel2
         '
         Me.Panel2.AllowDrop = True
@@ -481,60 +471,6 @@ Partial Class belibuku
         Me.Button6.TabIndex = 8
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'Button2
-        '
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(1079, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(34, 35)
-        Me.Button2.TabIndex = 10
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(1113, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(34, 35)
-        Me.Button1.TabIndex = 1
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.minimize_sign
-        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(1073, -3)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(35, 36)
-        Me.Button9.TabIndex = 12
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources._exit
-        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(1113, 0)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(35, 36)
-        Me.Button8.TabIndex = 11
-        Me.Button8.UseVisualStyleBackColor = True
-        '
         'Panel1
         '
         Me.Panel1.AllowDrop = True
@@ -559,6 +495,76 @@ Partial Class belibuku
         Me.Panel3.Size = New System.Drawing.Size(988, 70)
         Me.Panel3.TabIndex = 135
         '
+<<<<<<< HEAD
+=======
+        'Button32
+        '
+        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button32.FlatAppearance.BorderSize = 0
+        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button32.Location = New System.Drawing.Point(920, 7)
+        Me.Button32.Name = "Button32"
+        Me.Button32.Size = New System.Drawing.Size(48, 50)
+        Me.Button32.TabIndex = 30
+        Me.Button32.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(1113, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(34, 35)
+        Me.Button1.TabIndex = 1
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(1079, 0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(34, 35)
+        Me.Button2.TabIndex = 10
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources._exit
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(1113, 0)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(35, 36)
+        Me.Button8.TabIndex = 11
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.minimize_sign
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(1073, -3)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(35, 36)
+        Me.Button9.TabIndex = 12
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+>>>>>>> 19bb3e10af2322b2e465a4a0bd48592ed1366524
         'belibuku
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -614,16 +620,16 @@ Partial Class belibuku
     Friend WithEvents harga As DataGridViewTextBoxColumn
     Friend WithEvents Button5 As Button
     Friend WithEvents Button12 As Button
-    Friend WithEvents Button32 As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button31 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button32 As System.Windows.Forms.Button
 End Class
