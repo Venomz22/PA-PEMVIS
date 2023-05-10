@@ -18,7 +18,7 @@ Public Class AddBuku
             cmd.ExecuteNonQuery()
             MsgBox("Simpan data sukses....|", MsgBoxStyle.Information, "Perhatian")
         End If
-        ReadBuku.DataGridView1.Rows.Clear()
+        ReadBuku.dgv1.Rows.Clear()
         ReadBuku.TampilJenis()
         ReadBuku.Show()
         Me.Close()

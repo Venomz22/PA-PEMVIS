@@ -1,5 +1,13 @@
 ﻿Public Class menuutamaasliuser
-    Private Sub Button31_Click(sender As Object, e As EventArgs) Handles btnProfile.Click
+
+
+    Private Sub menuutamaasliuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Menuutama_user_.Show()
+        Me.Hide()
 
     End Sub
 End Class

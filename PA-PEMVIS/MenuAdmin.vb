@@ -22,4 +22,8 @@
     Private Sub Button6_Click_1(sender As Object, e As EventArgs) Handles Button6.Click
 
     End Sub
+
+    Private Sub Button32_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

@@ -23,7 +23,6 @@ Partial Class pembelian
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button32 = New System.Windows.Forms.Button()
         Me.Button30 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -31,23 +30,24 @@ Partial Class pembelian
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.judul = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.jumlah = New System.Windows.Forms.TextBox()
+        Me.total = New System.Windows.Forms.TextBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button32 = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -65,19 +65,6 @@ Partial Class pembelian
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(988, 70)
         Me.Panel3.TabIndex = 124
-        '
-        'Button32
-        '
-        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button32.FlatAppearance.BorderSize = 0
-        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button32.Location = New System.Drawing.Point(911, 7)
-        Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(48, 50)
-        Me.Button32.TabIndex = 31
-        Me.Button32.UseVisualStyleBackColor = True
         '
         'Button30
         '
@@ -167,52 +154,12 @@ Partial Class pembelian
         Me.Panel1.Size = New System.Drawing.Size(1148, 35)
         Me.Panel1.TabIndex = 122
         '
-        'Button9
+        'judul
         '
-        Me.Button9.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.minimize_sign
-        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(1073, 0)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(35, 36)
-        Me.Button9.TabIndex = 9
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources._exit
-        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(1114, 0)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(35, 36)
-        Me.Button8.TabIndex = 8
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(1114, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(34, 35)
-        Me.Button1.TabIndex = 1
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(328, 67)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox1.TabIndex = 125
+        Me.judul.Location = New System.Drawing.Point(328, 67)
+        Me.judul.Name = "judul"
+        Me.judul.Size = New System.Drawing.Size(235, 20)
+        Me.judul.TabIndex = 125
         '
         'Button5
         '
@@ -259,19 +206,19 @@ Partial Class pembelian
         Me.Button10.Text = "TOTAL PEMBELIAN"
         Me.Button10.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'jumlah
         '
-        Me.TextBox2.Location = New System.Drawing.Point(328, 151)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox2.TabIndex = 131
+        Me.jumlah.Location = New System.Drawing.Point(328, 151)
+        Me.jumlah.Name = "jumlah"
+        Me.jumlah.Size = New System.Drawing.Size(235, 20)
+        Me.jumlah.TabIndex = 131
         '
-        'TextBox3
+        'total
         '
-        Me.TextBox3.Location = New System.Drawing.Point(328, 245)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(235, 20)
-        Me.TextBox3.TabIndex = 132
+        Me.total.Location = New System.Drawing.Point(328, 245)
+        Me.total.Name = "total"
+        Me.total.Size = New System.Drawing.Size(235, 20)
+        Me.total.TabIndex = 132
         '
         'Panel4
         '
@@ -280,11 +227,11 @@ Partial Class pembelian
         Me.Panel4.Controls.Add(Me.Button14)
         Me.Panel4.Controls.Add(Me.Button6)
         Me.Panel4.Controls.Add(Me.Button13)
-        Me.Panel4.Controls.Add(Me.TextBox1)
-        Me.Panel4.Controls.Add(Me.TextBox2)
+        Me.Panel4.Controls.Add(Me.judul)
+        Me.Panel4.Controls.Add(Me.jumlah)
         Me.Panel4.Controls.Add(Me.Button12)
         Me.Panel4.Controls.Add(Me.PictureBox1)
-        Me.Panel4.Controls.Add(Me.TextBox3)
+        Me.Panel4.Controls.Add(Me.total)
         Me.Panel4.Controls.Add(Me.Button5)
         Me.Panel4.Controls.Add(Me.Button11)
         Me.Panel4.Controls.Add(Me.Button7)
@@ -294,46 +241,17 @@ Partial Class pembelian
         Me.Panel4.Size = New System.Drawing.Size(912, 421)
         Me.Panel4.TabIndex = 133
         '
-        'PictureBox1
+        'Button15
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(623, 67)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(242, 289)
-        Me.PictureBox1.TabIndex = 133
-        Me.PictureBox1.TabStop = False
-        '
-        'Button12
-        '
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(623, 18)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(244, 42)
-        Me.Button12.TabIndex = 134
-        Me.Button12.Text = "TAMPILAN BUKU"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Button13
-        '
-        Me.Button13.Location = New System.Drawing.Point(462, 367)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(101, 40)
-        Me.Button13.TabIndex = 135
-        Me.Button13.Text = "BATAL"
-        Me.Button13.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(284, 52)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(38, 42)
-        Me.Button6.TabIndex = 136
-        Me.Button6.Text = ":"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button15.FlatAppearance.BorderSize = 0
+        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button15.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button15.Location = New System.Drawing.Point(284, 230)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(38, 42)
+        Me.Button15.TabIndex = 138
+        Me.Button15.Text = ":"
+        Me.Button15.UseVisualStyleBackColor = True
         '
         'Button14
         '
@@ -347,17 +265,99 @@ Partial Class pembelian
         Me.Button14.Text = ":"
         Me.Button14.UseVisualStyleBackColor = True
         '
-        'Button15
+        'Button6
         '
-        Me.Button15.FlatAppearance.BorderSize = 0
-        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button15.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.Location = New System.Drawing.Point(284, 230)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(38, 42)
-        Me.Button15.TabIndex = 138
-        Me.Button15.Text = ":"
-        Me.Button15.UseVisualStyleBackColor = True
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Location = New System.Drawing.Point(284, 52)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(38, 42)
+        Me.Button6.TabIndex = 136
+        Me.Button6.Text = ":"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button13
+        '
+        Me.Button13.Location = New System.Drawing.Point(462, 367)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(101, 40)
+        Me.Button13.TabIndex = 135
+        Me.Button13.Text = "BATAL"
+        Me.Button13.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Location = New System.Drawing.Point(623, 18)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(244, 42)
+        Me.Button12.TabIndex = 134
+        Me.Button12.Text = "TAMPILAN BUKU"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(623, 67)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(242, 289)
+        Me.PictureBox1.TabIndex = 133
+        Me.PictureBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(1114, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(34, 35)
+        Me.Button1.TabIndex = 1
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.minimize_sign
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(1073, 0)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(35, 36)
+        Me.Button9.TabIndex = 9
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources._exit
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(1114, 0)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(35, 36)
+        Me.Button8.TabIndex = 8
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button32
+        '
+        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button32.FlatAppearance.BorderSize = 0
+        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button32.Location = New System.Drawing.Point(911, 7)
+        Me.Button32.Name = "Button32"
+        Me.Button32.Size = New System.Drawing.Size(48, 50)
+        Me.Button32.TabIndex = 31
+        Me.Button32.UseVisualStyleBackColor = True
         '
         'pembelian
         '
@@ -382,7 +382,6 @@ Partial Class pembelian
 
     End Sub
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Button32 As System.Windows.Forms.Button
     Friend WithEvents Button30 As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Button2 As System.Windows.Forms.Button
@@ -390,16 +389,13 @@ Partial Class pembelian
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Button9 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents judul As System.Windows.Forms.TextBox
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents jumlah As System.Windows.Forms.TextBox
+    Friend WithEvents total As System.Windows.Forms.TextBox
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents Button15 As System.Windows.Forms.Button
     Friend WithEvents Button14 As System.Windows.Forms.Button
@@ -407,4 +403,8 @@ Partial Class pembelian
     Friend WithEvents Button13 As System.Windows.Forms.Button
     Friend WithEvents Button12 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button32 As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
