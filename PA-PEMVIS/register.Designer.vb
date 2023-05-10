@@ -25,17 +25,17 @@ Partial Class register
         Me.Button30 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.rpass1 = New System.Windows.Forms.TextBox()
+        Me.rpass2 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.rno = New System.Windows.Forms.TextBox()
+        Me.ralamat = New System.Windows.Forms.TextBox()
+        Me.rnama = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.rusername = New System.Windows.Forms.TextBox()
+        Me.remail = New System.Windows.Forms.TextBox()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -79,19 +79,19 @@ Partial Class register
         Me.Button4.Text = "Confirm Password"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'TextBox3
+        'rpass1
         '
-        Me.TextBox3.Location = New System.Drawing.Point(92, 481)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 86
+        Me.rpass1.Location = New System.Drawing.Point(92, 481)
+        Me.rpass1.Name = "rpass1"
+        Me.rpass1.Size = New System.Drawing.Size(100, 20)
+        Me.rpass1.TabIndex = 86
         '
-        'TextBox2
+        'rpass2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(86, 540)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 85
+        Me.rpass2.Location = New System.Drawing.Point(86, 540)
+        Me.rpass2.Name = "rpass2"
+        Me.rpass2.Size = New System.Drawing.Size(100, 20)
+        Me.rpass2.TabIndex = 85
         '
         'Button3
         '
@@ -117,26 +117,26 @@ Partial Class register
         Me.Button1.Text = "alamat"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox4
+        'rno
         '
-        Me.TextBox4.Location = New System.Drawing.Point(92, 241)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 92
+        Me.rno.Location = New System.Drawing.Point(92, 241)
+        Me.rno.Name = "rno"
+        Me.rno.Size = New System.Drawing.Size(100, 20)
+        Me.rno.TabIndex = 92
         '
-        'TextBox5
+        'ralamat
         '
-        Me.TextBox5.Location = New System.Drawing.Point(86, 300)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 91
+        Me.ralamat.Location = New System.Drawing.Point(86, 300)
+        Me.ralamat.Name = "ralamat"
+        Me.ralamat.Size = New System.Drawing.Size(100, 20)
+        Me.ralamat.TabIndex = 91
         '
-        'TextBox6
+        'rnama
         '
-        Me.TextBox6.Location = New System.Drawing.Point(92, 182)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 90
+        Me.rnama.Location = New System.Drawing.Point(92, 182)
+        Me.rnama.Name = "rnama"
+        Me.rnama.Size = New System.Drawing.Size(100, 20)
+        Me.rnama.TabIndex = 90
         '
         'Button5
         '
@@ -162,19 +162,19 @@ Partial Class register
         Me.Button6.Text = "nama"
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'TextBox7
+        'rusername
         '
-        Me.TextBox7.Location = New System.Drawing.Point(92, 422)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 98
+        Me.rusername.Location = New System.Drawing.Point(92, 422)
+        Me.rusername.Name = "rusername"
+        Me.rusername.Size = New System.Drawing.Size(100, 20)
+        Me.rusername.TabIndex = 98
         '
-        'TextBox9
+        'remail
         '
-        Me.TextBox9.Location = New System.Drawing.Point(92, 363)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox9.TabIndex = 96
+        Me.remail.Location = New System.Drawing.Point(92, 363)
+        Me.remail.Name = "remail"
+        Me.remail.Size = New System.Drawing.Size(100, 20)
+        Me.remail.TabIndex = 96
         '
         'Button8
         '
@@ -223,22 +223,22 @@ Partial Class register
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(599, 701)
+        Me.ClientSize = New System.Drawing.Size(623, 701)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.rusername)
+        Me.Controls.Add(Me.remail)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.rno)
+        Me.Controls.Add(Me.ralamat)
+        Me.Controls.Add(Me.rnama)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.rpass1)
+        Me.Controls.Add(Me.rpass2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button30)
@@ -251,17 +251,17 @@ Partial Class register
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents Button30 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents rpass1 As System.Windows.Forms.TextBox
+    Friend WithEvents rpass2 As System.Windows.Forms.TextBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents rno As System.Windows.Forms.TextBox
+    Friend WithEvents ralamat As System.Windows.Forms.TextBox
+    Friend WithEvents rnama As System.Windows.Forms.TextBox
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents rusername As System.Windows.Forms.TextBox
+    Friend WithEvents remail As System.Windows.Forms.TextBox
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button

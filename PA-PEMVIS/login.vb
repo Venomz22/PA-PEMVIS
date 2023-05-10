@@ -17,11 +17,11 @@ Public Class login
         Dim un As String = lname.Text
         Dim pw As String = lpass.Text
 
-        cmd = New MySqlCommand("select * from akun where username = '" & un & "' and password = '" & pw & "'", con)
+        cmd = New MySqlCommand("select * from user where username = '" & un & "' and password = '" & pw & "'", con)
         rd = cmd.ExecuteReader
         rd.Read()
         If rd.HasRows Then
-            role = rd("rule")
+            role = rd("role")
 
             If role = "admin" Then
 

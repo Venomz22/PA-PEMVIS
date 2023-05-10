@@ -3,6 +3,7 @@ Imports System.Windows.Forms.DataFormats
 Imports MySql.Data.MySqlClient
 
 Public Class ReadBuku
+    Dim jenis As String
 
     Sub TampilJenis()
         da = New MySqlDataAdapter("Select * From tbbuku", con)
@@ -10,29 +11,29 @@ Public Class ReadBuku
         ds.Clear()
         da.Fill(ds, "tbbuku")
         For i As Integer = 0 To ds.Tables("tbbuku").Rows.Count - 1
-            DataGridView1.Rows.Add(ds.Tables("tbbuku").Rows(i)(0), ds.Tables("tbbuku").Rows(i)(1), ds.Tables("tbbuku").Rows(i)(2), ds.Tables("tbbuku").Rows(i)(3), ds.Tables("tbbuku").Rows(i)(4), ds.Tables("tbbuku").Rows(i)(5),
+            dgv1.Rows.Add(ds.Tables("tbbuku").Rows(i)(0), ds.Tables("tbbuku").Rows(i)(1), ds.Tables("tbbuku").Rows(i)(2), ds.Tables("tbbuku").Rows(i)(3), ds.Tables("tbbuku").Rows(i)(4), ds.Tables("tbbuku").Rows(i)(5),
 ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuku").Rows(i)(8))
         Next
-        DataGridView1.Refresh()
+        dgv1.Refresh()
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call koneksi()
         TampilJenis()
-        DataGridView1.ReadOnly = True
+        dgv1.ReadOnly = True
 
 
     End Sub
 
 
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv1.CellContentClick
 
     End Sub
 
-    Private Sub DataGridView1_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridView1.CellMouseClick
+    Private Sub DataGridView1_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgv1.CellMouseClick
         Dim i As Integer
-        i = Me.DataGridView1.CurrentRow.Index
-        With DataGridView1.Rows.Item(i)
+        i = Me.dgv1.CurrentRow.Index
+        With dgv1.Rows.Item(i)
             txtID.Text = .Cells(0).Value
             txtjudul.Text = .Cells(1).Value
             txtthun.Text = .Cells(2).Value
@@ -76,7 +77,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
             MsgBox("Hapus data sukses....|", MsgBoxStyle.Information, "Perhatian")
             clear()
-            DataGridView1.Rows.Clear()
+            dgv1.Rows.Clear()
             TampilJenis()
 
         End If
@@ -101,7 +102,7 @@ WHERE idbuku = '" & txtID.Text & "';"
 
             MsgBox("Edit data sukses....|", MsgBoxStyle.Information, "Perhatian")
             clear()
-            DataGridView1.Rows.Clear()
+            dgv1.Rows.Clear()
             TampilJenis()
 
 
