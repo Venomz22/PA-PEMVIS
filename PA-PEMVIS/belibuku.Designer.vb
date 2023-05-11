@@ -62,18 +62,9 @@ Partial Class belibuku
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-<<<<<<< HEAD
-=======
-        Me.Button32 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
->>>>>>> 19bb3e10af2322b2e465a4a0bd48592ed1366524
         Me.Panel4.SuspendLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -397,7 +388,7 @@ Partial Class belibuku
         Me.Button12.FlatAppearance.BorderSize = 0
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(234, 6)
+        Me.Button12.Location = New System.Drawing.Point(233, 11)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(563, 59)
         Me.Button12.TabIndex = 118
@@ -474,10 +465,6 @@ Partial Class belibuku
         'Panel1
         '
         Me.Panel1.AllowDrop = True
-        Me.Panel1.Controls.Add(Me.Button9)
-        Me.Panel1.Controls.Add(Me.Button8)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
@@ -489,82 +476,11 @@ Partial Class belibuku
         Me.Panel3.AllowDrop = True
         Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
         Me.Panel3.Controls.Add(Me.Button12)
-        Me.Panel3.Controls.Add(Me.Button32)
         Me.Panel3.Location = New System.Drawing.Point(160, -2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(988, 70)
         Me.Panel3.TabIndex = 135
         '
-<<<<<<< HEAD
-=======
-        'Button32
-        '
-        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button32.FlatAppearance.BorderSize = 0
-        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button32.Location = New System.Drawing.Point(920, 7)
-        Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(48, 50)
-        Me.Button32.TabIndex = 30
-        Me.Button32.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(1113, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(34, 35)
-        Me.Button1.TabIndex = 1
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(1079, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(34, 35)
-        Me.Button2.TabIndex = 10
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources._exit
-        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(1113, 0)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(35, 36)
-        Me.Button8.TabIndex = 11
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.minimize_sign
-        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(1073, -3)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(35, 36)
-        Me.Button9.TabIndex = 12
-        Me.Button9.UseVisualStyleBackColor = True
-        '
->>>>>>> 19bb3e10af2322b2e465a4a0bd48592ed1366524
         'belibuku
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -581,7 +497,6 @@ Partial Class belibuku
         Me.Panel4.PerformLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
 

@@ -18,16 +18,12 @@ Public Class pembelian
 
     End Sub
 
-    Private Sub jumlah_TextChanged(sender As Object, e As EventArgs) Handles jumlah.TextChanged
-
-    End Sub
-
-    Private Sub jumlah_KeyPress(sender As Object, e As KeyPressEventArgs) Handles jumlah.KeyPress
-
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         total.Text = Val(jumlah.Text) * harga
         MsgBox(total.Text)
         MsgBox(jumlah.Text)
         MsgBox(harga)
+        MsgBox("apakah ingin membeli ?", "confirm", vbYesNo)
     End Sub
 End Class
 

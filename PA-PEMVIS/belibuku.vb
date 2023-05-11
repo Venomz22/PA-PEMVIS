@@ -87,4 +87,120 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
         Me.Hide()
 
     End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+
+    End Sub
+
+    Private Sub cmbjenis_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbjenis.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+
+    End Sub
+
+    Private Sub txtterjual_TextChanged(sender As Object, e As EventArgs) Handles txtterjual.TextChanged
+
+    End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
+    Private Sub txtHarga_TextChanged(sender As Object, e As EventArgs) Handles txtHarga.TextChanged
+
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub txtthun_TextChanged(sender As Object, e As EventArgs) Handles txtthun.TextChanged
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub txtID_TextChanged(sender As Object, e As EventArgs) Handles txtID.TextChanged
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub txtjudul_TextChanged(sender As Object, e As EventArgs) Handles txtjudul.TextChanged
+
+    End Sub
+
+    Private Sub txtPengarang_TextChanged(sender As Object, e As EventArgs) Handles txtPengarang.TextChanged
+
+    End Sub
+
+    Private Sub Nama_Click(sender As Object, e As EventArgs) Handles Nama.Click
+
+    End Sub
+
+    Private Sub txtjumlah_TextChanged(sender As Object, e As EventArgs) Handles txtjumlah.TextChanged
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub txtPenerbit_TextChanged(sender As Object, e As EventArgs) Handles txtPenerbit.TextChanged
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+
+    End Sub
+
+    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
+
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+
+    End Sub
 End Class
