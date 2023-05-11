@@ -47,9 +47,10 @@ Partial Class register
         Me.Button30.FlatAppearance.BorderSize = 0
         Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button30.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!)
-        Me.Button30.Location = New System.Drawing.Point(145, 19)
+        Me.Button30.Location = New System.Drawing.Point(193, 23)
+        Me.Button30.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(245, 27)
+        Me.Button30.Size = New System.Drawing.Size(327, 33)
         Me.Button30.TabIndex = 76
         Me.Button30.Text = "SELAMAT DATANG"
         Me.Button30.UseVisualStyleBackColor = True
@@ -61,9 +62,10 @@ Partial Class register
         Me.Button11.FlatAppearance.BorderSize = 0
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button11.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(223, 52)
+        Me.Button11.Location = New System.Drawing.Point(297, 64)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(78, 75)
+        Me.Button11.Size = New System.Drawing.Size(104, 92)
         Me.Button11.TabIndex = 77
         Me.Button11.UseVisualStyleBackColor = True
         '
@@ -72,25 +74,28 @@ Partial Class register
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!)
-        Me.Button4.Location = New System.Drawing.Point(43, 507)
+        Me.Button4.Location = New System.Drawing.Point(57, 624)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(245, 27)
+        Me.Button4.Size = New System.Drawing.Size(327, 33)
         Me.Button4.TabIndex = 87
         Me.Button4.Text = "Confirm Password"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'rpass1
         '
-        Me.rpass1.Location = New System.Drawing.Point(92, 481)
+        Me.rpass1.Location = New System.Drawing.Point(123, 592)
+        Me.rpass1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rpass1.Name = "rpass1"
-        Me.rpass1.Size = New System.Drawing.Size(100, 20)
+        Me.rpass1.Size = New System.Drawing.Size(132, 22)
         Me.rpass1.TabIndex = 86
         '
         'rpass2
         '
-        Me.rpass2.Location = New System.Drawing.Point(86, 540)
+        Me.rpass2.Location = New System.Drawing.Point(115, 665)
+        Me.rpass2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rpass2.Name = "rpass2"
-        Me.rpass2.Size = New System.Drawing.Size(100, 20)
+        Me.rpass2.Size = New System.Drawing.Size(132, 22)
         Me.rpass2.TabIndex = 85
         '
         'Button3
@@ -98,9 +103,10 @@ Partial Class register
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!)
-        Me.Button3.Location = New System.Drawing.Point(12, 448)
+        Me.Button3.Location = New System.Drawing.Point(16, 551)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(245, 27)
+        Me.Button3.Size = New System.Drawing.Size(327, 33)
         Me.Button3.TabIndex = 83
         Me.Button3.Text = "Password"
         Me.Button3.UseVisualStyleBackColor = True
@@ -110,32 +116,36 @@ Partial Class register
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!)
-        Me.Button1.Location = New System.Drawing.Point(-5, 267)
+        Me.Button1.Location = New System.Drawing.Point(-7, 329)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(245, 27)
+        Me.Button1.Size = New System.Drawing.Size(327, 33)
         Me.Button1.TabIndex = 93
         Me.Button1.Text = "alamat"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'rno
         '
-        Me.rno.Location = New System.Drawing.Point(92, 241)
+        Me.rno.Location = New System.Drawing.Point(123, 297)
+        Me.rno.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rno.Name = "rno"
-        Me.rno.Size = New System.Drawing.Size(100, 20)
+        Me.rno.Size = New System.Drawing.Size(132, 22)
         Me.rno.TabIndex = 92
         '
         'ralamat
         '
-        Me.ralamat.Location = New System.Drawing.Point(86, 300)
+        Me.ralamat.Location = New System.Drawing.Point(115, 369)
+        Me.ralamat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ralamat.Name = "ralamat"
-        Me.ralamat.Size = New System.Drawing.Size(100, 20)
+        Me.ralamat.Size = New System.Drawing.Size(132, 22)
         Me.ralamat.TabIndex = 91
         '
         'rnama
         '
-        Me.rnama.Location = New System.Drawing.Point(92, 182)
+        Me.rnama.Location = New System.Drawing.Point(123, 224)
+        Me.rnama.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rnama.Name = "rnama"
-        Me.rnama.Size = New System.Drawing.Size(100, 20)
+        Me.rnama.Size = New System.Drawing.Size(132, 22)
         Me.rnama.TabIndex = 90
         '
         'Button5
@@ -143,9 +153,10 @@ Partial Class register
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!)
-        Me.Button5.Location = New System.Drawing.Point(12, 208)
+        Me.Button5.Location = New System.Drawing.Point(16, 256)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(245, 27)
+        Me.Button5.Size = New System.Drawing.Size(327, 33)
         Me.Button5.TabIndex = 89
         Me.Button5.Text = "nomor hp"
         Me.Button5.UseVisualStyleBackColor = True
@@ -155,25 +166,28 @@ Partial Class register
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!)
-        Me.Button6.Location = New System.Drawing.Point(12, 149)
+        Me.Button6.Location = New System.Drawing.Point(16, 183)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(245, 27)
+        Me.Button6.Size = New System.Drawing.Size(327, 33)
         Me.Button6.TabIndex = 88
         Me.Button6.Text = "nama"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'rusername
         '
-        Me.rusername.Location = New System.Drawing.Point(92, 422)
+        Me.rusername.Location = New System.Drawing.Point(123, 519)
+        Me.rusername.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rusername.Name = "rusername"
-        Me.rusername.Size = New System.Drawing.Size(100, 20)
+        Me.rusername.Size = New System.Drawing.Size(132, 22)
         Me.rusername.TabIndex = 98
         '
         'remail
         '
-        Me.remail.Location = New System.Drawing.Point(92, 363)
+        Me.remail.Location = New System.Drawing.Point(123, 447)
+        Me.remail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.remail.Name = "remail"
-        Me.remail.Size = New System.Drawing.Size(100, 20)
+        Me.remail.Size = New System.Drawing.Size(132, 22)
         Me.remail.TabIndex = 96
         '
         'Button8
@@ -181,9 +195,10 @@ Partial Class register
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!)
-        Me.Button8.Location = New System.Drawing.Point(12, 389)
+        Me.Button8.Location = New System.Drawing.Point(16, 479)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(245, 27)
+        Me.Button8.Size = New System.Drawing.Size(327, 33)
         Me.Button8.TabIndex = 95
         Me.Button8.Text = "username"
         Me.Button8.UseVisualStyleBackColor = True
@@ -193,37 +208,40 @@ Partial Class register
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!)
-        Me.Button9.Location = New System.Drawing.Point(12, 330)
+        Me.Button9.Location = New System.Drawing.Point(16, 406)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(245, 27)
+        Me.Button9.Size = New System.Drawing.Size(327, 33)
         Me.Button9.TabIndex = 94
         Me.Button9.Text = "email"
         Me.Button9.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(223, 594)
+        Me.Button2.Location = New System.Drawing.Point(297, 731)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(177, 23)
+        Me.Button2.Size = New System.Drawing.Size(236, 28)
         Me.Button2.TabIndex = 99
         Me.Button2.Text = "buat akun"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(223, 649)
+        Me.Button7.Location = New System.Drawing.Point(297, 799)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(177, 23)
+        Me.Button7.Size = New System.Drawing.Size(236, 28)
         Me.Button7.TabIndex = 100
         Me.Button7.Text = "batal"
         Me.Button7.UseVisualStyleBackColor = True
         '
         'register
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(623, 701)
+        Me.ClientSize = New System.Drawing.Size(831, 863)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.rusername)
@@ -242,6 +260,7 @@ Partial Class register
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button30)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "register"
         Me.Text = "register"
         Me.ResumeLayout(False)

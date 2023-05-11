@@ -6,6 +6,7 @@ Imports System.Security.Cryptography.X509Certificates
 
 Public Class login
     Public role As String
+    Public nama As String
     Public idlogin As String
 
     Private Sub loginuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -21,6 +22,7 @@ Public Class login
         rd = cmd.ExecuteReader
         rd.Read()
         If rd.HasRows Then
+            nama = rd("nama")
             role = rd("role")
             idlogin = rd("id")
             rd.Close()

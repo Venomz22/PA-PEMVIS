@@ -84,6 +84,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
         End With
         pembelian.buku = id
         pembelian.Show()
+
         Me.Hide()
 
     End Sub

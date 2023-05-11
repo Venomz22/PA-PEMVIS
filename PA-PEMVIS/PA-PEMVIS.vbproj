@@ -89,6 +89,18 @@
     <Compile Include="EditBuku.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invoices.Designer.vb">
+      <DependentUpon>invoices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="invoices.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ReadUser.Designer.vb">
       <DependentUpon>ReadUser.vb</DependentUpon>
     </Compile>
@@ -180,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditBuku.resx">
       <DependentUpon>EditBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invoices.resx">
+      <DependentUpon>invoices.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReadUser.resx">
       <DependentUpon>ReadUser.vb</DependentUpon>
