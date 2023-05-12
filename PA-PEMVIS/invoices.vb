@@ -16,18 +16,17 @@ Public Class invoices
         'DataGridView1.Rows.Add(ds.Tables("nota").Rows(i)(0), login.nama, ds.Tables("nota").Rows(i)(1), ds.Tables("nota").Rows(i)(2), ds.Tables("nota").Rows(i)(3))
         ' Next
         ' DataGridView1.Refresh()
-        cmd = New MySqlCommand("select * from nota where id = '" & pembelian.idnota & "'", con)
+        cmd = New MySqlCommand("select * from nota where id = '" & idnota & "'", con)
         rd = cmd.ExecuteReader
         rd.Read()
 
-        nota.Text = pembelian.idnota
+        nota.Text = idnota
         judul.Text = rd("judul")
         pemesan.Text = login.nama
         jumlah.Text = rd("jumlah")
         harga.Text = rd("harga")
         metode.Text = rd("payment")
         rd.Close()
-
         Me.Refresh()
 
 
@@ -35,6 +34,10 @@ Public Class invoices
     End Sub
 
     Private Sub id_Click(sender As Object, e As EventArgs) Handles id.Click
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
 End Class

@@ -4,6 +4,7 @@ Imports System.Windows
 Public Class AddBuku
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call koneksi()
+        txtID.Text = "BK-" + random()
 
     End Sub
 
@@ -26,7 +27,6 @@ Public Class AddBuku
     End Sub
 
     Sub clear()
-        txtID.Clear()
         cmbjenis.Text = ""
         txtjudul.Clear()
         txtPengarang.Clear()

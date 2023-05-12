@@ -25,7 +25,6 @@ Partial Class ReadUser
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.txtjk = New System.Windows.Forms.TextBox()
@@ -60,8 +59,8 @@ Partial Class ReadUser
         Me.Panel3.Controls.Add(Me.Button1)
         Me.Panel3.Controls.Add(Me.Button12)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(213, 43)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Location = New System.Drawing.Point(213, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1300, 86)
         Me.Panel3.TabIndex = 122
@@ -74,7 +73,7 @@ Partial Class ReadUser
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(1233, 7)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(51, 49)
         Me.Button1.TabIndex = 119
@@ -86,21 +85,12 @@ Partial Class ReadUser
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Location = New System.Drawing.Point(312, 7)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(751, 73)
         Me.Button12.TabIndex = 118
         Me.Button12.Text = "HI Admin !"
         Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Panel1
-        '
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1513, 43)
-        Me.Panel1.TabIndex = 120
         '
         'btnNext
         '
@@ -285,10 +275,10 @@ Partial Class ReadUser
         Me.Panel2.Controls.Add(Me.btnBook)
         Me.Panel2.Controls.Add(Me.btnUser)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 43)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(213, 708)
+        Me.Panel2.Size = New System.Drawing.Size(213, 751)
         Me.Panel2.TabIndex = 121
         '
         'btnHome
@@ -299,7 +289,7 @@ Partial Class ReadUser
         Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHome.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHome.Location = New System.Drawing.Point(53, 5)
-        Me.btnHome.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnHome.Margin = New System.Windows.Forms.Padding(4)
         Me.btnHome.Name = "btnHome"
         Me.btnHome.Size = New System.Drawing.Size(104, 92)
         Me.btnHome.TabIndex = 88
@@ -313,7 +303,7 @@ Partial Class ReadUser
         Me.btnprofile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnprofile.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnprofile.Location = New System.Drawing.Point(53, 156)
-        Me.btnprofile.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnprofile.Margin = New System.Windows.Forms.Padding(4)
         Me.btnprofile.Name = "btnprofile"
         Me.btnprofile.Size = New System.Drawing.Size(96, 82)
         Me.btnprofile.TabIndex = 87
@@ -327,7 +317,7 @@ Partial Class ReadUser
         Me.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTransaksi.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTransaksi.Location = New System.Drawing.Point(53, 615)
-        Me.btnTransaksi.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnTransaksi.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTransaksi.Name = "btnTransaksi"
         Me.btnTransaksi.Size = New System.Drawing.Size(96, 87)
         Me.btnTransaksi.TabIndex = 86
@@ -341,7 +331,7 @@ Partial Class ReadUser
         Me.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBook.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBook.Location = New System.Drawing.Point(53, 476)
-        Me.btnBook.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnBook.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBook.Name = "btnBook"
         Me.btnBook.Size = New System.Drawing.Size(96, 85)
         Me.btnBook.TabIndex = 85
@@ -355,7 +345,7 @@ Partial Class ReadUser
         Me.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUser.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUser.Location = New System.Drawing.Point(53, 308)
-        Me.btnUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnUser.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUser.Name = "btnUser"
         Me.btnUser.Size = New System.Drawing.Size(96, 96)
         Me.btnUser.TabIndex = 84
@@ -372,7 +362,6 @@ Partial Class ReadUser
         Me.Controls.Add(Me.btnprev)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "ReadUser"
         Me.Text = "Form1"
@@ -385,7 +374,6 @@ Partial Class ReadUser
     End Sub
 
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents btnNext As Button
     Friend WithEvents Panel4 As Panel
     Friend WithEvents txtjk As TextBox

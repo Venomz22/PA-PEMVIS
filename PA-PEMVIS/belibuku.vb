@@ -12,13 +12,13 @@ Public Class belibuku
 
     Sub TampilJenis()
 
-        da = New MySqlDataAdapter("Select * From tbbuku where jenis_buku ='" & jenis & "'", con)
+        da = New MySqlDataAdapter("Select * From tbbuku where jenis_buku ='" & jenis & "' AND jumlah > 0 ", con)
         ds = New DataSet
         ds.Clear()
         da.Fill(ds, "tbbuku")
         For i As Integer = 0 To ds.Tables("tbbuku").Rows.Count - 1
             dgv1.Rows.Add(ds.Tables("tbbuku").Rows(i)(0), ds.Tables("tbbuku").Rows(i)(1), ds.Tables("tbbuku").Rows(i)(2), ds.Tables("tbbuku").Rows(i)(3), ds.Tables("tbbuku").Rows(i)(4), ds.Tables("tbbuku").Rows(i)(5),
-ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuku").Rows(i)(8))
+ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7))
         Next
         dgv1.Refresh()
     End Sub
@@ -48,7 +48,6 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
             cmbjenis.Text = .Cells(5).Value
             txtjumlah.Text = .Cells(6).Value
             txtHarga.Text = .Cells(7).Value
-            txtterjual.Text = .Cells(8).Value
 
         End With
     End Sub
@@ -61,7 +60,6 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
         txtPenerbit.Clear()
         txtjumlah.Clear()
         txtHarga.Clear()
-        txtterjual.Clear()
         txtthun.Clear()
     End Sub
 
@@ -79,17 +77,16 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
             cmbjenis.Text = .Cells(5).Value
             txtjumlah.Text = .Cells(6).Value
             txtHarga.Text = .Cells(7).Value
-            txtterjual.Text = .Cells(8).Value
             id = .Cells(0).Value
         End With
         pembelian.buku = id
         pembelian.Show()
 
-        Me.Hide()
+        Me.Close()
 
     End Sub
 
-    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+    Private Sub Button12_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -101,11 +98,11 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
     End Sub
 
-    Private Sub txtterjual_TextChanged(sender As Object, e As EventArgs) Handles txtterjual.TextChanged
+    Private Sub txtterjual_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+    Private Sub Label9_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -169,7 +166,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -181,27 +178,27 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
     End Sub
 
-    Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
+    Private Sub Button31_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 End Class

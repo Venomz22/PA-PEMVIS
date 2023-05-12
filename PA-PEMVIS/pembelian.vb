@@ -2,31 +2,24 @@
 
 Public Class pembelian
     Public buku As String
-    Public idnota As String
-    Public idnota1 As Integer
-
-    Public harga_lama As Integer
     Public judul_buku As String
-    Public judul_sebelum As String
-    Public jumlah_pesanan As Integer
     Public harga As Integer
     Public answer As String
-    Public beli_lagi As Integer
+    Dim jumlahbuku As Integer
+    Dim terjual As Integer
 
     Private Sub pembelian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        MsgBox(judul_buku)
         judul.Enabled = False
         total.Enabled = False
         jumlah.Text = ""
         total.Text = ""
-
         cmd = New MySqlCommand("select * from tbbuku where idbuku = '" & buku & "'", con)
         rd = cmd.ExecuteReader
         rd.Read()
         judul.Text = rd("judul_buku")
         harga = rd("harga_buku")
-
-
+        jumlahbuku = rd("jumlah")
+        terjual = rd("jumlah_terjual")
         judul_buku = rd("judul_buku")
         rd.Close()
 
@@ -34,6 +27,8 @@ Public Class pembelian
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         total.Text = Val(jumlah.Text) * harga
+        jumlahbuku = jumlahbuku - Val(jumlah.Text)
+        terjual = terjual + Val(jumlah.Text)
         jumlah_pesanan = jumlah_pesanan + Val(jumlah.Text)
 
         'MsgBox(total.Text)
@@ -42,29 +37,36 @@ Public Class pembelian
 
         answer = MsgBox("ingin beli lagi ? ", vbQuestion + vbYesNo + vbDefaultButton2, "PERHATIAN")
         If beli_lagi = 0 Then
-            idnota = "not111"
-            idnota = idnota
+            idnota = login.idlogin + "N-" + random()
             Dim cmd_inseert = New MySqlCommand("INSERT INTO nota (id,judul,jumlah,harga,iduser,payment) values ('" & idnota & "','" & judul_buku & "','" & jumlah.Text & "','" & total.Text & "','" & login.idlogin & "','')", con)
             cmd_inseert.ExecuteNonQuery()
-
+            Dim cmbb = New MySqlCommand("UPDATE tbbuku SET jumlah = " & jumlahbuku & ", jumlah_terjual = " & terjual & " where idbuku = '" & buku & "'", con)
+            cmbb.ExecuteNonQuery()
         Else
-            pembelian_Load(sender, e)
-            Dim judul = judul_sebelum + "," + judul_buku
-            harga_lama = harga_lama + harga
-            cmd = New MySqlCommand("UPDATE nota SET harga = '" & harga_lama & "', judul = '" & judul & "', jumlah = '" & jumlah_pesanan & "' where id = '" & idnota & "'", con)
+            Dim judul = judul_sebelum + ", " + judul_buku
+            Dim totalll = totall + Val(total.Text)
+            cmd = New MySqlCommand("UPDATE nota SET harga = '" & totalll & "', judul = '" & judul & "', jumlah = '" & jumlah_pesanan & "' where id = '" & idnota & "'", con)
             cmd.ExecuteNonQuery()
+            Dim cmbbb = New MySqlCommand("UPDATE tbbuku SET jumlah = " & jumlahbuku & ", jumlah_terjual = " & terjual & " where idbuku = '" & buku & "'", con)
+            cmbbb.ExecuteNonQuery()
         End If
-
         If answer = MsgBoxResult.Yes Then
             beli_lagi = 1
             judul_sebelum = judul_sebelum + ", " + judul_buku
+            totall = Val(total.Text) + totall
+            total.Text = ""
+            jumlah.Text = ""
             Menuutama_user_.Show()
-            Me.Hide()
+            Me.Close()
             Exit Sub
 
         Else
             Form2.Show()
         End If
+
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
 End Class
