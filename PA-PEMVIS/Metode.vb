@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Form2
+Public Class Metode
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call koneksi()
 

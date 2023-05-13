@@ -71,7 +71,7 @@ Public Class pembelian
             Exit Sub
 
         Else
-            Form2.Show()
+            Metode.Show()
         End If
 
     End Sub
@@ -83,6 +83,24 @@ Public Class pembelian
     Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
         Menuutama_user_.Show()
         Me.Close()
+
+    End Sub
+
+    Private Sub jumlah_KeyPress(sender As Object, e As KeyPressEventArgs) Handles jumlah.KeyPress
+        Dim keyascii As Short = Asc(e.KeyChar)
+        If (e.KeyChar Like “[1-9]” OrElse keyascii = Keys.Back) Then
+            keyascii = 0
+        Else
+            e.Handled = CBool(keyascii)
+            MessageBox.Show("Wajib mengisi dengan angka dan harus lebih dari 0", "PERINGATAN", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
+    Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
+
+    End Sub
+
+    Private Sub btnbook_Click(sender As Object, e As EventArgs) Handles btnbook.Click
 
     End Sub
 End Class

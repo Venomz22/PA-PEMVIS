@@ -23,7 +23,6 @@ Partial Class belibuku
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.cmbjenis = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtHarga = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -51,13 +50,14 @@ Partial Class belibuku
         Me.Jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button30 = New System.Windows.Forms.Button()
+        Me.txtjenis = New System.Windows.Forms.TextBox()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnProfile = New System.Windows.Forms.Button()
         Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.btnbook = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button30 = New System.Windows.Forms.Button()
         Me.Panel4.SuspendLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -67,7 +67,7 @@ Partial Class belibuku
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.cmbjenis)
+        Me.Panel4.Controls.Add(Me.txtjenis)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Controls.Add(Me.txtHarga)
         Me.Panel4.Controls.Add(Me.Label8)
@@ -92,17 +92,6 @@ Partial Class belibuku
         Me.Panel4.Size = New System.Drawing.Size(979, 432)
         Me.Panel4.TabIndex = 138
         '
-        'cmbjenis
-        '
-        Me.cmbjenis.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbjenis.FormattingEnabled = True
-        Me.cmbjenis.Items.AddRange(New Object() {"Horor", "Misteri", "Petualangan", "Musik", "Sejarah", "Drama", "Fiksi", "Fiksi Ilmiah", "Romansa", "Ensiklopedia"})
-        Me.cmbjenis.Location = New System.Drawing.Point(681, 103)
-        Me.cmbjenis.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.cmbjenis.Name = "cmbjenis"
-        Me.cmbjenis.Size = New System.Drawing.Size(180, 24)
-        Me.cmbjenis.TabIndex = 116
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
@@ -118,6 +107,7 @@ Partial Class belibuku
         Me.txtHarga.Location = New System.Drawing.Point(681, 249)
         Me.txtHarga.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtHarga.Name = "txtHarga"
+        Me.txtHarga.ReadOnly = True
         Me.txtHarga.Size = New System.Drawing.Size(180, 22)
         Me.txtHarga.TabIndex = 112
         '
@@ -136,6 +126,7 @@ Partial Class belibuku
         Me.txtthun.Location = New System.Drawing.Point(248, 249)
         Me.txtthun.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtthun.Name = "txtthun"
+        Me.txtthun.ReadOnly = True
         Me.txtthun.Size = New System.Drawing.Size(180, 22)
         Me.txtthun.TabIndex = 110
         '
@@ -166,6 +157,7 @@ Partial Class belibuku
         Me.txtID.Location = New System.Drawing.Point(248, 96)
         Me.txtID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtID.Name = "txtID"
+        Me.txtID.ReadOnly = True
         Me.txtID.Size = New System.Drawing.Size(180, 22)
         Me.txtID.TabIndex = 107
         '
@@ -184,6 +176,7 @@ Partial Class belibuku
         Me.txtjudul.Location = New System.Drawing.Point(248, 167)
         Me.txtjudul.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtjudul.Name = "txtjudul"
+        Me.txtjudul.ReadOnly = True
         Me.txtjudul.Size = New System.Drawing.Size(180, 22)
         Me.txtjudul.TabIndex = 97
         '
@@ -192,6 +185,7 @@ Partial Class belibuku
         Me.txtPengarang.Location = New System.Drawing.Point(248, 314)
         Me.txtPengarang.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPengarang.Name = "txtPengarang"
+        Me.txtPengarang.ReadOnly = True
         Me.txtPengarang.Size = New System.Drawing.Size(180, 22)
         Me.txtPengarang.TabIndex = 105
         '
@@ -210,6 +204,7 @@ Partial Class belibuku
         Me.txtjumlah.Location = New System.Drawing.Point(681, 185)
         Me.txtjumlah.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtjumlah.Name = "txtjumlah"
+        Me.txtjumlah.ReadOnly = True
         Me.txtjumlah.Size = New System.Drawing.Size(180, 22)
         Me.txtjumlah.TabIndex = 104
         '
@@ -238,6 +233,7 @@ Partial Class belibuku
         Me.txtPenerbit.Location = New System.Drawing.Point(248, 382)
         Me.txtPenerbit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPenerbit.Name = "txtPenerbit"
+        Me.txtPenerbit.ReadOnly = True
         Me.txtPenerbit.Size = New System.Drawing.Size(180, 22)
         Me.txtPenerbit.TabIndex = 102
         '
@@ -344,6 +340,54 @@ Partial Class belibuku
         Me.Panel2.Size = New System.Drawing.Size(205, 791)
         Me.Panel2.TabIndex = 134
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel3.Controls.Add(Me.Button7)
+        Me.Panel3.Controls.Add(Me.Button30)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(205, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1324, 88)
+        Me.Panel3.TabIndex = 139
+        '
+        'Button30
+        '
+        Me.Button30.FlatAppearance.BorderSize = 0
+        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button30.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button30.Location = New System.Drawing.Point(267, 7)
+        Me.Button30.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(751, 73)
+        Me.Button30.TabIndex = 29
+        Me.Button30.Text = "DAFTAR BUKU"
+        Me.Button30.UseVisualStyleBackColor = True
+        '
+        'txtjenis
+        '
+        Me.txtjenis.Location = New System.Drawing.Point(681, 103)
+        Me.txtjenis.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtjenis.Name = "txtjenis"
+        Me.txtjenis.ReadOnly = True
+        Me.txtjenis.Size = New System.Drawing.Size(180, 22)
+        Me.txtjenis.TabIndex = 140
+        '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(1235, 20)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(51, 49)
+        Me.Button7.TabIndex = 32
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'btnHome
         '
         Me.btnHome.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop2
@@ -400,49 +444,11 @@ Partial Class belibuku
         Me.btnbook.TabIndex = 13
         Me.btnbook.UseVisualStyleBackColor = True
         '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel3.Controls.Add(Me.Button7)
-        Me.Panel3.Controls.Add(Me.Button30)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(205, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1324, 88)
-        Me.Panel3.TabIndex = 139
-        '
-        'Button7
-        '
-        Me.Button7.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(1235, 20)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(51, 49)
-        Me.Button7.TabIndex = 32
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button30
-        '
-        Me.Button30.FlatAppearance.BorderSize = 0
-        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button30.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button30.Location = New System.Drawing.Point(267, 7)
-        Me.Button30.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(751, 73)
-        Me.Button30.TabIndex = 29
-        Me.Button30.Text = "DAFTAR BUKU"
-        Me.Button30.UseVisualStyleBackColor = True
-        '
         'belibuku
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(1529, 791)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
@@ -461,7 +467,6 @@ Partial Class belibuku
     End Sub
 
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents cmbjenis As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents txtHarga As TextBox
     Friend WithEvents Label8 As Label
@@ -501,4 +506,5 @@ Partial Class belibuku
     Friend WithEvents btnProfile As Button
     Friend WithEvents btnTransaksi As Button
     Friend WithEvents btnbook As Button
+    Friend WithEvents txtjenis As TextBox
 End Class

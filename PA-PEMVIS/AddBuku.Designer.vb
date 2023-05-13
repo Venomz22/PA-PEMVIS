@@ -44,10 +44,10 @@ Partial Class AddBuku
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button32 = New System.Windows.Forms.Button()
         Me.btnTambah = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.Button32 = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnprofile = New System.Windows.Forms.Button()
         Me.btnTransaksi = New System.Windows.Forms.Button()
@@ -72,6 +72,7 @@ Partial Class AddBuku
         Me.txtterjual.Location = New System.Drawing.Point(681, 322)
         Me.txtterjual.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtterjual.Name = "txtterjual"
+        Me.txtterjual.ReadOnly = True
         Me.txtterjual.Size = New System.Drawing.Size(180, 22)
         Me.txtterjual.TabIndex = 114
         '
@@ -165,6 +166,7 @@ Partial Class AddBuku
         Me.txtID.Location = New System.Drawing.Point(248, 96)
         Me.txtID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtID.Name = "txtID"
+        Me.txtID.ReadOnly = True
         Me.txtID.Size = New System.Drawing.Size(180, 22)
         Me.txtID.TabIndex = 107
         '
@@ -268,7 +270,7 @@ Partial Class AddBuku
         Me.Panel3.Controls.Add(Me.Button32)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(213, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1300, 86)
         Me.Panel3.TabIndex = 134
@@ -279,26 +281,12 @@ Partial Class AddBuku
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Location = New System.Drawing.Point(276, 14)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(751, 73)
         Me.Button12.TabIndex = 118
-        Me.Button12.Text = "Tambah Buku"
+        Me.Button12.Text = "TAMBAH BUKU"
         Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Button32
-        '
-        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button32.FlatAppearance.BorderSize = 0
-        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button32.Location = New System.Drawing.Point(1243, 21)
-        Me.Button32.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(51, 49)
-        Me.Button32.TabIndex = 30
-        Me.Button32.UseVisualStyleBackColor = True
         '
         'btnTambah
         '
@@ -323,7 +311,7 @@ Partial Class AddBuku
         Me.Panel2.Controls.Add(Me.btnUser)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(213, 751)
         Me.Panel2.TabIndex = 133
@@ -339,6 +327,20 @@ Partial Class AddBuku
         Me.btnClear.TabIndex = 140
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False
+        '
+        'Button32
+        '
+        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button32.FlatAppearance.BorderSize = 0
+        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button32.Location = New System.Drawing.Point(1243, 21)
+        Me.Button32.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button32.Name = "Button32"
+        Me.Button32.Size = New System.Drawing.Size(51, 49)
+        Me.Button32.TabIndex = 30
+        Me.Button32.UseVisualStyleBackColor = True
         '
         'btnHome
         '

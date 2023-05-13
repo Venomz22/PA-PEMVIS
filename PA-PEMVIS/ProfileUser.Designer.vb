@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ProfileAdmin
+Partial Class ProfileUser
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class ProfileAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.txtjk = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtID = New System.Windows.Forms.TextBox()
@@ -33,38 +33,36 @@ Partial Class ProfileAdmin
         Me.txtAlamat = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtnomorHp = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txttglLahir = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnprofile = New System.Windows.Forms.Button()
         Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.btnBook = New System.Windows.Forms.Button()
-        Me.btnUser = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Panel2.SuspendLayout()
-        Me.Panel4.SuspendLayout()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.txttglLahir = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel2
+        'Button1
         '
-        Me.Panel2.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel2.Controls.Add(Me.btnHome)
-        Me.Panel2.Controls.Add(Me.btnprofile)
-        Me.Panel2.Controls.Add(Me.btnTransaksi)
-        Me.Panel2.Controls.Add(Me.btnBook)
-        Me.Panel2.Controls.Add(Me.btnUser)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 86)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(213, 665)
-        Me.Panel2.TabIndex = 127
+        Me.Button1.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(1419, 13)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(51, 49)
+        Me.Button1.TabIndex = 119
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'txtjk
         '
@@ -160,94 +158,6 @@ Partial Class ProfileAdmin
         Me.txtnomorHp.Size = New System.Drawing.Size(180, 22)
         Me.txtnomorHp.TabIndex = 103
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(485, 240)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 31)
-        Me.Label3.TabIndex = 99
-        Me.Label3.Text = "Alamat"
-        '
-        'txttglLahir
-        '
-        Me.txttglLahir.Location = New System.Drawing.Point(668, 97)
-        Me.txttglLahir.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txttglLahir.Name = "txttglLahir"
-        Me.txttglLahir.ReadOnly = True
-        Me.txttglLahir.Size = New System.Drawing.Size(180, 22)
-        Me.txttglLahir.TabIndex = 102
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(67, 240)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(155, 31)
-        Me.Label4.TabIndex = 100
-        Me.Label4.Text = "Jenis Kelamin"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(485, 89)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(155, 31)
-        Me.Label5.TabIndex = 101
-        Me.Label5.Text = "Tanggal Lahir"
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.txtjk)
-        Me.Panel4.Controls.Add(Me.Label7)
-        Me.Panel4.Controls.Add(Me.txtID)
-        Me.Panel4.Controls.Add(Me.Label6)
-        Me.Panel4.Controls.Add(Me.txtnama)
-        Me.Panel4.Controls.Add(Me.txtUsername)
-        Me.Panel4.Controls.Add(Me.Nama)
-        Me.Panel4.Controls.Add(Me.txtAlamat)
-        Me.Panel4.Controls.Add(Me.Label2)
-        Me.Panel4.Controls.Add(Me.txtnomorHp)
-        Me.Panel4.Controls.Add(Me.Label3)
-        Me.Panel4.Controls.Add(Me.txttglLahir)
-        Me.Panel4.Controls.Add(Me.Label4)
-        Me.Panel4.Controls.Add(Me.Label5)
-        Me.Panel4.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.Panel4.Location = New System.Drawing.Point(385, 223)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(927, 409)
-        Me.Panel4.TabIndex = 130
-        '
-        'Button12
-        '
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(469, 9)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(751, 73)
-        Me.Button12.TabIndex = 118
-        Me.Button12.Text = "PROFILE ADMIN"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel3.Controls.Add(Me.Button1)
-        Me.Panel3.Controls.Add(Me.Button12)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1513, 86)
-        Me.Panel3.TabIndex = 128
-        '
         'btnHome
         '
         Me.btnHome.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop1
@@ -255,7 +165,7 @@ Partial Class ProfileAdmin
         Me.btnHome.FlatAppearance.BorderSize = 0
         Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHome.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHome.Location = New System.Drawing.Point(53, 19)
+        Me.btnHome.Location = New System.Drawing.Point(45, 151)
         Me.btnHome.Margin = New System.Windows.Forms.Padding(4)
         Me.btnHome.Name = "btnHome"
         Me.btnHome.Size = New System.Drawing.Size(104, 92)
@@ -269,7 +179,7 @@ Partial Class ProfileAdmin
         Me.btnprofile.FlatAppearance.BorderSize = 0
         Me.btnprofile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnprofile.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnprofile.Location = New System.Drawing.Point(53, 156)
+        Me.btnprofile.Location = New System.Drawing.Point(45, 288)
         Me.btnprofile.Margin = New System.Windows.Forms.Padding(4)
         Me.btnprofile.Name = "btnprofile"
         Me.btnprofile.Size = New System.Drawing.Size(96, 82)
@@ -304,59 +214,128 @@ Partial Class ProfileAdmin
         Me.btnBook.TabIndex = 85
         Me.btnBook.UseVisualStyleBackColor = True
         '
-        'btnUser
+        'Panel3
         '
-        Me.btnUser.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.recruitment
-        Me.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnUser.FlatAppearance.BorderSize = 0
-        Me.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUser.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUser.Location = New System.Drawing.Point(53, 275)
-        Me.btnUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnUser.Name = "btnUser"
-        Me.btnUser.Size = New System.Drawing.Size(96, 96)
-        Me.btnUser.TabIndex = 84
-        Me.btnUser.UseVisualStyleBackColor = True
+        Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel3.Controls.Add(Me.Button1)
+        Me.Panel3.Controls.Add(Me.Button12)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(213, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1300, 86)
+        Me.Panel3.TabIndex = 132
         '
-        'Button1
+        'Button12
         '
-        Me.Button1.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(1419, 13)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(51, 49)
-        Me.Button1.TabIndex = 119
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Location = New System.Drawing.Point(407, 4)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(751, 73)
+        Me.Button12.TabIndex = 118
+        Me.Button12.Text = "PROFILE DIRI"
+        Me.Button12.UseVisualStyleBackColor = True
         '
-        'ProfileAdmin
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(485, 240)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(90, 31)
+        Me.Label3.TabIndex = 99
+        Me.Label3.Text = "Alamat"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.txtjk)
+        Me.Panel4.Controls.Add(Me.Label7)
+        Me.Panel4.Controls.Add(Me.txtID)
+        Me.Panel4.Controls.Add(Me.Label6)
+        Me.Panel4.Controls.Add(Me.txtnama)
+        Me.Panel4.Controls.Add(Me.txtUsername)
+        Me.Panel4.Controls.Add(Me.Nama)
+        Me.Panel4.Controls.Add(Me.txtAlamat)
+        Me.Panel4.Controls.Add(Me.Label2)
+        Me.Panel4.Controls.Add(Me.txtnomorHp)
+        Me.Panel4.Controls.Add(Me.Label3)
+        Me.Panel4.Controls.Add(Me.txttglLahir)
+        Me.Panel4.Controls.Add(Me.Label4)
+        Me.Panel4.Controls.Add(Me.Label5)
+        Me.Panel4.ImeMode = System.Windows.Forms.ImeMode.[On]
+        Me.Panel4.Location = New System.Drawing.Point(385, 223)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(927, 409)
+        Me.Panel4.TabIndex = 133
+        '
+        'txttglLahir
+        '
+        Me.txttglLahir.Location = New System.Drawing.Point(668, 97)
+        Me.txttglLahir.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txttglLahir.Name = "txttglLahir"
+        Me.txttglLahir.ReadOnly = True
+        Me.txttglLahir.Size = New System.Drawing.Size(180, 22)
+        Me.txttglLahir.TabIndex = 102
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(67, 240)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(155, 31)
+        Me.Label4.TabIndex = 100
+        Me.Label4.Text = "Jenis Kelamin"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(485, 89)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(155, 31)
+        Me.Label5.TabIndex = 101
+        Me.Label5.Text = "Tanggal Lahir"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel2.Controls.Add(Me.btnHome)
+        Me.Panel2.Controls.Add(Me.btnprofile)
+        Me.Panel2.Controls.Add(Me.btnTransaksi)
+        Me.Panel2.Controls.Add(Me.btnBook)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(213, 751)
+        Me.Panel2.TabIndex = 131
+        '
+        'ProfileUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(1513, 751)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
-        Me.Name = "ProfileAdmin"
-        Me.Text = "ProfileAdmin"
-        Me.Panel2.ResumeLayout(False)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel2)
+        Me.Name = "ProfileUser"
+        Me.Text = "ProfileUser"
+        Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents btnHome As Button
-    Friend WithEvents btnprofile As Button
-    Friend WithEvents btnTransaksi As Button
-    Friend WithEvents btnUser As Button
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnBook As Button
+    Friend WithEvents Button1 As Button
     Friend WithEvents txtjk As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents txtID As TextBox
@@ -367,12 +346,16 @@ Partial Class ProfileAdmin
     Friend WithEvents txtAlamat As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents txtnomorHp As TextBox
+    Friend WithEvents btnHome As Button
+    Friend WithEvents btnprofile As Button
+    Friend WithEvents btnTransaksi As Button
+    Friend WithEvents btnBook As Button
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Button12 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents Panel4 As Panel
     Friend WithEvents txttglLahir As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel2 As Panel
 End Class

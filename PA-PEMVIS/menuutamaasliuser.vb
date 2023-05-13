@@ -22,6 +22,12 @@
     End Sub
 
     Private Sub btnProfile_Click(sender As Object, e As EventArgs) Handles btnProfile.Click
+        ProfileUser.Show()
+        Me.Close()
+    End Sub
 
+    Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
+        TransaksiUser.Show()
+        Me.Close()
     End Sub
 End Class

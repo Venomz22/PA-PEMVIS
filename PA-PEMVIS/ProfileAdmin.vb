@@ -38,4 +38,9 @@ Public Class ProfileAdmin
         ReadBuku.Show()
         Me.Close()
     End Sub
+
+    Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
+        Transaksi.Show()
+        Me.Close()
+    End Sub
 End Class

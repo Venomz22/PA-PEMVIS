@@ -77,7 +77,8 @@ Public Class ReadUser
 
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) 
-
+    Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
+        Transaksi.Show()
+        Me.Close()
     End Sub
 End Class

@@ -23,7 +23,6 @@ Partial Class ReadUser
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.txtjk = New System.Windows.Forms.TextBox()
@@ -42,12 +41,13 @@ Partial Class ReadUser
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnprev = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnprofile = New System.Windows.Forms.Button()
         Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.btnBook = New System.Windows.Forms.Button()
         Me.btnUser = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -64,20 +64,6 @@ Partial Class ReadUser
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1300, 86)
         Me.Panel3.TabIndex = 122
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(1233, 7)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(51, 49)
-        Me.Button1.TabIndex = 119
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'btnNext
         '
@@ -120,6 +106,7 @@ Partial Class ReadUser
         Me.txtjk.Location = New System.Drawing.Point(248, 249)
         Me.txtjk.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtjk.Name = "txtjk"
+        Me.txtjk.ReadOnly = True
         Me.txtjk.Size = New System.Drawing.Size(180, 22)
         Me.txtjk.TabIndex = 110
         '
@@ -138,6 +125,7 @@ Partial Class ReadUser
         Me.txtID.Location = New System.Drawing.Point(248, 96)
         Me.txtID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtID.Name = "txtID"
+        Me.txtID.ReadOnly = True
         Me.txtID.Size = New System.Drawing.Size(180, 22)
         Me.txtID.TabIndex = 107
         '
@@ -156,6 +144,7 @@ Partial Class ReadUser
         Me.txtnama.Location = New System.Drawing.Point(248, 167)
         Me.txtnama.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtnama.Name = "txtnama"
+        Me.txtnama.ReadOnly = True
         Me.txtnama.Size = New System.Drawing.Size(180, 22)
         Me.txtnama.TabIndex = 97
         '
@@ -164,6 +153,7 @@ Partial Class ReadUser
         Me.txtUsername.Location = New System.Drawing.Point(248, 314)
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.ReadOnly = True
         Me.txtUsername.Size = New System.Drawing.Size(180, 22)
         Me.txtUsername.TabIndex = 105
         '
@@ -182,6 +172,7 @@ Partial Class ReadUser
         Me.txtAlamat.Location = New System.Drawing.Point(668, 249)
         Me.txtAlamat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtAlamat.Name = "txtAlamat"
+        Me.txtAlamat.ReadOnly = True
         Me.txtAlamat.Size = New System.Drawing.Size(180, 22)
         Me.txtAlamat.TabIndex = 104
         '
@@ -200,6 +191,7 @@ Partial Class ReadUser
         Me.txtnomorHp.Location = New System.Drawing.Point(668, 167)
         Me.txtnomorHp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtnomorHp.Name = "txtnomorHp"
+        Me.txtnomorHp.ReadOnly = True
         Me.txtnomorHp.Size = New System.Drawing.Size(180, 22)
         Me.txtnomorHp.TabIndex = 103
         '
@@ -218,6 +210,7 @@ Partial Class ReadUser
         Me.txttglLahir.Location = New System.Drawing.Point(668, 97)
         Me.txttglLahir.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txttglLahir.Name = "txttglLahir"
+        Me.txttglLahir.ReadOnly = True
         Me.txttglLahir.Size = New System.Drawing.Size(180, 22)
         Me.txttglLahir.TabIndex = 102
         '
@@ -267,6 +260,33 @@ Partial Class ReadUser
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(213, 751)
         Me.Panel2.TabIndex = 121
+        '
+        'Button12
+        '
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Location = New System.Drawing.Point(275, 7)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(751, 73)
+        Me.Button12.TabIndex = 120
+        Me.Button12.Text = "DAFTAR USER"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(1233, 7)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(51, 49)
+        Me.Button1.TabIndex = 119
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'btnHome
         '
@@ -337,19 +357,6 @@ Partial Class ReadUser
         Me.btnUser.Size = New System.Drawing.Size(96, 96)
         Me.btnUser.TabIndex = 84
         Me.btnUser.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(275, 7)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(751, 73)
-        Me.Button12.TabIndex = 120
-        Me.Button12.Text = "DAFTAR USER"
-        Me.Button12.UseVisualStyleBackColor = True
         '
         'ReadUser
         '

@@ -45,7 +45,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7))
             txtthun.Text = .Cells(2).Value
             txtPengarang.Text = .Cells(3).Value
             txtPenerbit.Text = .Cells(4).Value
-            cmbjenis.Text = .Cells(5).Value
+            txtjenis.Text = .Cells(5).Value
             txtjumlah.Text = .Cells(6).Value
             txtHarga.Text = .Cells(7).Value
 
@@ -54,7 +54,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7))
 
     Sub clear()
         txtID.Clear()
-        cmbjenis.SelectedIndex = -1
+        txtjenis.Clear()
         txtjudul.Clear()
         txtPengarang.Clear()
         txtPenerbit.Clear()
@@ -74,7 +74,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7))
             txtthun.Text = .Cells(2).Value
             txtPengarang.Text = .Cells(3).Value
             txtPenerbit.Text = .Cells(4).Value
-            cmbjenis.Text = .Cells(5).Value
+            txtjenis.Text = .Cells(5).Value
             txtjumlah.Text = .Cells(6).Value
             txtHarga.Text = .Cells(7).Value
             id = .Cells(0).Value
@@ -90,7 +90,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7))
 
     End Sub
 
-    Private Sub cmbjenis_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbjenis.SelectedIndexChanged
+    Private Sub cmbjenis_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -209,6 +209,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7))
     End Sub
 
     Private Sub btnProfile_Click(sender As Object, e As EventArgs) Handles btnProfile.Click
+        ProfileUser.Show()
 
         Me.Close()
     End Sub
@@ -218,5 +219,10 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7))
         Me.Close()
 
 
+    End Sub
+
+    Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
+        TransaksiUser.Show()
+        Me.Close()
     End Sub
 End Class
