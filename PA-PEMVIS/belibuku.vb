@@ -201,4 +201,22 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7))
     Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
+
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        menuutamaasliuser.Show()
+        Me.Close()
+
+    End Sub
+
+    Private Sub btnProfile_Click(sender As Object, e As EventArgs) Handles btnProfile.Click
+
+        Me.Close()
+    End Sub
+
+    Private Sub btnbook_Click(sender As Object, e As EventArgs) Handles btnbook.Click
+        Menuutama_user_.Show()
+        Me.Close()
+
+
+    End Sub
 End Class

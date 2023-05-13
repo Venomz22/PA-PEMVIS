@@ -24,7 +24,6 @@ Partial Class ReadUser
     Private Sub InitializeComponent()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.txtjk = New System.Windows.Forms.TextBox()
@@ -48,6 +47,7 @@ Partial Class ReadUser
         Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.btnBook = New System.Windows.Forms.Button()
         Me.btnUser = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -56,8 +56,8 @@ Partial Class ReadUser
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel3.Controls.Add(Me.Button1)
         Me.Panel3.Controls.Add(Me.Button12)
+        Me.Panel3.Controls.Add(Me.Button1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(213, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
@@ -78,19 +78,6 @@ Partial Class ReadUser
         Me.Button1.Size = New System.Drawing.Size(51, 49)
         Me.Button1.TabIndex = 119
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(312, 7)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(751, 73)
-        Me.Button12.TabIndex = 118
-        Me.Button12.Text = "HI Admin !"
-        Me.Button12.UseVisualStyleBackColor = True
         '
         'btnNext
         '
@@ -351,6 +338,19 @@ Partial Class ReadUser
         Me.btnUser.TabIndex = 84
         Me.btnUser.UseVisualStyleBackColor = True
         '
+        'Button12
+        '
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Location = New System.Drawing.Point(275, 7)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(751, 73)
+        Me.Button12.TabIndex = 120
+        Me.Button12.Text = "DAFTAR USER"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
         'ReadUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -397,6 +397,6 @@ Partial Class ReadUser
     Friend WithEvents btnTransaksi As Button
     Friend WithEvents btnBook As Button
     Friend WithEvents btnUser As Button
-    Friend WithEvents Button12 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button12 As Button
 End Class

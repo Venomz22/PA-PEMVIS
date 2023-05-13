@@ -42,7 +42,6 @@ Partial Class belibuku
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.dgv1 = New System.Windows.Forms.DataGridView()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.ID_buku = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Judul = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TahunTerbit = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -51,13 +50,14 @@ Partial Class belibuku
         Me.JenisBuku = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnProfile = New System.Windows.Forms.Button()
+        Me.btnTransaksi = New System.Windows.Forms.Button()
+        Me.btnbook = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button30 = New System.Windows.Forms.Button()
-        Me.Button31 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel4.SuspendLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -273,21 +273,6 @@ Partial Class belibuku
         Me.dgv1.Size = New System.Drawing.Size(1063, 158)
         Me.dgv1.TabIndex = 137
         '
-        'Panel2
-        '
-        Me.Panel2.AllowDrop = True
-        Me.Panel2.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel2.Controls.Add(Me.Button5)
-        Me.Panel2.Controls.Add(Me.Button31)
-        Me.Panel2.Controls.Add(Me.Button3)
-        Me.Panel2.Controls.Add(Me.Button4)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(205, 791)
-        Me.Panel2.TabIndex = 134
-        '
         'ID_buku
         '
         Me.ID_buku.HeaderText = "ID Buku"
@@ -344,6 +329,77 @@ Partial Class belibuku
         Me.harga.Name = "harga"
         Me.harga.Width = 125
         '
+        'Panel2
+        '
+        Me.Panel2.AllowDrop = True
+        Me.Panel2.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel2.Controls.Add(Me.btnHome)
+        Me.Panel2.Controls.Add(Me.btnProfile)
+        Me.Panel2.Controls.Add(Me.btnTransaksi)
+        Me.Panel2.Controls.Add(Me.btnbook)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(205, 791)
+        Me.Panel2.TabIndex = 134
+        '
+        'btnHome
+        '
+        Me.btnHome.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop2
+        Me.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnHome.FlatAppearance.BorderSize = 0
+        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHome.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHome.Location = New System.Drawing.Point(56, 126)
+        Me.btnHome.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(96, 82)
+        Me.btnHome.TabIndex = 17
+        Me.btnHome.UseVisualStyleBackColor = True
+        '
+        'btnProfile
+        '
+        Me.btnProfile.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.user
+        Me.btnProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnProfile.FlatAppearance.BorderSize = 0
+        Me.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnProfile.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProfile.Location = New System.Drawing.Point(56, 272)
+        Me.btnProfile.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnProfile.Name = "btnProfile"
+        Me.btnProfile.Size = New System.Drawing.Size(96, 82)
+        Me.btnProfile.TabIndex = 15
+        Me.btnProfile.UseVisualStyleBackColor = True
+        '
+        'btnTransaksi
+        '
+        Me.btnTransaksi.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.cash_machine
+        Me.btnTransaksi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnTransaksi.FlatAppearance.BorderSize = 0
+        Me.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTransaksi.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTransaksi.Location = New System.Drawing.Point(56, 528)
+        Me.btnTransaksi.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTransaksi.Name = "btnTransaksi"
+        Me.btnTransaksi.Size = New System.Drawing.Size(96, 87)
+        Me.btnTransaksi.TabIndex = 14
+        Me.btnTransaksi.UseVisualStyleBackColor = True
+        '
+        'btnbook
+        '
+        Me.btnbook.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.open_book
+        Me.btnbook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnbook.FlatAppearance.BorderSize = 0
+        Me.btnbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnbook.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnbook.Location = New System.Drawing.Point(56, 395)
+        Me.btnbook.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnbook.Name = "btnbook"
+        Me.btnbook.Size = New System.Drawing.Size(96, 85)
+        Me.btnbook.TabIndex = 13
+        Me.btnbook.UseVisualStyleBackColor = True
+        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
@@ -380,64 +436,8 @@ Partial Class belibuku
         Me.Button30.Name = "Button30"
         Me.Button30.Size = New System.Drawing.Size(751, 73)
         Me.Button30.TabIndex = 29
-        Me.Button30.Text = "KATEGORI BUKU"
+        Me.Button30.Text = "DAFTAR BUKU"
         Me.Button30.UseVisualStyleBackColor = True
-        '
-        'Button31
-        '
-        Me.Button31.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.user
-        Me.Button31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button31.FlatAppearance.BorderSize = 0
-        Me.Button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button31.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button31.Location = New System.Drawing.Point(56, 272)
-        Me.Button31.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button31.Name = "Button31"
-        Me.Button31.Size = New System.Drawing.Size(96, 82)
-        Me.Button31.TabIndex = 15
-        Me.Button31.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.cash_machine
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(56, 528)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(96, 87)
-        Me.Button3.TabIndex = 14
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.open_book
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(56, 395)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(96, 85)
-        Me.Button4.TabIndex = 13
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop2
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(56, 126)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(96, 82)
-        Me.Button5.TabIndex = 17
-        Me.Button5.UseVisualStyleBackColor = True
         '
         'belibuku
         '
@@ -448,7 +448,7 @@ Partial Class belibuku
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.dgv1)
         Me.Controls.Add(Me.Panel2)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "belibuku"
         Me.Text = "belibuku"
         Me.Panel4.ResumeLayout(False)
@@ -497,8 +497,8 @@ Partial Class belibuku
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Button7 As Button
     Friend WithEvents Button30 As Button
-    Friend WithEvents Button31 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnHome As Button
+    Friend WithEvents btnProfile As Button
+    Friend WithEvents btnTransaksi As Button
+    Friend WithEvents btnbook As Button
 End Class

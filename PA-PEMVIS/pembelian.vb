@@ -23,6 +23,16 @@ Public Class pembelian
         judul_buku = rd("judul_buku")
         rd.Close()
 
+        btnbook.Enabled = False
+        btnHome.Enabled = False
+        btnProfile.Enabled = False
+        btnTransaksi.Enabled = False
+
+
+
+
+
+
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -30,10 +40,6 @@ Public Class pembelian
         jumlahbuku = jumlahbuku - Val(jumlah.Text)
         terjual = terjual + Val(jumlah.Text)
         jumlah_pesanan = jumlah_pesanan + Val(jumlah.Text)
-
-        'MsgBox(total.Text)
-        'MsgBox(jumlah.Text)
-        'MsgBox(harga)
 
         answer = MsgBox("ingin beli lagi ? ", vbQuestion + vbYesNo + vbDefaultButton2, "PERHATIAN")
         If beli_lagi = 0 Then
@@ -51,8 +57,12 @@ Public Class pembelian
             cmbbb.ExecuteNonQuery()
         End If
         If answer = MsgBoxResult.Yes Then
+            If beli_lagi = 0 Then
+                judul_sebelum = judul_buku
+            Else
+                judul_sebelum = judul_sebelum + ", " + judul_buku
+            End If
             beli_lagi = 1
-            judul_sebelum = judul_sebelum + ", " + judul_buku
             totall = Val(total.Text) + totall
             total.Text = ""
             jumlah.Text = ""
@@ -67,6 +77,12 @@ Public Class pembelian
     End Sub
 
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
+        Menuutama_user_.Show()
+        Me.Close()
 
     End Sub
 End Class

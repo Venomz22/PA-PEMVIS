@@ -98,7 +98,7 @@ Module Module1
 
     Function random() As String
         Dim hasil As String = " "
-        Dim nilai As String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+        Dim nilai As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
         Dim jumlah = 0
         Dim rand As New Random
         Dim strpos As String = ""

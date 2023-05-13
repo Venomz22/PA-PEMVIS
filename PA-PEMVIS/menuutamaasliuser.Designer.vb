@@ -24,13 +24,12 @@ Partial Class menuutamaasliuser
     Private Sub InitializeComponent()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button30 = New System.Windows.Forms.Button()
+        Me.welcome = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button31 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnhome = New System.Windows.Forms.Button()
+        Me.btnProfile = New System.Windows.Forms.Button()
+        Me.btnTransaksi = New System.Windows.Forms.Button()
+        Me.btnbook = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -43,10 +42,10 @@ Partial Class menuutamaasliuser
         '
         Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
         Me.Panel3.Controls.Add(Me.Button1)
-        Me.Panel3.Controls.Add(Me.Button30)
+        Me.Panel3.Controls.Add(Me.welcome)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(213, 43)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Location = New System.Drawing.Point(213, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1318, 86)
         Me.Panel3.TabIndex = 117
@@ -59,103 +58,94 @@ Partial Class menuutamaasliuser
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(1236, 18)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(51, 49)
         Me.Button1.TabIndex = 32
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button30
+        'welcome
         '
-        Me.Button30.FlatAppearance.BorderSize = 0
-        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button30.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button30.Location = New System.Drawing.Point(296, 7)
-        Me.Button30.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(751, 73)
-        Me.Button30.TabIndex = 29
-        Me.Button30.Text = "Halo !"
-        Me.Button30.UseVisualStyleBackColor = True
+        Me.welcome.FlatAppearance.BorderSize = 0
+        Me.welcome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.welcome.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.welcome.Location = New System.Drawing.Point(296, 7)
+        Me.welcome.Margin = New System.Windows.Forms.Padding(4)
+        Me.welcome.Name = "welcome"
+        Me.welcome.Size = New System.Drawing.Size(751, 73)
+        Me.welcome.TabIndex = 29
+        Me.welcome.Text = "Halo !"
+        Me.welcome.UseVisualStyleBackColor = True
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Controls.Add(Me.Button31)
-        Me.Panel2.Controls.Add(Me.Button3)
-        Me.Panel2.Controls.Add(Me.Button4)
+        Me.Panel2.Controls.Add(Me.btnhome)
+        Me.Panel2.Controls.Add(Me.btnProfile)
+        Me.Panel2.Controls.Add(Me.btnTransaksi)
+        Me.Panel2.Controls.Add(Me.btnbook)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 43)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(213, 755)
+        Me.Panel2.Size = New System.Drawing.Size(213, 798)
         Me.Panel2.TabIndex = 116
         '
-        'Button2
+        'btnhome
         '
-        Me.Button2.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.home
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(60, 41)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(96, 91)
-        Me.Button2.TabIndex = 17
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnhome.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop2
+        Me.btnhome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnhome.FlatAppearance.BorderSize = 0
+        Me.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnhome.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnhome.Location = New System.Drawing.Point(60, 53)
+        Me.btnhome.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnhome.Name = "btnhome"
+        Me.btnhome.Size = New System.Drawing.Size(96, 82)
+        Me.btnhome.TabIndex = 17
+        Me.btnhome.UseVisualStyleBackColor = True
         '
-        'Button31
+        'btnProfile
         '
-        Me.Button31.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.user
-        Me.Button31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button31.FlatAppearance.BorderSize = 0
-        Me.Button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button31.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button31.Location = New System.Drawing.Point(60, 218)
-        Me.Button31.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button31.Name = "Button31"
-        Me.Button31.Size = New System.Drawing.Size(96, 82)
-        Me.Button31.TabIndex = 12
-        Me.Button31.UseVisualStyleBackColor = True
+        Me.btnProfile.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.user
+        Me.btnProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnProfile.FlatAppearance.BorderSize = 0
+        Me.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnProfile.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProfile.Location = New System.Drawing.Point(60, 218)
+        Me.btnProfile.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnProfile.Name = "btnProfile"
+        Me.btnProfile.Size = New System.Drawing.Size(96, 82)
+        Me.btnProfile.TabIndex = 12
+        Me.btnProfile.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnTransaksi
         '
-        Me.Button3.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.cash_machine
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(60, 580)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(96, 87)
-        Me.Button3.TabIndex = 10
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnTransaksi.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.cash_machine
+        Me.btnTransaksi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnTransaksi.FlatAppearance.BorderSize = 0
+        Me.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTransaksi.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTransaksi.Location = New System.Drawing.Point(60, 580)
+        Me.btnTransaksi.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTransaksi.Name = "btnTransaksi"
+        Me.btnTransaksi.Size = New System.Drawing.Size(96, 87)
+        Me.btnTransaksi.TabIndex = 10
+        Me.btnTransaksi.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnbook
         '
-        Me.Button4.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.open_book
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(60, 396)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(96, 85)
-        Me.Button4.TabIndex = 9
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Panel1
-        '
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1531, 43)
-        Me.Panel1.TabIndex = 95
+        Me.btnbook.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.open_book
+        Me.btnbook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnbook.FlatAppearance.BorderSize = 0
+        Me.btnbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnbook.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnbook.Location = New System.Drawing.Point(60, 396)
+        Me.btnbook.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnbook.Name = "btnbook"
+        Me.btnbook.Size = New System.Drawing.Size(96, 85)
+        Me.btnbook.TabIndex = 9
+        Me.btnbook.UseVisualStyleBackColor = True
         '
         'Button11
         '
@@ -163,7 +153,7 @@ Partial Class menuutamaasliuser
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button11.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Location = New System.Drawing.Point(509, 562)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(751, 139)
         Me.Button11.TabIndex = 121
@@ -177,7 +167,7 @@ Partial Class menuutamaasliuser
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Location = New System.Drawing.Point(509, 446)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(751, 73)
         Me.Button10.TabIndex = 120
@@ -192,7 +182,7 @@ Partial Class menuutamaasliuser
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Location = New System.Drawing.Point(779, 261)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(211, 177)
         Me.Button7.TabIndex = 118
@@ -204,7 +194,7 @@ Partial Class menuutamaasliuser
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(527, 181)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(751, 73)
         Me.Button5.TabIndex = 119
@@ -223,9 +213,8 @@ Partial Class menuutamaasliuser
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "menuutamaasliuser"
         Me.Text = "menuutamaasliuser"
         Me.Panel3.ResumeLayout(False)
@@ -234,16 +223,15 @@ Partial Class menuutamaasliuser
 
     End Sub
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Button30 As System.Windows.Forms.Button
+    Friend WithEvents welcome As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents Button31 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents btnProfile As System.Windows.Forms.Button
+    Friend WithEvents btnTransaksi As System.Windows.Forms.Button
+    Friend WithEvents btnbook As System.Windows.Forms.Button
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnhome As Button
 End Class

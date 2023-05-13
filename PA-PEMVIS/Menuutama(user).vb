@@ -61,4 +61,19 @@
         belibuku.Show()
         Me.Dispose()
     End Sub
+
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        menuutamaasliuser.Show()
+        Me.Close()
+
+    End Sub
+
+    Private Sub btnProfile_Click(sender As Object, e As EventArgs) Handles btnProfile.Click
+        menuutamaasliuser.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnbook_Click(sender As Object, e As EventArgs) Handles btnbook.Click
+
+    End Sub
 End Class

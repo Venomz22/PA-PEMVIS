@@ -291,12 +291,12 @@ Partial Class ProfileAdmin
         Me.Button12.FlatAppearance.BorderSize = 0
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(312, 7)
+        Me.Button12.Location = New System.Drawing.Point(469, 9)
         Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(751, 73)
         Me.Button12.TabIndex = 118
-        Me.Button12.Text = "HI Admin !"
+        Me.Button12.Text = "PROFILE ADMIN"
         Me.Button12.UseVisualStyleBackColor = True
         '
         'Panel3

@@ -83,12 +83,6 @@
     <Compile Include="belibuku.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditBuku.Designer.vb">
-      <DependentUpon>EditBuku.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EditBuku.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
@@ -129,13 +123,6 @@
       <DependentUpon>login.vb</DependentUpon>
     </Compile>
     <Compile Include="login.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuAdmin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuAdmin.Designer.vb">
-      <DependentUpon>MenuAdmin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menuutama%28user%29.Designer.vb">
@@ -190,9 +177,6 @@
     <EmbeddedResource Include="belibuku.resx">
       <DependentUpon>belibuku.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditBuku.resx">
-      <DependentUpon>EditBuku.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
@@ -213,9 +197,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuAdmin.resx">
-      <DependentUpon>MenuAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menuutama%28user%29.resx">
       <DependentUpon>Menuutama%28user%29.vb</DependentUpon>

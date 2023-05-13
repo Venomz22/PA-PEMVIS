@@ -11,12 +11,10 @@ Public Class login
 
     Private Sub loginuser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Call koneksi()
-
         Dim un As String = lname.Text
         Dim pw As String = lpass.Text
 
@@ -54,6 +52,14 @@ Public Class login
 
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
 
     End Sub
 End Class
