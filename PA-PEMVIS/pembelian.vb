@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.IO
+Imports MySql.Data.MySqlClient
 
 Public Class pembelian
     Public buku As String
@@ -7,6 +8,8 @@ Public Class pembelian
     Public answer As String
     Dim jumlahbuku As Integer
     Dim terjual As Integer
+    Dim gambar As String
+
 
     Private Sub pembelian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         judul.Enabled = False
@@ -21,12 +24,15 @@ Public Class pembelian
         jumlahbuku = rd("jumlah")
         terjual = rd("jumlah_terjual")
         judul_buku = rd("judul_buku")
+        gambar = rd("gambar")
         rd.Close()
 
         btnbook.Enabled = False
         btnHome.Enabled = False
         btnProfile.Enabled = False
         btnTransaksi.Enabled = False
+        Dim sFolder As String = "D:\Dunia Perkuliahan\Semester 4\Pratikum\Pemrograman Visual\PA-PEMVIS\Gambar"
+        PictureBox1.ImageLocation = Path.Combine(sFolder, Path.GetFileName(gambar))
 
 
 
@@ -102,5 +108,10 @@ Public Class pembelian
 
     Private Sub btnbook_Click(sender As Object, e As EventArgs) Handles btnbook.Click
 
+    End Sub
+
+    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        login.Show()
+        Me.Close()
     End Sub
 End Class

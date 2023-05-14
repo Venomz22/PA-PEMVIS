@@ -32,9 +32,14 @@ Public Class ProfileUser
             txtnomorHp.Text = rd("nohp")
             txtAlamat.Text = rd("alamat")
             txtjk.Text = rd("kelamin")
-            txttglLahir.Text = rd("tanggal lahir")
+            txttglLahir.Text = rd("tanggal_lahir")
             txtUsername.Text = rd("username")
             rd.Close()
         End If
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        login.Show()
+        Me.Close()
     End Sub
 End Class

@@ -23,6 +23,7 @@ Partial Class belibuku
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.txtjenis = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtHarga = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -49,24 +50,28 @@ Partial Class belibuku
         Me.JenisBuku = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Gambar = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button30 = New System.Windows.Forms.Button()
-        Me.txtjenis = New System.Windows.Forms.TextBox()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnProfile = New System.Windows.Forms.Button()
         Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.btnbook = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button30 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.Panel4.SuspendLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.btnBack)
         Me.Panel4.Controls.Add(Me.txtjenis)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Controls.Add(Me.txtHarga)
@@ -86,11 +91,20 @@ Partial Class belibuku
         Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Controls.Add(Me.Label5)
         Me.Panel4.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.Panel4.Location = New System.Drawing.Point(353, 300)
+        Me.Panel4.Location = New System.Drawing.Point(234, 310)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(979, 432)
         Me.Panel4.TabIndex = 138
+        '
+        'txtjenis
+        '
+        Me.txtjenis.Location = New System.Drawing.Point(681, 103)
+        Me.txtjenis.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtjenis.Name = "txtjenis"
+        Me.txtjenis.ReadOnly = True
+        Me.txtjenis.Size = New System.Drawing.Size(180, 22)
+        Me.txtjenis.TabIndex = 140
         '
         'Label10
         '
@@ -144,7 +158,7 @@ Partial Class belibuku
         '
         Me.btnbeli.BackColor = System.Drawing.Color.SkyBlue
         Me.btnbeli.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnbeli.Location = New System.Drawing.Point(707, 382)
+        Me.btnbeli.Location = New System.Drawing.Point(600, 381)
         Me.btnbeli.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnbeli.Name = "btnbeli"
         Me.btnbeli.Size = New System.Drawing.Size(117, 37)
@@ -260,8 +274,8 @@ Partial Class belibuku
         'dgv1
         '
         Me.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_buku, Me.Judul, Me.TahunTerbit, Me.Pengarang, Me.Penerbit, Me.JenisBuku, Me.Jumlah, Me.harga})
-        Me.dgv1.Location = New System.Drawing.Point(307, 111)
+        Me.dgv1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_buku, Me.Judul, Me.TahunTerbit, Me.Pengarang, Me.Penerbit, Me.JenisBuku, Me.Jumlah, Me.harga, Me.Gambar})
+        Me.dgv1.Location = New System.Drawing.Point(234, 110)
         Me.dgv1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgv1.Name = "dgv1"
         Me.dgv1.RowHeadersWidth = 51
@@ -325,6 +339,13 @@ Partial Class belibuku
         Me.harga.Name = "harga"
         Me.harga.Width = 125
         '
+        'Gambar
+        '
+        Me.Gambar.HeaderText = "Gambar"
+        Me.Gambar.MinimumWidth = 6
+        Me.Gambar.Name = "Gambar"
+        Me.Gambar.Width = 125
+        '
         'Panel2
         '
         Me.Panel2.AllowDrop = True
@@ -339,54 +360,6 @@ Partial Class belibuku
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(205, 791)
         Me.Panel2.TabIndex = 134
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel3.Controls.Add(Me.Button7)
-        Me.Panel3.Controls.Add(Me.Button30)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(205, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1324, 88)
-        Me.Panel3.TabIndex = 139
-        '
-        'Button30
-        '
-        Me.Button30.FlatAppearance.BorderSize = 0
-        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button30.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button30.Location = New System.Drawing.Point(267, 7)
-        Me.Button30.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(751, 73)
-        Me.Button30.TabIndex = 29
-        Me.Button30.Text = "DAFTAR BUKU"
-        Me.Button30.UseVisualStyleBackColor = True
-        '
-        'txtjenis
-        '
-        Me.txtjenis.Location = New System.Drawing.Point(681, 103)
-        Me.txtjenis.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtjenis.Name = "txtjenis"
-        Me.txtjenis.ReadOnly = True
-        Me.txtjenis.Size = New System.Drawing.Size(180, 22)
-        Me.txtjenis.TabIndex = 140
-        '
-        'Button7
-        '
-        Me.Button7.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(1235, 20)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(51, 49)
-        Me.Button7.TabIndex = 32
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'btnHome
         '
@@ -444,12 +417,75 @@ Partial Class belibuku
         Me.btnbook.TabIndex = 13
         Me.btnbook.UseVisualStyleBackColor = True
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel3.Controls.Add(Me.Button7)
+        Me.Panel3.Controls.Add(Me.Button30)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(205, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1324, 88)
+        Me.Panel3.TabIndex = 139
+        '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(1235, 20)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(51, 49)
+        Me.Button7.TabIndex = 32
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button30
+        '
+        Me.Button30.FlatAppearance.BorderSize = 0
+        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button30.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button30.Location = New System.Drawing.Point(267, 7)
+        Me.Button30.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(751, 73)
+        Me.Button30.TabIndex = 29
+        Me.Button30.Text = "DAFTAR BUKU"
+        Me.Button30.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.PictureBox1.ErrorImage = Nothing
+        Me.PictureBox1.Location = New System.Drawing.Point(1232, 310)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(285, 432)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 140
+        Me.PictureBox1.TabStop = False
+        '
+        'btnBack
+        '
+        Me.btnBack.BackColor = System.Drawing.Color.SkyBlue
+        Me.btnBack.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(759, 382)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(117, 37)
+        Me.btnBack.TabIndex = 141
+        Me.btnBack.Text = "Selesai"
+        Me.btnBack.UseVisualStyleBackColor = False
+        '
         'belibuku
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(1529, 791)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.dgv1)
@@ -462,6 +498,7 @@ Partial Class belibuku
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -491,14 +528,6 @@ Partial Class belibuku
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button32 As System.Windows.Forms.Button
-    Friend WithEvents ID_buku As DataGridViewTextBoxColumn
-    Friend WithEvents Judul As DataGridViewTextBoxColumn
-    Friend WithEvents TahunTerbit As DataGridViewTextBoxColumn
-    Friend WithEvents Pengarang As DataGridViewTextBoxColumn
-    Friend WithEvents Penerbit As DataGridViewTextBoxColumn
-    Friend WithEvents JenisBuku As DataGridViewTextBoxColumn
-    Friend WithEvents Jumlah As DataGridViewTextBoxColumn
-    Friend WithEvents harga As DataGridViewTextBoxColumn
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Button7 As Button
     Friend WithEvents Button30 As Button
@@ -507,4 +536,15 @@ Partial Class belibuku
     Friend WithEvents btnTransaksi As Button
     Friend WithEvents btnbook As Button
     Friend WithEvents txtjenis As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ID_buku As DataGridViewTextBoxColumn
+    Friend WithEvents Judul As DataGridViewTextBoxColumn
+    Friend WithEvents TahunTerbit As DataGridViewTextBoxColumn
+    Friend WithEvents Pengarang As DataGridViewTextBoxColumn
+    Friend WithEvents Penerbit As DataGridViewTextBoxColumn
+    Friend WithEvents JenisBuku As DataGridViewTextBoxColumn
+    Friend WithEvents Jumlah As DataGridViewTextBoxColumn
+    Friend WithEvents harga As DataGridViewTextBoxColumn
+    Friend WithEvents Gambar As DataGridViewTextBoxColumn
+    Friend WithEvents btnBack As Button
 End Class

@@ -45,6 +45,7 @@ Partial Class ProfileUser
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -217,6 +218,7 @@ Partial Class ProfileUser
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel3.Controls.Add(Me.Button3)
         Me.Panel3.Controls.Add(Me.Button1)
         Me.Panel3.Controls.Add(Me.Button12)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
@@ -316,6 +318,20 @@ Partial Class ProfileUser
         Me.Panel2.Size = New System.Drawing.Size(213, 751)
         Me.Panel2.TabIndex = 131
         '
+        'Button3
+        '
+        Me.Button3.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(1214, 13)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(51, 49)
+        Me.Button3.TabIndex = 120
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'ProfileUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -358,4 +374,5 @@ Partial Class ProfileUser
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Button3 As Button
 End Class

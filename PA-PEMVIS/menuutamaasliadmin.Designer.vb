@@ -23,18 +23,18 @@ Partial Class menuutamaasliadmin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button30 = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button32 = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnprofile = New System.Windows.Forms.Button()
         Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.btnBook = New System.Windows.Forms.Button()
         Me.btnUser = New System.Windows.Forms.Button()
+        Me.Button30 = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button32 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
@@ -53,99 +53,6 @@ Partial Class menuutamaasliadmin
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(213, 798)
         Me.Panel2.TabIndex = 114
-        '
-        'Button30
-        '
-        Me.Button30.FlatAppearance.BorderSize = 0
-        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button30.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button30.Location = New System.Drawing.Point(543, 185)
-        Me.Button30.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(751, 73)
-        Me.Button30.TabIndex = 31
-        Me.Button30.Text = "SELAMAT DATANG !"
-        Me.Button30.UseVisualStyleBackColor = True
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel3.Controls.Add(Me.Button32)
-        Me.Panel3.Controls.Add(Me.Button12)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(213, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1318, 86)
-        Me.Panel3.TabIndex = 115
-        '
-        'Button12
-        '
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(312, 7)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(751, 73)
-        Me.Button12.TabIndex = 118
-        Me.Button12.Text = "HI Admin !"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(525, 449)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(751, 73)
-        Me.Button10.TabIndex = 116
-        Me.Button10.Text = "Di TOKO MANTAP"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button11
-        '
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(525, 566)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(751, 139)
-        Me.Button11.TabIndex = 117
-        Me.Button11.Text = "Selamat datang di toko Mantap disini kamu bisa beli buku dengan banyak pilihan da" &
-    "ri kategori sampai judul yang lengkap hanya ada di toko ini"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop2
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(795, 265)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(211, 177)
-        Me.Button7.TabIndex = 16
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button32
-        '
-        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button32.FlatAppearance.BorderSize = 0
-        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button32.Location = New System.Drawing.Point(1251, 18)
-        Me.Button32.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(51, 49)
-        Me.Button32.TabIndex = 119
-        Me.Button32.UseVisualStyleBackColor = True
         '
         'btnHome
         '
@@ -216,6 +123,99 @@ Partial Class menuutamaasliadmin
         Me.btnUser.Size = New System.Drawing.Size(96, 96)
         Me.btnUser.TabIndex = 8
         Me.btnUser.UseVisualStyleBackColor = True
+        '
+        'Button30
+        '
+        Me.Button30.FlatAppearance.BorderSize = 0
+        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button30.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button30.Location = New System.Drawing.Point(543, 185)
+        Me.Button30.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(751, 73)
+        Me.Button30.TabIndex = 31
+        Me.Button30.Text = "SELAMAT DATANG !"
+        Me.Button30.UseVisualStyleBackColor = True
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel3.Controls.Add(Me.Button32)
+        Me.Panel3.Controls.Add(Me.Button12)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(213, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1318, 86)
+        Me.Panel3.TabIndex = 115
+        '
+        'Button32
+        '
+        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button32.FlatAppearance.BorderSize = 0
+        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button32.Location = New System.Drawing.Point(1251, 18)
+        Me.Button32.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button32.Name = "Button32"
+        Me.Button32.Size = New System.Drawing.Size(51, 49)
+        Me.Button32.TabIndex = 119
+        Me.Button32.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Location = New System.Drawing.Point(312, 7)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(751, 73)
+        Me.Button12.TabIndex = 118
+        Me.Button12.Text = "HI Admin !"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.Location = New System.Drawing.Point(525, 449)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(751, 73)
+        Me.Button10.TabIndex = 116
+        Me.Button10.Text = "Di TOKO MANTAP"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.Location = New System.Drawing.Point(525, 566)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(751, 139)
+        Me.Button11.TabIndex = 117
+        Me.Button11.Text = "Selamat datang di toko Mantap disini kamu bisa beli buku dengan banyak pilihan da" &
+    "ri kategori sampai judul yang lengkap hanya ada di toko ini"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop2
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(795, 265)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(211, 177)
+        Me.Button7.TabIndex = 16
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'menuutamaasliadmin
         '

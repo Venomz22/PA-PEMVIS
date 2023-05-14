@@ -23,6 +23,11 @@ Partial Class ProfileAdmin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnprofile = New System.Windows.Forms.Button()
+        Me.btnTransaksi = New System.Windows.Forms.Button()
+        Me.btnBook = New System.Windows.Forms.Button()
+        Me.btnUser = New System.Windows.Forms.Button()
         Me.txtjk = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtID = New System.Windows.Forms.TextBox()
@@ -40,11 +45,6 @@ Partial Class ProfileAdmin
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnHome = New System.Windows.Forms.Button()
-        Me.btnprofile = New System.Windows.Forms.Button()
-        Me.btnTransaksi = New System.Windows.Forms.Button()
-        Me.btnBook = New System.Windows.Forms.Button()
-        Me.btnUser = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -65,6 +65,76 @@ Partial Class ProfileAdmin
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(213, 665)
         Me.Panel2.TabIndex = 127
+        '
+        'btnHome
+        '
+        Me.btnHome.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop1
+        Me.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnHome.FlatAppearance.BorderSize = 0
+        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHome.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHome.Location = New System.Drawing.Point(53, 19)
+        Me.btnHome.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(104, 92)
+        Me.btnHome.TabIndex = 88
+        Me.btnHome.UseVisualStyleBackColor = True
+        '
+        'btnprofile
+        '
+        Me.btnprofile.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.user
+        Me.btnprofile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnprofile.FlatAppearance.BorderSize = 0
+        Me.btnprofile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnprofile.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnprofile.Location = New System.Drawing.Point(53, 156)
+        Me.btnprofile.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnprofile.Name = "btnprofile"
+        Me.btnprofile.Size = New System.Drawing.Size(96, 82)
+        Me.btnprofile.TabIndex = 87
+        Me.btnprofile.UseVisualStyleBackColor = True
+        '
+        'btnTransaksi
+        '
+        Me.btnTransaksi.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.cash_machine
+        Me.btnTransaksi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnTransaksi.FlatAppearance.BorderSize = 0
+        Me.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTransaksi.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTransaksi.Location = New System.Drawing.Point(53, 551)
+        Me.btnTransaksi.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTransaksi.Name = "btnTransaksi"
+        Me.btnTransaksi.Size = New System.Drawing.Size(96, 87)
+        Me.btnTransaksi.TabIndex = 86
+        Me.btnTransaksi.UseVisualStyleBackColor = True
+        '
+        'btnBook
+        '
+        Me.btnBook.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.open_book
+        Me.btnBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBook.FlatAppearance.BorderSize = 0
+        Me.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBook.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBook.Location = New System.Drawing.Point(53, 416)
+        Me.btnBook.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBook.Name = "btnBook"
+        Me.btnBook.Size = New System.Drawing.Size(96, 85)
+        Me.btnBook.TabIndex = 85
+        Me.btnBook.UseVisualStyleBackColor = True
+        '
+        'btnUser
+        '
+        Me.btnUser.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.recruitment
+        Me.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnUser.FlatAppearance.BorderSize = 0
+        Me.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUser.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUser.Location = New System.Drawing.Point(53, 275)
+        Me.btnUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnUser.Name = "btnUser"
+        Me.btnUser.Size = New System.Drawing.Size(96, 96)
+        Me.btnUser.TabIndex = 84
+        Me.btnUser.UseVisualStyleBackColor = True
         '
         'txtjk
         '
@@ -247,76 +317,6 @@ Partial Class ProfileAdmin
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1513, 86)
         Me.Panel3.TabIndex = 128
-        '
-        'btnHome
-        '
-        Me.btnHome.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop1
-        Me.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnHome.FlatAppearance.BorderSize = 0
-        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHome.Location = New System.Drawing.Point(53, 19)
-        Me.btnHome.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(104, 92)
-        Me.btnHome.TabIndex = 88
-        Me.btnHome.UseVisualStyleBackColor = True
-        '
-        'btnprofile
-        '
-        Me.btnprofile.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.user
-        Me.btnprofile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnprofile.FlatAppearance.BorderSize = 0
-        Me.btnprofile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnprofile.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnprofile.Location = New System.Drawing.Point(53, 156)
-        Me.btnprofile.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnprofile.Name = "btnprofile"
-        Me.btnprofile.Size = New System.Drawing.Size(96, 82)
-        Me.btnprofile.TabIndex = 87
-        Me.btnprofile.UseVisualStyleBackColor = True
-        '
-        'btnTransaksi
-        '
-        Me.btnTransaksi.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.cash_machine
-        Me.btnTransaksi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnTransaksi.FlatAppearance.BorderSize = 0
-        Me.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTransaksi.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTransaksi.Location = New System.Drawing.Point(53, 551)
-        Me.btnTransaksi.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnTransaksi.Name = "btnTransaksi"
-        Me.btnTransaksi.Size = New System.Drawing.Size(96, 87)
-        Me.btnTransaksi.TabIndex = 86
-        Me.btnTransaksi.UseVisualStyleBackColor = True
-        '
-        'btnBook
-        '
-        Me.btnBook.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.open_book
-        Me.btnBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnBook.FlatAppearance.BorderSize = 0
-        Me.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBook.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBook.Location = New System.Drawing.Point(53, 416)
-        Me.btnBook.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnBook.Name = "btnBook"
-        Me.btnBook.Size = New System.Drawing.Size(96, 85)
-        Me.btnBook.TabIndex = 85
-        Me.btnBook.UseVisualStyleBackColor = True
-        '
-        'btnUser
-        '
-        Me.btnUser.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.recruitment
-        Me.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnUser.FlatAppearance.BorderSize = 0
-        Me.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUser.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUser.Location = New System.Drawing.Point(53, 275)
-        Me.btnUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnUser.Name = "btnUser"
-        Me.btnUser.Size = New System.Drawing.Size(96, 96)
-        Me.btnUser.TabIndex = 84
-        Me.btnUser.UseVisualStyleBackColor = True
         '
         'Button1
         '

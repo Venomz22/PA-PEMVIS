@@ -1,4 +1,5 @@
-﻿Imports System.Windows
+﻿Imports System.IO
+Imports System.Windows
 Imports System.Windows.Forms.DataFormats
 Imports MySql.Data.MySqlClient
 
@@ -11,7 +12,7 @@ Public Class ReadBuku
         da.Fill(ds, "tbbuku")
         For i As Integer = 0 To ds.Tables("tbbuku").Rows.Count - 1
             dgv1.Rows.Add(ds.Tables("tbbuku").Rows(i)(0), ds.Tables("tbbuku").Rows(i)(1), ds.Tables("tbbuku").Rows(i)(2), ds.Tables("tbbuku").Rows(i)(3), ds.Tables("tbbuku").Rows(i)(4), ds.Tables("tbbuku").Rows(i)(5),
-ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuku").Rows(i)(8))
+ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuku").Rows(i)(8), ds.Tables("tbbuku").Rows(i)(9))
         Next
         dgv1.Refresh()
     End Sub
@@ -73,6 +74,9 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
             txtjumlah.Text = .Cells(6).Value
             txtHarga.Text = .Cells(7).Value
             txtterjual.Text = .Cells(8).Value
+            Dim sFolder As String = "D:\Dunia Perkuliahan\Semester 4\Pratikum\Pemrograman Visual\PA-PEMVIS\Gambar"
+            Dim files = .Cells(9).Value
+            PictureBox1.ImageLocation = Path.Combine(sFolder, Path.GetFileName(files))
 
         End With
     End Sub
@@ -189,5 +193,11 @@ WHERE idbuku = '" & txtID.Text & "';"
     Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
         Transaksi.Show()
         Me.Close()
+    End Sub
+
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        login.Show()
+        Me.Close()
+
     End Sub
 End Class

@@ -41,6 +41,7 @@ Partial Class invoices
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.id = New System.Windows.Forms.Label()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -286,11 +287,22 @@ Partial Class invoices
         Me.id.TabIndex = 2
         Me.id.Text = "id pemesanan"
         '
+        'btnBack
+        '
+        Me.btnBack.Location = New System.Drawing.Point(1033, 699)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(135, 49)
+        Me.btnBack.TabIndex = 137
+        Me.btnBack.Text = "Kembali"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
         'invoices
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1368, 811)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "invoices"
         Me.Text = "invoices"
@@ -318,4 +330,5 @@ Partial Class invoices
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents btnBack As Button
 End Class

@@ -26,8 +26,15 @@ Partial Class Transaksi
         Me.txtJumlah = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.dgv1 = New System.Windows.Forms.DataGridView()
+        Me.ID_buku = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Judul = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TahunTerbit = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.terjual = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtID = New System.Windows.Forms.TextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtjudul = New System.Windows.Forms.TextBox()
@@ -35,23 +42,16 @@ Partial Class Transaksi
         Me.Nama = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnprofile = New System.Windows.Forms.Button()
         Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.btnBook = New System.Windows.Forms.Button()
         Me.btnUser = New System.Windows.Forms.Button()
-        Me.ID_buku = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Judul = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TahunTerbit = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.terjual = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.txtIDUser = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtPayment = New System.Windows.Forms.TextBox()
-        Me.txtIDUser = New System.Windows.Forms.TextBox()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -99,6 +99,48 @@ Partial Class Transaksi
         Me.dgv1.Size = New System.Drawing.Size(1063, 211)
         Me.dgv1.TabIndex = 136
         '
+        'ID_buku
+        '
+        Me.ID_buku.HeaderText = "ID Transaksi"
+        Me.ID_buku.MinimumWidth = 6
+        Me.ID_buku.Name = "ID_buku"
+        Me.ID_buku.Width = 125
+        '
+        'Judul
+        '
+        Me.Judul.HeaderText = "ID User"
+        Me.Judul.MinimumWidth = 6
+        Me.Judul.Name = "Judul"
+        Me.Judul.Width = 125
+        '
+        'TahunTerbit
+        '
+        Me.TahunTerbit.HeaderText = "Judul Buku"
+        Me.TahunTerbit.MinimumWidth = 6
+        Me.TahunTerbit.Name = "TahunTerbit"
+        Me.TahunTerbit.Width = 125
+        '
+        'Jumlah
+        '
+        Me.Jumlah.HeaderText = "Total Jumlah"
+        Me.Jumlah.MinimumWidth = 6
+        Me.Jumlah.Name = "Jumlah"
+        Me.Jumlah.Width = 125
+        '
+        'harga
+        '
+        Me.harga.HeaderText = "Total Harga"
+        Me.harga.MinimumWidth = 6
+        Me.harga.Name = "harga"
+        Me.harga.Width = 125
+        '
+        'terjual
+        '
+        Me.terjual.HeaderText = "Payment"
+        Me.terjual.MinimumWidth = 6
+        Me.terjual.Name = "terjual"
+        Me.terjual.Width = 125
+        '
         'txtID
         '
         Me.txtID.Location = New System.Drawing.Point(248, 96)
@@ -120,6 +162,20 @@ Partial Class Transaksi
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1300, 86)
         Me.Panel3.TabIndex = 134
+        '
+        'Button3
+        '
+        Me.Button3.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(1251, 7)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(51, 49)
+        Me.Button3.TabIndex = 119
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Button12
         '
@@ -199,53 +255,6 @@ Partial Class Transaksi
         Me.Panel2.Size = New System.Drawing.Size(213, 751)
         Me.Panel2.TabIndex = 133
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(586, 97)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(94, 31)
-        Me.Label5.TabIndex = 101
-        Me.Label5.Text = "ID User"
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.txtIDUser)
-        Me.Panel4.Controls.Add(Me.Label2)
-        Me.Panel4.Controls.Add(Me.txtPayment)
-        Me.Panel4.Controls.Add(Me.Label10)
-        Me.Panel4.Controls.Add(Me.txtJumlah)
-        Me.Panel4.Controls.Add(Me.Label7)
-        Me.Panel4.Controls.Add(Me.txtID)
-        Me.Panel4.Controls.Add(Me.Label6)
-        Me.Panel4.Controls.Add(Me.txtjudul)
-        Me.Panel4.Controls.Add(Me.txtHarga)
-        Me.Panel4.Controls.Add(Me.Nama)
-        Me.Panel4.Controls.Add(Me.Label4)
-        Me.Panel4.Controls.Add(Me.Label5)
-        Me.Panel4.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.Panel4.Location = New System.Drawing.Point(351, 380)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(979, 338)
-        Me.Panel4.TabIndex = 137
-        '
-        'Button3
-        '
-        Me.Button3.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(1251, 7)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(51, 49)
-        Me.Button3.TabIndex = 119
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'btnHome
         '
         Me.btnHome.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop1
@@ -316,47 +325,47 @@ Partial Class Transaksi
         Me.btnUser.TabIndex = 89
         Me.btnUser.UseVisualStyleBackColor = True
         '
-        'ID_buku
+        'Label5
         '
-        Me.ID_buku.HeaderText = "ID Transaksi"
-        Me.ID_buku.MinimumWidth = 6
-        Me.ID_buku.Name = "ID_buku"
-        Me.ID_buku.Width = 125
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(586, 97)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(94, 31)
+        Me.Label5.TabIndex = 101
+        Me.Label5.Text = "ID User"
         '
-        'Judul
+        'Panel4
         '
-        Me.Judul.HeaderText = "ID User"
-        Me.Judul.MinimumWidth = 6
-        Me.Judul.Name = "Judul"
-        Me.Judul.Width = 125
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.txtIDUser)
+        Me.Panel4.Controls.Add(Me.Label2)
+        Me.Panel4.Controls.Add(Me.txtPayment)
+        Me.Panel4.Controls.Add(Me.Label10)
+        Me.Panel4.Controls.Add(Me.txtJumlah)
+        Me.Panel4.Controls.Add(Me.Label7)
+        Me.Panel4.Controls.Add(Me.txtID)
+        Me.Panel4.Controls.Add(Me.Label6)
+        Me.Panel4.Controls.Add(Me.txtjudul)
+        Me.Panel4.Controls.Add(Me.txtHarga)
+        Me.Panel4.Controls.Add(Me.Nama)
+        Me.Panel4.Controls.Add(Me.Label4)
+        Me.Panel4.Controls.Add(Me.Label5)
+        Me.Panel4.ImeMode = System.Windows.Forms.ImeMode.[On]
+        Me.Panel4.Location = New System.Drawing.Point(351, 380)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(979, 338)
+        Me.Panel4.TabIndex = 137
         '
-        'TahunTerbit
+        'txtIDUser
         '
-        Me.TahunTerbit.HeaderText = "Judul Buku"
-        Me.TahunTerbit.MinimumWidth = 6
-        Me.TahunTerbit.Name = "TahunTerbit"
-        Me.TahunTerbit.Width = 125
-        '
-        'Jumlah
-        '
-        Me.Jumlah.HeaderText = "Total Jumlah"
-        Me.Jumlah.MinimumWidth = 6
-        Me.Jumlah.Name = "Jumlah"
-        Me.Jumlah.Width = 125
-        '
-        'harga
-        '
-        Me.harga.HeaderText = "Total Harga"
-        Me.harga.MinimumWidth = 6
-        Me.harga.Name = "harga"
-        Me.harga.Width = 125
-        '
-        'terjual
-        '
-        Me.terjual.HeaderText = "Payment"
-        Me.terjual.MinimumWidth = 6
-        Me.terjual.Name = "terjual"
-        Me.terjual.Width = 125
+        Me.txtIDUser.Location = New System.Drawing.Point(785, 98)
+        Me.txtIDUser.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtIDUser.Name = "txtIDUser"
+        Me.txtIDUser.ReadOnly = True
+        Me.txtIDUser.Size = New System.Drawing.Size(180, 22)
+        Me.txtIDUser.TabIndex = 119
         '
         'Label2
         '
@@ -376,15 +385,6 @@ Partial Class Transaksi
         Me.txtPayment.ReadOnly = True
         Me.txtPayment.Size = New System.Drawing.Size(180, 22)
         Me.txtPayment.TabIndex = 118
-        '
-        'txtIDUser
-        '
-        Me.txtIDUser.Location = New System.Drawing.Point(785, 98)
-        Me.txtIDUser.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtIDUser.Name = "txtIDUser"
-        Me.txtIDUser.ReadOnly = True
-        Me.txtIDUser.Size = New System.Drawing.Size(180, 22)
-        Me.txtIDUser.TabIndex = 119
         '
         'Transaksi
         '

@@ -1,5 +1,11 @@
 ﻿Public Class Menuutama_user_
     Private Sub Menuutama_user__Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If beli_lagi = 0 Then
+            btnBack.Visible = False
+        Else
+            btnBack.Visible = True
+        End If
+
         Me.Refresh()
     End Sub
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
@@ -79,6 +85,16 @@
 
     Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
         TransaksiUser.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        login.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Metode.Show()
         Me.Close()
     End Sub
 End Class

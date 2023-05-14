@@ -40,4 +40,10 @@ Public Class invoices
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Menuutama_user_.Show()
+        Me.Close()
+
+    End Sub
 End Class

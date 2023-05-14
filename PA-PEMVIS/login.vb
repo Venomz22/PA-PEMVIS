@@ -14,32 +14,43 @@ Public Class login
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Call koneksi()
-        Dim un As String = lname.Text
-        Dim pw As String = lpass.Text
-
-        cmd = New MySqlCommand("select * from user where username = '" & un & "' and password = '" & pw & "'", con)
-        rd = cmd.ExecuteReader
-        rd.Read()
-        If rd.HasRows Then
-            nama = rd("nama")
-            role = rd("role")
-            idlogin = rd("id")
-            rd.Close()
-
-
-            If role = "Admin" Then
-                menuutamaasliadmin.Show()
-                Me.Visible = False
-            Else
-
-                menuutamaasliuser.Show()
-                Me.Visible = False
-            End If
-
+        If lpass.Text = "" And lname.Text = "" Then
+            MsgBox("Username dan Password wajib di isi")
         Else
-            MsgBox("username atau password anda salah")
+            Call koneksi()
+            Dim un As String = lname.Text
+            Dim pw As String = lpass.Text
+
+            cmd = New MySqlCommand("select * from user where username = '" & un & "' and password = '" & pw & "'", con)
+            rd = cmd.ExecuteReader
+            rd.Read()
+            If rd.HasRows Then
+                nama = rd("nama")
+                role = rd("role")
+                idlogin = rd("id")
+                rd.Close()
+
+
+                If role = "Admin" Then
+                    menuutamaasliadmin.Show()
+                    lname.Text = ""
+                    lpass.Text = ""
+                    Me.Visible = False
+                Else
+
+                    menuutamaasliuser.Show()
+                    lname.Text = ""
+                    lpass.Text = ""
+                    Me.Visible = False
+                End If
+
+            Else
+                MsgBox("username atau password anda salah")
+                lname.Text = ""
+                lpass.Text = ""
+            End If
         End If
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs)
@@ -52,6 +63,8 @@ Public Class login
 
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        register.Show()
+        Me.Hide()
 
     End Sub
 

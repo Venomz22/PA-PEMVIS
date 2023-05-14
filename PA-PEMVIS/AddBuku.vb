@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.IO
 Imports System.Windows
 
 Public Class AddBuku
@@ -51,7 +52,7 @@ Public Class AddBuku
             rd.Read()
             If Not rd.HasRows Then
                 rd.Close()
-                Dim simpan As String = $"insert into tbbuku(idbuku,judul_buku,tahun_terbit, pengarang,penerbit,jenis_buku, jumlah,harga_buku, jumlah_terjual)values ('" & txtID.Text & "', '" & txtjudul.Text & "', '" & txtthun.Text & "', '" & txtPengarang.Text & "', '" & txtPenerbit.Text & "', '" & cmbjenis.Text & "', '" & txtjumlah.Text & "', '" & txtHarga.Text & "', '" & txtterjual.Text & "')"
+                Dim simpan As String = $"insert into tbbuku(idbuku,judul_buku,tahun_terbit, pengarang,penerbit,jenis_buku, jumlah,harga_buku, jumlah_terjual, gambar)values ('" & txtID.Text & "', '" & txtjudul.Text & "', '" & txtthun.Text & "', '" & txtPengarang.Text & "', '" & txtPenerbit.Text & "', '" & cmbjenis.Text & "', '" & txtjumlah.Text & "', '" & txtHarga.Text & "', '" & txtterjual.Text & "', '" & txtGambar.Text & "')"
                 cmd = New MySqlCommand(simpan, con)
                 cmd.ExecuteNonQuery()
                 MsgBox("Simpan data sukses....|", MsgBoxStyle.Information, "Perhatian")
@@ -137,6 +138,28 @@ Public Class AddBuku
 
     Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
         Transaksi.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
+
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim sSource As String
+        Dim sFolder As String = "D:\Dunia Perkuliahan\Semester 4\Pratikum\Pemrograman Visual\PA-PEMVIS\Gambar"
+        Dim sFile As String
+        BukaFile.Filter = "jpg|*.jpg|png|*.png|bmp|*.bmp|ico|*.ico|All Files|*.*"
+        BukaFile.ShowDialog()
+        sSource = BukaFile.FileName
+        sFile = Path.Combine(sFolder, Path.GetFileName(sSource))
+        File.Copy(sSource, sFile, True)
+        txtGambar.Text = Path.GetFileName(sSource)
+    End Sub
+
+    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        login.Show()
         Me.Close()
     End Sub
 End Class

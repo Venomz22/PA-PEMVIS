@@ -28,4 +28,9 @@
         Transaksi.Show()
         Me.Close()
     End Sub
+
+    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        login.Show()
+        Me.Close()
+    End Sub
 End Class

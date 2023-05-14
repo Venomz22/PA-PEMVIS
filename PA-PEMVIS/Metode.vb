@@ -16,8 +16,6 @@ Public Class Metode
         totall = 0
         jumlah_pesanan = 0
         pembelian.Close()
-
-        Menuutama_user_.Show()
         Me.Close()
     End Sub
 End Class

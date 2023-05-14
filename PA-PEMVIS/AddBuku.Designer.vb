@@ -28,6 +28,9 @@ Partial Class AddBuku
         Me.txtHarga = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.txtGambar = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.cmbjenis = New System.Windows.Forms.ComboBox()
         Me.txtthun = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -44,15 +47,16 @@ Partial Class AddBuku
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button32 = New System.Windows.Forms.Button()
         Me.btnTambah = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnClear = New System.Windows.Forms.Button()
-        Me.Button32 = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnprofile = New System.Windows.Forms.Button()
         Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.btnBook = New System.Windows.Forms.Button()
         Me.btnUser = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.BukaFile = New System.Windows.Forms.OpenFileDialog()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -107,6 +111,9 @@ Partial Class AddBuku
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.txtGambar)
+        Me.Panel4.Controls.Add(Me.Button1)
+        Me.Panel4.Controls.Add(Me.Label1)
         Me.Panel4.Controls.Add(Me.cmbjenis)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Controls.Add(Me.txtterjual)
@@ -132,6 +139,36 @@ Partial Class AddBuku
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(979, 432)
         Me.Panel4.TabIndex = 137
+        '
+        'txtGambar
+        '
+        Me.txtGambar.Location = New System.Drawing.Point(681, 376)
+        Me.txtGambar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtGambar.Name = "txtGambar"
+        Me.txtGambar.Size = New System.Drawing.Size(180, 22)
+        Me.txtGambar.TabIndex = 142
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.SkyBlue
+        Me.Button1.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(867, 371)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(64, 35)
+        Me.Button1.TabIndex = 141
+        Me.Button1.Text = "File"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(499, 367)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(102, 31)
+        Me.Label1.TabIndex = 117
+        Me.Label1.Text = "Pilih File"
         '
         'cmbjenis
         '
@@ -288,6 +325,20 @@ Partial Class AddBuku
         Me.Button12.Text = "TAMBAH BUKU"
         Me.Button12.UseVisualStyleBackColor = True
         '
+        'Button32
+        '
+        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button32.FlatAppearance.BorderSize = 0
+        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button32.Location = New System.Drawing.Point(1243, 21)
+        Me.Button32.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button32.Name = "Button32"
+        Me.Button32.Size = New System.Drawing.Size(51, 49)
+        Me.Button32.TabIndex = 30
+        Me.Button32.UseVisualStyleBackColor = True
+        '
         'btnTambah
         '
         Me.btnTambah.BackColor = System.Drawing.Color.SkyBlue
@@ -315,32 +366,6 @@ Partial Class AddBuku
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(213, 751)
         Me.Panel2.TabIndex = 133
-        '
-        'btnClear
-        '
-        Me.btnClear.BackColor = System.Drawing.Color.SkyBlue
-        Me.btnClear.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(872, 630)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(117, 37)
-        Me.btnClear.TabIndex = 140
-        Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = False
-        '
-        'Button32
-        '
-        Me.Button32.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
-        Me.Button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button32.FlatAppearance.BorderSize = 0
-        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button32.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button32.Location = New System.Drawing.Point(1243, 21)
-        Me.Button32.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(51, 49)
-        Me.Button32.TabIndex = 30
-        Me.Button32.UseVisualStyleBackColor = True
         '
         'btnHome
         '
@@ -412,6 +437,18 @@ Partial Class AddBuku
         Me.btnUser.TabIndex = 79
         Me.btnUser.UseVisualStyleBackColor = True
         '
+        'btnClear
+        '
+        Me.btnClear.BackColor = System.Drawing.Color.SkyBlue
+        Me.btnClear.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(872, 630)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(117, 37)
+        Me.btnClear.TabIndex = 140
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = False
+        '
         'AddBuku
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -464,4 +501,8 @@ Partial Class AddBuku
     Friend WithEvents btnTransaksi As Button
     Friend WithEvents btnBook As Button
     Friend WithEvents btnUser As Button
+    Friend WithEvents BukaFile As OpenFileDialog
+    Friend WithEvents txtGambar As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label1 As Label
 End Class
