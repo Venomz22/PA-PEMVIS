@@ -8,12 +8,12 @@ Public Class ProfileAdmin
         rd = cmd.ExecuteReader
         rd.Read()
         If rd.HasRows Then
-            txtID.Text = login.idlogin
+            txtID.Text = rd("kode")
             txtnama.Text = rd("nama")
             txtnomorHp.Text = rd("nohp")
             txtAlamat.Text = rd("alamat")
             txtjk.Text = rd("kelamin")
-            txttglLahir.Text = rd("tanggal lahir")
+            txttglLahir.Text = rd("tanggal_lahir")
             txtUsername.Text = rd("username")
             rd.Close()
         End If

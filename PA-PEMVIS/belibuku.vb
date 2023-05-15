@@ -6,14 +6,17 @@ Imports System.Windows.Forms.DataFormats
 Public Class belibuku
 
     Public jenis As String
-    Public id As String
+    Public id As Integer
 
     Private Sub belibuku_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If beli_lagi = 0 Then
             btnBack.Visible = False
+            btnBatal.Visible = False
         Else
             btnBack.Visible = True
+            btnBatal.Visible = True
         End If
+        btnbeli.Enabled = False
     End Sub
 
     Sub TampilJenis()
@@ -23,7 +26,7 @@ Public Class belibuku
         ds.Clear()
         da.Fill(ds, "tbbuku")
         For i As Integer = 0 To ds.Tables("tbbuku").Rows.Count - 1
-            dgv1.Rows.Add(ds.Tables("tbbuku").Rows(i)(0), ds.Tables("tbbuku").Rows(i)(1), ds.Tables("tbbuku").Rows(i)(2), ds.Tables("tbbuku").Rows(i)(3), ds.Tables("tbbuku").Rows(i)(4), ds.Tables("tbbuku").Rows(i)(5),
+            dgv1.Rows.Add(ds.Tables("tbbuku").Rows(i)(10), ds.Tables("tbbuku").Rows(i)(1), ds.Tables("tbbuku").Rows(i)(2), ds.Tables("tbbuku").Rows(i)(3), ds.Tables("tbbuku").Rows(i)(4), ds.Tables("tbbuku").Rows(i)(5),
 ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuku").Rows(i)(9))
         Next
         dgv1.Refresh()
@@ -57,8 +60,18 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
             Dim sFolder As String = "D:\Dunia Perkuliahan\Semester 4\Pratikum\Pemrograman Visual\PA-PEMVIS\Gambar"
             Dim files = .Cells(8).Value
             PictureBox1.ImageLocation = Path.Combine(sFolder, Path.GetFileName(files))
+            btnbeli.Enabled = True
 
         End With
+
+        cmd = New MySqlCommand("Select * From tbbuku where judul_buku = '" & txtjudul.Text & "' and pengarang = '" & txtPengarang.Text & "' and penerbit = '" & txtPenerbit.Text & "' and kode = '" & txtID.Text & "'", con)
+        rd = cmd.ExecuteReader
+        rd.Read()
+        If rd.HasRows Then
+            id = rd("idbuku")
+            rd.Close()
+        End If
+        rd.Close()
     End Sub
 
     Sub clear()
@@ -74,20 +87,19 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
     Private Sub btnbeli_Click(sender As Object, e As EventArgs) Handles btnbeli.Click
 
-        Dim i As Integer
-        i = Me.dgv1.CurrentRow.Index
+        'Dim i As Integer
+        'i = Me.dgv1.CurrentRow.Index
 
-        With dgv1.Rows.Item(i)
-            txtID.Text = .Cells(0).Value
-            txtjudul.Text = .Cells(1).Value
-            txtthun.Text = .Cells(2).Value
-            txtPengarang.Text = .Cells(3).Value
-            txtPenerbit.Text = .Cells(4).Value
-            txtjenis.Text = .Cells(5).Value
-            txtjumlah.Text = .Cells(6).Value
-            txtHarga.Text = .Cells(7).Value
-            id = .Cells(0).Value
-        End With
+        'With dgv1.Rows.Item(i)
+        '    txtID.Text = .Cells(0).Value
+        '    txtjudul.Text = .Cells(1).Value
+        '    txtthun.Text = .Cells(2).Value
+        '    txtPengarang.Text = .Cells(3).Value
+        '    txtPenerbit.Text = .Cells(4).Value
+        '    txtjenis.Text = .Cells(5).Value
+        '    txtjumlah.Text = .Cells(6).Value
+        '    txtHarga.Text = .Cells(7).Value
+        'End With
         pembelian.buku = id
         pembelian.Show()
 
@@ -243,6 +255,41 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Metode.Show()
         Me.Close()
+
+    End Sub
+
+    Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
+        Dim answer = MsgBox("Yakin ingin membatalkan pesanan ? ", vbQuestion + vbYesNo + vbDefaultButton2, "PERHATIAN")
+        If answer = MsgBoxResult.Yes Then
+            For i As Integer = 0 To arrbeliID.Count - 1
+                cmd = New MySqlCommand("select * from tbbuku where idbuku = '" & arrbeliID(i) & "'", con)
+                rd = cmd.ExecuteReader
+                rd.Read()
+                Dim jumlahbuku As Integer = rd("jumlah") + Val(arrbeliJML(i))
+                rd.Close()
+                Dim cmbbb = New MySqlCommand("UPDATE tbbuku SET jumlah = " & jumlahbuku & " where idbuku = '" & arrbeliID(i) & "'", con)
+                cmbbb.ExecuteNonQuery()
+            Next
+            Menuutama_user_.btnHome.Enabled = True
+            Menuutama_user_.btnProfile.Enabled = True
+            Menuutama_user_.btnTransaksi.Enabled = True
+            Menuutama_user_.btnbook.Enabled = True
+            Menuutama_user_.btnBack.Visible = False
+            Menuutama_user_.btnBatal.Visible = False
+            Menuutama_user_.Show()
+            btnBack.Visible = False
+            btnBatal.Visible = False
+            arrbeliJML.Clear()
+            arrbeliID.Clear()
+            beli_lagi = 0
+            judul_sebelum = ""
+            totall = 0
+            jumlah_pesanan = 0
+            Menuutama_user_.Show()
+            Me.Close()
+        Else
+            Me.Refresh()
+        End If
 
     End Sub
 End Class

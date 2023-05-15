@@ -4,10 +4,11 @@ Imports System.Windows
 Imports System.Windows.Forms.DataFormats
 
 Public Class ReadUser
+    Dim index As Integer
     Private Sub ReadUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call koneksi()
 
-        cmd = New MySqlCommand("Select * From user where role = 'User'", con)
+        cmd = New MySqlCommand("select * from user where role = 'User'", con)
         rd = cmd.ExecuteReader
         rd.Read()
         If rd.HasRows Then
@@ -21,7 +22,7 @@ Public Class ReadUser
         End If
     End Sub
 
-    Dim index As Integer
+
     Public Sub Data(ByVal posisi As Integer)
         da = New MySqlDataAdapter("Select * From user where role = 'User'", con)
         ds = New DataSet
@@ -36,18 +37,18 @@ Public Class ReadUser
     End Sub
 
     Private Sub btnprev_Click(sender As Object, e As EventArgs) Handles btnprev.Click
-        index -= 1
-        Data(index)
-        If index = 0 Then
+        Index -= 1
+        Data(Index)
+        If Index = 0 Then
             btnprev.Enabled = False
         End If
         btnNext.Enabled = True
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
-        index += 1
-        If index = ds.Tables("user").Rows.Count - 1 Then
-            Data(index)
+        Index += 1
+        If Index = ds.Tables("user").Rows.Count - 1 Then
+            Data(Index)
             btnNext.Enabled = False
             btnprev.Enabled = True
         ElseIf ds.Tables("user").Rows.Count = 1 Then
@@ -55,7 +56,7 @@ Public Class ReadUser
             btnNext.Enabled = False
             btnprev.Enabled = False
         Else
-            Data(index)
+            Data(Index)
             btnprev.Enabled = True
         End If
     End Sub

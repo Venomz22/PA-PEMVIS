@@ -74,8 +74,8 @@ Public Class register
                     kelamin = RbLaki.Text
                 End If
                 Dim role As String = "User"
-                Dim id As String = "U-" + random()
-                Dim cmdd = New MySqlCommand("INSERT INTO user (username,nama,nohp,alamat,password,kelamin, tanggal_lahir, role, id) values ('" & rusername.Text & "','" & rnama.Text & "','" & rnomorHP.Text & "','" & rAlamat.Text & "','" & rpass.Text & "','" & kelamin & "', '" & Format(tanggal.Value, "yyyy-MM-dd") & "', ' " & role & "', '" & id & "')", con)
+                Dim kode As String = "U-" + random()
+                Dim cmdd = New MySqlCommand("INSERT INTO user (username,nama,nohp,alamat,password,kelamin, tanggal_lahir, role, id, kode) values ('" & rusername.Text & "','" & rnama.Text & "','" & rnomorHP.Text & "','" & rAlamat.Text & "','" & rpass.Text & "','" & kelamin & "', '" & Format(tanggal.Value, "yyyy-MM-dd") & "', '" & role & "', ' ', '" & kode & "')", con)
                 cmdd.ExecuteNonQuery()
                 MsgBox("Anda berhasil registrasi")
                 login.Show()

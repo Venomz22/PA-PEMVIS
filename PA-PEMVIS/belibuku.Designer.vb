@@ -23,6 +23,7 @@ Partial Class belibuku
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.txtjenis = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtHarga = New System.Windows.Forms.TextBox()
@@ -60,7 +61,7 @@ Partial Class belibuku
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button30 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnBatal = New System.Windows.Forms.Button()
         Me.Panel4.SuspendLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -71,6 +72,7 @@ Partial Class belibuku
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.btnBatal)
         Me.Panel4.Controls.Add(Me.btnBack)
         Me.Panel4.Controls.Add(Me.txtjenis)
         Me.Panel4.Controls.Add(Me.Label10)
@@ -96,6 +98,18 @@ Partial Class belibuku
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(979, 432)
         Me.Panel4.TabIndex = 138
+        '
+        'btnBack
+        '
+        Me.btnBack.BackColor = System.Drawing.Color.SkyBlue
+        Me.btnBack.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(641, 381)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(117, 37)
+        Me.btnBack.TabIndex = 141
+        Me.btnBack.Text = "Selesai"
+        Me.btnBack.UseVisualStyleBackColor = False
         '
         'txtjenis
         '
@@ -158,7 +172,7 @@ Partial Class belibuku
         '
         Me.btnbeli.BackColor = System.Drawing.Color.SkyBlue
         Me.btnbeli.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnbeli.Location = New System.Drawing.Point(600, 381)
+        Me.btnbeli.Location = New System.Drawing.Point(496, 382)
         Me.btnbeli.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnbeli.Name = "btnbeli"
         Me.btnbeli.Size = New System.Drawing.Size(117, 37)
@@ -467,17 +481,17 @@ Partial Class belibuku
         Me.PictureBox1.TabIndex = 140
         Me.PictureBox1.TabStop = False
         '
-        'btnBack
+        'btnBatal
         '
-        Me.btnBack.BackColor = System.Drawing.Color.SkyBlue
-        Me.btnBack.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack.Location = New System.Drawing.Point(759, 382)
-        Me.btnBack.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(117, 37)
-        Me.btnBack.TabIndex = 141
-        Me.btnBack.Text = "Selesai"
-        Me.btnBack.UseVisualStyleBackColor = False
+        Me.btnBatal.BackColor = System.Drawing.Color.SkyBlue
+        Me.btnBatal.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBatal.Location = New System.Drawing.Point(785, 381)
+        Me.btnBatal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnBatal.Name = "btnBatal"
+        Me.btnBatal.Size = New System.Drawing.Size(117, 37)
+        Me.btnBatal.TabIndex = 142
+        Me.btnBatal.Text = "Batal"
+        Me.btnBatal.UseVisualStyleBackColor = False
         '
         'belibuku
         '
@@ -547,4 +561,5 @@ Partial Class belibuku
     Friend WithEvents harga As DataGridViewTextBoxColumn
     Friend WithEvents Gambar As DataGridViewTextBoxColumn
     Friend WithEvents btnBack As Button
+    Friend WithEvents btnBatal As Button
 End Class

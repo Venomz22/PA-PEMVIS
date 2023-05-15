@@ -27,7 +27,7 @@ Public Class ProfileUser
         rd = cmd.ExecuteReader
         rd.Read()
         If rd.HasRows Then
-            txtID.Text = login.idlogin
+            txtID.Text = rd("kode")
             txtnama.Text = rd("nama")
             txtnomorHp.Text = rd("nohp")
             txtAlamat.Text = rd("alamat")

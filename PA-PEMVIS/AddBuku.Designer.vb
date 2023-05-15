@@ -145,6 +145,7 @@ Partial Class AddBuku
         Me.txtGambar.Location = New System.Drawing.Point(681, 376)
         Me.txtGambar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtGambar.Name = "txtGambar"
+        Me.txtGambar.ReadOnly = True
         Me.txtGambar.Size = New System.Drawing.Size(180, 22)
         Me.txtGambar.TabIndex = 142
         '
@@ -155,7 +156,7 @@ Partial Class AddBuku
         Me.Button1.Location = New System.Drawing.Point(867, 371)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(64, 35)
+        Me.Button1.Size = New System.Drawing.Size(76, 35)
         Me.Button1.TabIndex = 141
         Me.Button1.Text = "File"
         Me.Button1.UseVisualStyleBackColor = False
@@ -172,6 +173,7 @@ Partial Class AddBuku
         '
         'cmbjenis
         '
+        Me.cmbjenis.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbjenis.FormattingEnabled = True
         Me.cmbjenis.Items.AddRange(New Object() {"Horor", "Misteri", "Petualangan", "Musik", "Sejarah", "Drama", "Fiksi", "Fiksi Ilmiah", "Romansa", "Ensiklopedia"})
         Me.cmbjenis.Location = New System.Drawing.Point(681, 103)
@@ -343,7 +345,7 @@ Partial Class AddBuku
         '
         Me.btnTambah.BackColor = System.Drawing.Color.SkyBlue
         Me.btnTambah.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTambah.Location = New System.Drawing.Point(709, 630)
+        Me.btnTambah.Location = New System.Drawing.Point(709, 617)
         Me.btnTambah.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnTambah.Name = "btnTambah"
         Me.btnTambah.Size = New System.Drawing.Size(117, 37)
@@ -441,7 +443,7 @@ Partial Class AddBuku
         '
         Me.btnClear.BackColor = System.Drawing.Color.SkyBlue
         Me.btnClear.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(872, 630)
+        Me.btnClear.Location = New System.Drawing.Point(872, 617)
         Me.btnClear.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(117, 37)

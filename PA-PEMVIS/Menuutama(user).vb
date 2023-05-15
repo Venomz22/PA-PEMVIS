@@ -1,9 +1,13 @@
-﻿Public Class Menuutama_user_
+﻿Imports MySql.Data.MySqlClient
+
+Public Class Menuutama_user_
     Private Sub Menuutama_user__Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If beli_lagi = 0 Then
             btnBack.Visible = False
+            btnBatal.Visible = False
         Else
             btnBack.Visible = True
+            btnBatal.Visible = True
         End If
 
         Me.Refresh()
@@ -96,5 +100,35 @@
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Metode.Show()
         Me.Close()
+    End Sub
+
+    Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
+        Dim answer = MsgBox("Yakin ingin membalkan pesanan ? ", vbQuestion + vbYesNo + vbDefaultButton2, "PERHATIAN")
+        If answer = MsgBoxResult.Yes Then
+            For i As Integer = 0 To arrbeliID.Count - 1
+                cmd = New MySqlCommand("select * from tbbuku where idbuku = '" & arrbeliID(i) & "'", con)
+                rd = cmd.ExecuteReader
+                rd.Read()
+                Dim jumlahbuku As Integer = rd("jumlah") + Val(arrbeliJML(i))
+                rd.Close()
+                Dim cmbbb = New MySqlCommand("UPDATE tbbuku SET jumlah = " & jumlahbuku & " where idbuku = '" & arrbeliID(i) & "'", con)
+                cmbbb.ExecuteNonQuery()
+            Next
+            Me.btnHome.Enabled = True
+            Me.btnProfile.Enabled = True
+            Me.btnTransaksi.Enabled = True
+            Me.btnbook.Enabled = True
+            btnBack.Visible = False
+            btnBatal.Visible = False
+            arrbeliJML.Clear()
+            arrbeliID.Clear()
+            beli_lagi = 0
+            judul_sebelum = ""
+            totall = 0
+            jumlah_pesanan = 0
+        Else
+            Me.Refresh()
+        End If
+
     End Sub
 End Class

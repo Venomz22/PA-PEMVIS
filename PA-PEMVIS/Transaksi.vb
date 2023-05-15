@@ -10,7 +10,7 @@ Public Class Transaksi
         ds.Clear()
         da.Fill(ds, "nota")
         For i As Integer = 0 To ds.Tables("nota").Rows.Count - 1
-            dgv1.Rows.Add(ds.Tables("nota").Rows(i)(0), ds.Tables("nota").Rows(i)(4), ds.Tables("nota").Rows(i)(1), ds.Tables("nota").Rows(i)(2), ds.Tables("nota").Rows(i)(3), ds.Tables("nota").Rows(i)(5))
+            dgv1.Rows.Add(ds.Tables("nota").Rows(i)(6), ds.Tables("nota").Rows(i)(4), ds.Tables("nota").Rows(i)(1), ds.Tables("nota").Rows(i)(2), ds.Tables("nota").Rows(i)(3), ds.Tables("nota").Rows(i)(5))
         Next
         dgv1.Refresh()
     End Sub

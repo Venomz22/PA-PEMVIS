@@ -19,8 +19,10 @@ Module Module1
     Public beli_lagi As Integer
     Public judul_sebelum As String
     Public totall As Integer
-    Public idnota As String
+    Public idnota As Integer
     Public jumlah_pesanan As Integer
+    Public arrbeliID As ArrayList = New ArrayList()
+    Public arrbeliJML As ArrayList = New ArrayList()
 
 
     Sub koneksi()
@@ -36,42 +38,45 @@ Module Module1
         End Try
     End Sub
 
-    'Sub nomor_urut()
-    '    cmd = New MySqlCommand("Select * From user where id = '" & login.idlogin & "'", con)
-    '    rd = cmd.ExecuteReader
-    '    rd.Read()
-    '    If rd.HasRows Then
-    '        rd.Close()
-    '        da = New MySqlDataAdapter("Select * From user where id = '" & login.idlogin & "'", con)
-    '        ds = New DataSet
-    '        da.Fill(ds, "user")
-    '        Dim index1 As Integer = ds.Tables("user").Rows.Count - 1
-    '        Dim iduser As String = ds.Tables("user").Rows(index1)(8).ToString
-    '        nomorUser = Val(iduser.Substring(1))
-    '    Else
-    '        rd.Close()
-    '        nomorUser = 0
-    '    End If
+    Sub nomor_urut()
+        'cmd = New MySqlCommand("Select * From user where id = '" & login.idlogin & "'", con)
+        'rd = cmd.ExecuteReader
+        'rd.Read()
+        'If rd.HasRows Then
+        '    rd.Close()
+        '    da = New MySqlDataAdapter("Select * From user where id = '" & login.idlogin & "'", con)
+        '    ds = New DataSet
+        '    da.Fill(ds, "user")
+        '    Dim index1 As Integer = ds.Tables("user").Rows.Count - 1
+        '    Dim iduser As String = ds.Tables("user").Rows(index1)(8).ToString
+        '    nomorUser = Val(iduser.Substring(1))
+        'Else
+        '    rd.Close()
+        '    nomorUser = 0
+        'End If
+
+        'cmd = New MySqlCommand("Select * From tbbuku", con)
+        'rd = cmd.ExecuteReader
+        'rd.Read()
+        'If rd.HasRows Then
+        '    rd.Close()
+        '    da = New MySqlDataAdapter("Select * From tbbuku", con)
+        '    ds = New DataSet
+        '    da.Fill(ds, "buku")
+        '    Dim index2 As Integer = ds.Tables("buku").Rows.Count - 1
+        '    Dim nomor As Integer = ds.Tables("buku").Rows(index2)(0).ToString
+        '    nomorBuku = nomor + 1
+        'Else
+        '    rd.Close()
+        '    nomorBuku = 1
+        'End If
+    End Sub
 
 
 
 
 
-    '    cmd = New MySqlCommand("Select * From tbbuku", con)
-    '    rd = cmd.ExecuteReader
-    '    rd.Read()
-    '    If rd.HasRows Then
-    '        rd.Close()
-    '        da = New MySqlDataAdapter("Select * From tbbuku", con)
-    '        ds = New DataSet
-    '        da.Fill(ds, "buku")
-    '        Dim index2 As Integer = ds.Tables("buku").Rows.Count - 1
-    '        Dim idbuku As String = ds.Tables("buku").Rows(index2)(0).ToString
-    '        nomorBuku = Val(idbuku.Substring(2))
-    '    Else
-    '        rd.Close()
-    '        nomorBuku = 0
-    '    End If
+    '   
 
 
 

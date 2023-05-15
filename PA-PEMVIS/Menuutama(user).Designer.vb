@@ -51,6 +51,7 @@ Partial Class Menuutama_user_
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button29 = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnBatal = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
@@ -436,7 +437,7 @@ Partial Class Menuutama_user_
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(1364, 719)
+        Me.btnBack.Location = New System.Drawing.Point(1174, 719)
         Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(135, 49)
@@ -444,12 +445,23 @@ Partial Class Menuutama_user_
         Me.btnBack.Text = "Selesai"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'btnBatal
+        '
+        Me.btnBatal.Location = New System.Drawing.Point(1337, 719)
+        Me.btnBatal.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBatal.Name = "btnBatal"
+        Me.btnBatal.Size = New System.Drawing.Size(135, 49)
+        Me.btnBatal.TabIndex = 144
+        Me.btnBatal.Text = "Batal"
+        Me.btnBatal.UseVisualStyleBackColor = True
+        '
         'Menuutama_user_
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(1531, 798)
+        Me.Controls.Add(Me.btnBatal)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -511,4 +523,5 @@ Partial Class Menuutama_user_
     Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents btnBack As Button
+    Friend WithEvents btnBatal As Button
 End Class

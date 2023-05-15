@@ -20,7 +20,7 @@ Public Class invoices
         rd = cmd.ExecuteReader
         rd.Read()
 
-        nota.Text = idnota
+        nota.Text = rd("kode")
         judul.Text = rd("judul")
         pemesan.Text = login.nama
         jumlah.Text = rd("jumlah")
