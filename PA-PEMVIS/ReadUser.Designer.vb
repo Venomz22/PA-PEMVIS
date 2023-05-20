@@ -22,32 +22,33 @@ Partial Class ReadUser
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ReadUser))
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnNext = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.txtjk = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.txtID = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.txtnama = New System.Windows.Forms.TextBox()
         Me.txtUsername = New System.Windows.Forms.TextBox()
-        Me.Nama = New System.Windows.Forms.Label()
         Me.txtAlamat = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtnomorHp = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.txttglLahir = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.btnprev = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnprofile = New System.Windows.Forms.Button()
         Me.btnTransaksi = New System.Windows.Forms.Button()
         Me.btnBook = New System.Windows.Forms.Button()
         Me.btnUser = New System.Windows.Forms.Button()
+        Me.btnprev = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.btnNext = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -55,227 +56,222 @@ Partial Class ReadUser
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel3.Controls.Add(Me.Button12)
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Controls.Add(Me.Button1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(213, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel3.Location = New System.Drawing.Point(160, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1300, 86)
+        Me.Panel3.Size = New System.Drawing.Size(975, 70)
         Me.Panel3.TabIndex = 122
         '
-        'Button12
+        'Label1
         '
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Font = New System.Drawing.Font("Britannic Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(275, 7)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(751, 73)
-        Me.Button12.TabIndex = 120
-        Me.Button12.Text = "DAFTAR USER"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Britannic Bold", 36.0!)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(318, 9)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(311, 53)
+        Me.Label1.TabIndex = 144
+        Me.Label1.Text = "DAFTAR USER"
         '
         'Button1
         '
-        Me.Button1.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.logout
+        Me.Button1.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.exit__1_
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(1233, 7)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(915, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(51, 49)
+        Me.Button1.Size = New System.Drawing.Size(38, 40)
         Me.Button1.TabIndex = 119
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'btnNext
-        '
-        Me.btnNext.BackColor = System.Drawing.Color.SkyBlue
-        Me.btnNext.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNext.Location = New System.Drawing.Point(861, 658)
-        Me.btnNext.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnNext.Name = "btnNext"
-        Me.btnNext.Size = New System.Drawing.Size(99, 37)
-        Me.btnNext.TabIndex = 125
-        Me.btnNext.Text = "Next"
-        Me.btnNext.UseVisualStyleBackColor = False
-        '
         'Panel4
         '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel4.BackColor = System.Drawing.Color.LightSalmon
+        Me.Panel4.Controls.Add(Me.Label14)
+        Me.Panel4.Controls.Add(Me.Label13)
+        Me.Panel4.Controls.Add(Me.Label11)
+        Me.Panel4.Controls.Add(Me.Label10)
+        Me.Panel4.Controls.Add(Me.Label9)
+        Me.Panel4.Controls.Add(Me.Label8)
+        Me.Panel4.Controls.Add(Me.Label12)
         Me.Panel4.Controls.Add(Me.txtjk)
-        Me.Panel4.Controls.Add(Me.Label7)
         Me.Panel4.Controls.Add(Me.txtID)
-        Me.Panel4.Controls.Add(Me.Label6)
         Me.Panel4.Controls.Add(Me.txtnama)
         Me.Panel4.Controls.Add(Me.txtUsername)
-        Me.Panel4.Controls.Add(Me.Nama)
         Me.Panel4.Controls.Add(Me.txtAlamat)
-        Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Controls.Add(Me.txtnomorHp)
-        Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Controls.Add(Me.txttglLahir)
-        Me.Panel4.Controls.Add(Me.Label4)
-        Me.Panel4.Controls.Add(Me.Label5)
         Me.Panel4.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.Panel4.Location = New System.Drawing.Point(385, 223)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel4.Location = New System.Drawing.Point(229, 109)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(927, 409)
+        Me.Panel4.Size = New System.Drawing.Size(828, 422)
         Me.Panel4.TabIndex = 124
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label14.Location = New System.Drawing.Point(416, 241)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(93, 28)
+        Me.Label14.TabIndex = 151
+        Me.Label14.Text = "Alamat"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
+        Me.Label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label13.Location = New System.Drawing.Point(416, 134)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(130, 28)
+        Me.Label13.TabIndex = 150
+        Me.Label13.Text = "Nomor HP"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label11.Location = New System.Drawing.Point(416, 49)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(172, 28)
+        Me.Label11.TabIndex = 149
+        Me.Label11.Text = "Tanggal Lahir"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label10.Location = New System.Drawing.Point(19, 337)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(131, 28)
+        Me.Label10.TabIndex = 148
+        Me.Label10.Text = "Username"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label9.Location = New System.Drawing.Point(19, 245)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(153, 24)
+        Me.Label9.TabIndex = 147
+        Me.Label9.Text = "Jenis Kelamin"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label8.Location = New System.Drawing.Point(18, 139)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(79, 28)
+        Me.Label8.TabIndex = 146
+        Me.Label8.Text = "Nama"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label12.Location = New System.Drawing.Point(19, 45)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(38, 28)
+        Me.Label12.TabIndex = 145
+        Me.Label12.Text = "ID"
         '
         'txtjk
         '
-        Me.txtjk.Location = New System.Drawing.Point(248, 249)
-        Me.txtjk.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtjk.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!)
+        Me.txtjk.Location = New System.Drawing.Point(186, 239)
+        Me.txtjk.Margin = New System.Windows.Forms.Padding(2)
         Me.txtjk.Name = "txtjk"
         Me.txtjk.ReadOnly = True
-        Me.txtjk.Size = New System.Drawing.Size(180, 22)
+        Me.txtjk.Size = New System.Drawing.Size(182, 32)
         Me.txtjk.TabIndex = 110
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(67, 314)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(119, 31)
-        Me.Label7.TabIndex = 109
-        Me.Label7.Text = "Username"
         '
         'txtID
         '
-        Me.txtID.Location = New System.Drawing.Point(248, 96)
-        Me.txtID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtID.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtID.Location = New System.Drawing.Point(186, 42)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(2)
         Me.txtID.Name = "txtID"
         Me.txtID.ReadOnly = True
-        Me.txtID.Size = New System.Drawing.Size(180, 22)
+        Me.txtID.Size = New System.Drawing.Size(182, 32)
         Me.txtID.TabIndex = 107
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(67, 89)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(40, 31)
-        Me.Label6.TabIndex = 106
-        Me.Label6.Text = "ID"
         '
         'txtnama
         '
-        Me.txtnama.Location = New System.Drawing.Point(248, 167)
-        Me.txtnama.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtnama.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!)
+        Me.txtnama.Location = New System.Drawing.Point(186, 136)
+        Me.txtnama.Margin = New System.Windows.Forms.Padding(2)
         Me.txtnama.Name = "txtnama"
         Me.txtnama.ReadOnly = True
-        Me.txtnama.Size = New System.Drawing.Size(180, 22)
+        Me.txtnama.Size = New System.Drawing.Size(182, 32)
         Me.txtnama.TabIndex = 97
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(248, 314)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtUsername.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!)
+        Me.txtUsername.Location = New System.Drawing.Point(186, 337)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.ReadOnly = True
-        Me.txtUsername.Size = New System.Drawing.Size(180, 22)
+        Me.txtUsername.Size = New System.Drawing.Size(182, 32)
         Me.txtUsername.TabIndex = 105
-        '
-        'Nama
-        '
-        Me.Nama.AutoSize = True
-        Me.Nama.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Nama.Location = New System.Drawing.Point(67, 160)
-        Me.Nama.Name = "Nama"
-        Me.Nama.Size = New System.Drawing.Size(77, 31)
-        Me.Nama.TabIndex = 96
-        Me.Nama.Text = "Nama"
         '
         'txtAlamat
         '
-        Me.txtAlamat.Location = New System.Drawing.Point(668, 249)
-        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtAlamat.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!)
+        Me.txtAlamat.Location = New System.Drawing.Point(604, 241)
+        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.ReadOnly = True
-        Me.txtAlamat.Size = New System.Drawing.Size(180, 22)
+        Me.txtAlamat.Size = New System.Drawing.Size(191, 32)
         Me.txtAlamat.TabIndex = 104
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(485, 160)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(127, 31)
-        Me.Label2.TabIndex = 98
-        Me.Label2.Text = "Nomor HP"
         '
         'txtnomorHp
         '
-        Me.txtnomorHp.Location = New System.Drawing.Point(668, 167)
-        Me.txtnomorHp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtnomorHp.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!)
+        Me.txtnomorHp.Location = New System.Drawing.Point(604, 141)
+        Me.txtnomorHp.Margin = New System.Windows.Forms.Padding(2)
         Me.txtnomorHp.Name = "txtnomorHp"
         Me.txtnomorHp.ReadOnly = True
-        Me.txtnomorHp.Size = New System.Drawing.Size(180, 22)
+        Me.txtnomorHp.Size = New System.Drawing.Size(191, 32)
         Me.txtnomorHp.TabIndex = 103
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(485, 240)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 31)
-        Me.Label3.TabIndex = 99
-        Me.Label3.Text = "Alamat"
         '
         'txttglLahir
         '
-        Me.txttglLahir.Location = New System.Drawing.Point(668, 97)
-        Me.txttglLahir.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txttglLahir.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!)
+        Me.txttglLahir.Location = New System.Drawing.Point(604, 45)
+        Me.txttglLahir.Margin = New System.Windows.Forms.Padding(2)
         Me.txttglLahir.Name = "txttglLahir"
         Me.txttglLahir.ReadOnly = True
-        Me.txttglLahir.Size = New System.Drawing.Size(180, 22)
+        Me.txttglLahir.Size = New System.Drawing.Size(191, 32)
         Me.txttglLahir.TabIndex = 102
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(67, 240)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(155, 31)
-        Me.Label4.TabIndex = 100
-        Me.Label4.Text = "Jenis Kelamin"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(485, 89)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(155, 31)
-        Me.Label5.TabIndex = 101
-        Me.Label5.Text = "Tanggal Lahir"
-        '
-        'btnprev
-        '
-        Me.btnprev.BackColor = System.Drawing.Color.SkyBlue
-        Me.btnprev.Font = New System.Drawing.Font("Palatino Linotype", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnprev.Location = New System.Drawing.Point(727, 658)
-        Me.btnprev.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnprev.Name = "btnprev"
-        Me.btnprev.Size = New System.Drawing.Size(99, 37)
-        Me.btnprev.TabIndex = 123
-        Me.btnprev.Text = "Prev"
-        Me.btnprev.UseVisualStyleBackColor = False
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.Panel2.Controls.Add(Me.btnHome)
         Me.Panel2.Controls.Add(Me.btnprofile)
         Me.Panel2.Controls.Add(Me.btnTransaksi)
@@ -283,9 +279,8 @@ Partial Class ReadUser
         Me.Panel2.Controls.Add(Me.btnUser)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(213, 751)
+        Me.Panel2.Size = New System.Drawing.Size(160, 610)
         Me.Panel2.TabIndex = 121
         '
         'btnHome
@@ -295,10 +290,9 @@ Partial Class ReadUser
         Me.btnHome.FlatAppearance.BorderSize = 0
         Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHome.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHome.Location = New System.Drawing.Point(53, 5)
-        Me.btnHome.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnHome.Location = New System.Drawing.Point(40, 4)
         Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(104, 92)
+        Me.btnHome.Size = New System.Drawing.Size(78, 75)
         Me.btnHome.TabIndex = 88
         Me.btnHome.UseVisualStyleBackColor = True
         '
@@ -309,10 +303,9 @@ Partial Class ReadUser
         Me.btnprofile.FlatAppearance.BorderSize = 0
         Me.btnprofile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnprofile.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnprofile.Location = New System.Drawing.Point(53, 156)
-        Me.btnprofile.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnprofile.Location = New System.Drawing.Point(40, 127)
         Me.btnprofile.Name = "btnprofile"
-        Me.btnprofile.Size = New System.Drawing.Size(96, 82)
+        Me.btnprofile.Size = New System.Drawing.Size(72, 67)
         Me.btnprofile.TabIndex = 87
         Me.btnprofile.UseVisualStyleBackColor = True
         '
@@ -323,10 +316,9 @@ Partial Class ReadUser
         Me.btnTransaksi.FlatAppearance.BorderSize = 0
         Me.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTransaksi.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTransaksi.Location = New System.Drawing.Point(53, 615)
-        Me.btnTransaksi.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTransaksi.Location = New System.Drawing.Point(40, 500)
         Me.btnTransaksi.Name = "btnTransaksi"
-        Me.btnTransaksi.Size = New System.Drawing.Size(96, 87)
+        Me.btnTransaksi.Size = New System.Drawing.Size(72, 71)
         Me.btnTransaksi.TabIndex = 86
         Me.btnTransaksi.UseVisualStyleBackColor = True
         '
@@ -337,10 +329,9 @@ Partial Class ReadUser
         Me.btnBook.FlatAppearance.BorderSize = 0
         Me.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBook.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBook.Location = New System.Drawing.Point(53, 476)
-        Me.btnBook.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBook.Location = New System.Drawing.Point(40, 387)
         Me.btnBook.Name = "btnBook"
-        Me.btnBook.Size = New System.Drawing.Size(96, 85)
+        Me.btnBook.Size = New System.Drawing.Size(72, 69)
         Me.btnBook.TabIndex = 85
         Me.btnBook.UseVisualStyleBackColor = True
         '
@@ -351,28 +342,78 @@ Partial Class ReadUser
         Me.btnUser.FlatAppearance.BorderSize = 0
         Me.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUser.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUser.Location = New System.Drawing.Point(53, 308)
-        Me.btnUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnUser.Location = New System.Drawing.Point(40, 250)
         Me.btnUser.Name = "btnUser"
-        Me.btnUser.Size = New System.Drawing.Size(96, 96)
+        Me.btnUser.Size = New System.Drawing.Size(72, 78)
         Me.btnUser.TabIndex = 84
         Me.btnUser.UseVisualStyleBackColor = True
         '
+        'btnprev
+        '
+        Me.btnprev.ActiveBorderThickness = 1
+        Me.btnprev.ActiveCornerRadius = 20
+        Me.btnprev.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.btnprev.ActiveForecolor = System.Drawing.Color.White
+        Me.btnprev.ActiveLineColor = System.Drawing.Color.Cyan
+        Me.btnprev.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.btnprev.BackgroundImage = CType(resources.GetObject("btnprev.BackgroundImage"), System.Drawing.Image)
+        Me.btnprev.ButtonText = "PREV"
+        Me.btnprev.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnprev.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnprev.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.btnprev.IdleBorderThickness = 1
+        Me.btnprev.IdleCornerRadius = 20
+        Me.btnprev.IdleFillColor = System.Drawing.Color.White
+        Me.btnprev.IdleForecolor = System.Drawing.Color.Black
+        Me.btnprev.IdleLineColor = System.Drawing.Color.PaleGreen
+        Me.btnprev.Location = New System.Drawing.Point(487, 543)
+        Me.btnprev.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnprev.Name = "btnprev"
+        Me.btnprev.Size = New System.Drawing.Size(107, 53)
+        Me.btnprev.TabIndex = 189
+        Me.btnprev.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnNext
+        '
+        Me.btnNext.ActiveBorderThickness = 1
+        Me.btnNext.ActiveCornerRadius = 20
+        Me.btnNext.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.btnNext.ActiveForecolor = System.Drawing.Color.White
+        Me.btnNext.ActiveLineColor = System.Drawing.Color.Cyan
+        Me.btnNext.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.btnNext.BackgroundImage = CType(resources.GetObject("btnNext.BackgroundImage"), System.Drawing.Image)
+        Me.btnNext.ButtonText = "NEXT"
+        Me.btnNext.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNext.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNext.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.btnNext.IdleBorderThickness = 1
+        Me.btnNext.IdleCornerRadius = 20
+        Me.btnNext.IdleFillColor = System.Drawing.Color.White
+        Me.btnNext.IdleForecolor = System.Drawing.Color.Black
+        Me.btnNext.IdleLineColor = System.Drawing.Color.PaleGreen
+        Me.btnNext.Location = New System.Drawing.Point(668, 543)
+        Me.btnNext.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(107, 53)
+        Me.btnNext.TabIndex = 190
+        Me.btnNext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'ReadUser
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1513, 751)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1135, 610)
         Me.Controls.Add(Me.btnNext)
-        Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.btnprev)
+        Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "ReadUser"
         Me.Text = "Form1"
         Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -381,23 +422,14 @@ Partial Class ReadUser
     End Sub
 
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents btnNext As Button
     Friend WithEvents Panel4 As Panel
     Friend WithEvents txtjk As TextBox
-    Friend WithEvents Label7 As Label
     Friend WithEvents txtID As TextBox
-    Friend WithEvents Label6 As Label
     Friend WithEvents txtnama As TextBox
     Friend WithEvents txtUsername As TextBox
-    Friend WithEvents Nama As Label
     Friend WithEvents txtAlamat As TextBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents txtnomorHp As TextBox
-    Friend WithEvents Label3 As Label
     Friend WithEvents txttglLahir As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents btnprev As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnHome As Button
     Friend WithEvents btnprofile As Button
@@ -405,5 +437,14 @@ Partial Class ReadUser
     Friend WithEvents btnBook As Button
     Friend WithEvents btnUser As Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button12 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents btnprev As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents btnNext As Bunifu.Framework.UI.BunifuThinButton2
 End Class

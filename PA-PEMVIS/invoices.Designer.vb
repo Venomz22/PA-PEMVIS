@@ -22,6 +22,7 @@ Partial Class invoices
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(invoices))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pemesan = New System.Windows.Forms.Label()
         Me.judul = New System.Windows.Forms.Label()
@@ -41,13 +42,13 @@ Partial Class invoices
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.id = New System.Windows.Forms.Label()
-        Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnBack = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.DarkCyan
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.Panel1.Controls.Add(Me.pemesan)
         Me.Panel1.Controls.Add(Me.judul)
         Me.Panel1.Controls.Add(Me.jumlah)
@@ -66,9 +67,10 @@ Partial Class invoices
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.id)
-        Me.Panel1.Location = New System.Drawing.Point(243, 140)
+        Me.Panel1.Location = New System.Drawing.Point(182, 114)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(879, 501)
+        Me.Panel1.Size = New System.Drawing.Size(659, 407)
         Me.Panel1.TabIndex = 1
         '
         'pemesan
@@ -77,9 +79,10 @@ Partial Class invoices
         Me.pemesan.BackColor = System.Drawing.Color.Transparent
         Me.pemesan.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pemesan.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.pemesan.Location = New System.Drawing.Point(320, 129)
+        Me.pemesan.Location = New System.Drawing.Point(285, 87)
+        Me.pemesan.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.pemesan.Name = "pemesan"
-        Me.pemesan.Size = New System.Drawing.Size(20, 29)
+        Me.pemesan.Size = New System.Drawing.Size(16, 24)
         Me.pemesan.TabIndex = 18
         Me.pemesan.Text = ","
         '
@@ -89,9 +92,10 @@ Partial Class invoices
         Me.judul.BackColor = System.Drawing.Color.Transparent
         Me.judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.judul.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.judul.Location = New System.Drawing.Point(320, 180)
+        Me.judul.Location = New System.Drawing.Point(285, 157)
+        Me.judul.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.judul.Name = "judul"
-        Me.judul.Size = New System.Drawing.Size(20, 29)
+        Me.judul.Size = New System.Drawing.Size(16, 24)
         Me.judul.TabIndex = 17
         Me.judul.Text = ","
         '
@@ -101,9 +105,10 @@ Partial Class invoices
         Me.jumlah.BackColor = System.Drawing.Color.Transparent
         Me.jumlah.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.jumlah.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.jumlah.Location = New System.Drawing.Point(320, 243)
+        Me.jumlah.Location = New System.Drawing.Point(285, 228)
+        Me.jumlah.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.jumlah.Name = "jumlah"
-        Me.jumlah.Size = New System.Drawing.Size(20, 29)
+        Me.jumlah.Size = New System.Drawing.Size(16, 24)
         Me.jumlah.TabIndex = 16
         Me.jumlah.Text = ","
         '
@@ -113,9 +118,10 @@ Partial Class invoices
         Me.harga.BackColor = System.Drawing.Color.Transparent
         Me.harga.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.harga.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.harga.Location = New System.Drawing.Point(320, 299)
+        Me.harga.Location = New System.Drawing.Point(285, 290)
+        Me.harga.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.harga.Name = "harga"
-        Me.harga.Size = New System.Drawing.Size(20, 29)
+        Me.harga.Size = New System.Drawing.Size(16, 24)
         Me.harga.TabIndex = 15
         Me.harga.Text = ","
         '
@@ -125,9 +131,10 @@ Partial Class invoices
         Me.metode.BackColor = System.Drawing.Color.Transparent
         Me.metode.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.metode.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.metode.Location = New System.Drawing.Point(320, 359)
+        Me.metode.Location = New System.Drawing.Point(285, 352)
+        Me.metode.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.metode.Name = "metode"
-        Me.metode.Size = New System.Drawing.Size(20, 29)
+        Me.metode.Size = New System.Drawing.Size(16, 24)
         Me.metode.TabIndex = 14
         Me.metode.Text = ","
         '
@@ -137,9 +144,10 @@ Partial Class invoices
         Me.nota.BackColor = System.Drawing.Color.Transparent
         Me.nota.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nota.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.nota.Location = New System.Drawing.Point(320, 69)
+        Me.nota.Location = New System.Drawing.Point(285, 29)
+        Me.nota.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.nota.Name = "nota"
-        Me.nota.Size = New System.Drawing.Size(20, 29)
+        Me.nota.Size = New System.Drawing.Size(16, 24)
         Me.nota.TabIndex = 13
         Me.nota.Text = ","
         '
@@ -149,9 +157,10 @@ Partial Class invoices
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label11.Location = New System.Drawing.Point(279, 359)
+        Me.Label11.Location = New System.Drawing.Point(250, 351)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(20, 29)
+        Me.Label11.Size = New System.Drawing.Size(16, 24)
         Me.Label11.TabIndex = 12
         Me.Label11.Text = ":"
         '
@@ -161,9 +170,10 @@ Partial Class invoices
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label10.Location = New System.Drawing.Point(279, 299)
+        Me.Label10.Location = New System.Drawing.Point(250, 289)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(20, 29)
+        Me.Label10.Size = New System.Drawing.Size(16, 24)
         Me.Label10.TabIndex = 11
         Me.Label10.Text = ":"
         '
@@ -173,9 +183,10 @@ Partial Class invoices
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label9.Location = New System.Drawing.Point(279, 129)
+        Me.Label9.Location = New System.Drawing.Point(250, 87)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(20, 29)
+        Me.Label9.Size = New System.Drawing.Size(16, 24)
         Me.Label9.TabIndex = 10
         Me.Label9.Text = ":"
         '
@@ -185,9 +196,10 @@ Partial Class invoices
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label8.Location = New System.Drawing.Point(279, 180)
+        Me.Label8.Location = New System.Drawing.Point(250, 157)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(20, 29)
+        Me.Label8.Size = New System.Drawing.Size(16, 24)
         Me.Label8.TabIndex = 9
         Me.Label8.Text = ":"
         '
@@ -197,9 +209,10 @@ Partial Class invoices
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(279, 243)
+        Me.Label7.Location = New System.Drawing.Point(250, 232)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(20, 29)
+        Me.Label7.Size = New System.Drawing.Size(16, 24)
         Me.Label7.TabIndex = 8
         Me.Label7.Text = ":"
         '
@@ -209,9 +222,10 @@ Partial Class invoices
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(279, 69)
+        Me.Label6.Location = New System.Drawing.Point(250, 29)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(20, 29)
+        Me.Label6.Size = New System.Drawing.Size(16, 24)
         Me.Label6.TabIndex = 7
         Me.Label6.Text = ":"
         '
@@ -219,11 +233,12 @@ Partial Class invoices
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(61, 299)
+        Me.Label5.Location = New System.Drawing.Point(28, 285)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(136, 29)
+        Me.Label5.Size = New System.Drawing.Size(137, 28)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "total harga"
         '
@@ -231,11 +246,12 @@ Partial Class invoices
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(61, 359)
+        Me.Label4.Location = New System.Drawing.Point(28, 347)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(196, 29)
+        Me.Label4.Size = New System.Drawing.Size(197, 28)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "pembayaran via"
         '
@@ -243,11 +259,12 @@ Partial Class invoices
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(61, 243)
+        Me.Label3.Location = New System.Drawing.Point(28, 228)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 29)
+        Me.Label3.Size = New System.Drawing.Size(89, 28)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "jumlah"
         '
@@ -255,11 +272,12 @@ Partial Class invoices
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(61, 180)
+        Me.Label2.Location = New System.Drawing.Point(28, 157)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(133, 29)
+        Me.Label2.Size = New System.Drawing.Size(132, 28)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "judul buku"
         '
@@ -267,11 +285,12 @@ Partial Class invoices
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(61, 129)
+        Me.Label1.Location = New System.Drawing.Point(28, 87)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(190, 29)
+        Me.Label1.Size = New System.Drawing.Size(186, 28)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "nama pemesan"
         '
@@ -279,31 +298,48 @@ Partial Class invoices
         '
         Me.id.AutoSize = True
         Me.id.BackColor = System.Drawing.Color.Transparent
-        Me.id.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.id.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!)
         Me.id.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.id.Location = New System.Drawing.Point(61, 69)
+        Me.id.Location = New System.Drawing.Point(28, 24)
+        Me.id.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.id.Name = "id"
-        Me.id.Size = New System.Drawing.Size(177, 29)
+        Me.id.Size = New System.Drawing.Size(173, 28)
         Me.id.TabIndex = 2
         Me.id.Text = "id pemesanan"
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(1033, 699)
-        Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBack.ActiveBorderThickness = 1
+        Me.btnBack.ActiveCornerRadius = 20
+        Me.btnBack.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.btnBack.ActiveForecolor = System.Drawing.Color.White
+        Me.btnBack.ActiveLineColor = System.Drawing.Color.Cyan
+        Me.btnBack.BackColor = System.Drawing.SystemColors.Control
+        Me.btnBack.BackgroundImage = CType(resources.GetObject("btnBack.BackgroundImage"), System.Drawing.Image)
+        Me.btnBack.ButtonText = "Kembali"
+        Me.btnBack.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBack.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.btnBack.IdleBorderThickness = 1
+        Me.btnBack.IdleCornerRadius = 20
+        Me.btnBack.IdleFillColor = System.Drawing.Color.White
+        Me.btnBack.IdleForecolor = System.Drawing.Color.Black
+        Me.btnBack.IdleLineColor = System.Drawing.Color.PaleGreen
+        Me.btnBack.Location = New System.Drawing.Point(734, 541)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(5)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(135, 49)
-        Me.btnBack.TabIndex = 137
-        Me.btnBack.Text = "Kembali"
-        Me.btnBack.UseVisualStyleBackColor = True
+        Me.btnBack.Size = New System.Drawing.Size(107, 53)
+        Me.btnBack.TabIndex = 188
+        Me.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'invoices
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1368, 811)
+        Me.ClientSize = New System.Drawing.Size(1026, 659)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "invoices"
         Me.Text = "invoices"
         Me.Panel1.ResumeLayout(False)
@@ -330,5 +366,5 @@ Partial Class invoices
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents btnBack As Button
+    Friend WithEvents btnBack As Bunifu.Framework.UI.BunifuThinButton2
 End Class

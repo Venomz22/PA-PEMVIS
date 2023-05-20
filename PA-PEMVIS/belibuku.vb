@@ -7,20 +7,38 @@ Public Class belibuku
 
     Public jenis As String
     Public id As Integer
+    Public nomor As Integer
 
     Private Sub belibuku_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If beli_lagi = 0 Then
-            btnBack.Visible = False
-            btnBatal.Visible = False
+        Call koneksi()
+
+        If nomor = 0 Then
+            TampilJenis()
+            If beli_lagi = 0 Then
+                btnBack.Visible = False
+                btnBatal.Visible = False
+            Else
+                btnBack.Visible = True
+                btnBatal.Visible = True
+            End If
+            btnbeli.Enabled = False
         Else
-            btnBack.Visible = True
-            btnBatal.Visible = True
+            Menuutama_user_.TampilJenis()
+            If beli_lagi = 0 Then
+                btnBack.Visible = False
+                btnBatal.Visible = False
+            Else
+                btnBack.Visible = True
+                btnBatal.Visible = True
+            End If
+            btnbeli.Enabled = False
         End If
-        btnbeli.Enabled = False
+        dgv1.ReadOnly = True
+
+
     End Sub
 
     Sub TampilJenis()
-
         da = New MySqlDataAdapter("Select * From tbbuku where jenis_buku ='" & jenis & "' AND jumlah > 0 ", con)
         ds = New DataSet
         ds.Clear()
@@ -32,10 +50,6 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
         dgv1.Refresh()
     End Sub
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call koneksi()
-        TampilJenis()
-        dgv1.ReadOnly = True
-
 
     End Sub
 
@@ -48,30 +62,30 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
     Private Sub DataGridView1_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dgv1.CellMouseClick
         Dim i As Integer
         i = Me.dgv1.CurrentRow.Index
-        With dgv1.Rows.Item(i)
-            txtID.Text = .Cells(0).Value
-            txtjudul.Text = .Cells(1).Value
-            txtthun.Text = .Cells(2).Value
-            txtPengarang.Text = .Cells(3).Value
-            txtPenerbit.Text = .Cells(4).Value
-            txtjenis.Text = .Cells(5).Value
-            txtjumlah.Text = .Cells(6).Value
-            txtHarga.Text = .Cells(7).Value
-            Dim sFolder As String = "D:\Dunia Perkuliahan\Semester 4\Pratikum\Pemrograman Visual\PA-PEMVIS\Gambar"
-            Dim files = .Cells(8).Value
-            PictureBox1.ImageLocation = Path.Combine(sFolder, Path.GetFileName(files))
-            btnbeli.Enabled = True
-
-        End With
-
-        cmd = New MySqlCommand("Select * From tbbuku where judul_buku = '" & txtjudul.Text & "' and pengarang = '" & txtPengarang.Text & "' and penerbit = '" & txtPenerbit.Text & "' and kode = '" & txtID.Text & "'", con)
-        rd = cmd.ExecuteReader
-        rd.Read()
-        If rd.HasRows Then
-            id = rd("idbuku")
+        If i <> dgv1.RowCount - 1 Then
+            With dgv1.Rows.Item(i)
+                txtID.Text = .Cells(0).Value
+                txtjudul.Text = .Cells(1).Value
+                txtthun.Text = .Cells(2).Value
+                txtPengarang.Text = .Cells(3).Value
+                txtPenerbit.Text = .Cells(4).Value
+                txtjenis.Text = .Cells(5).Value
+                txtjumlah.Text = .Cells(6).Value
+                txtHarga.Text = .Cells(7).Value
+                Dim sFolder As String = "D:\Dunia Perkuliahan\Semester 4\Pratikum\Pemrograman Visual\PA-PEMVIS\Gambar"
+                Dim files = .Cells(8).Value
+                PictureBox1.ImageLocation = Path.Combine(sFolder, Path.GetFileName(files))
+                btnbeli.Enabled = True
+            End With
+            cmd = New MySqlCommand("Select * From tbbuku where judul_buku = '" & txtjudul.Text & "' and pengarang = '" & txtPengarang.Text & "' and penerbit = '" & txtPenerbit.Text & "' and kode = '" & txtID.Text & "'", con)
+            rd = cmd.ExecuteReader
+            rd.Read()
+            If rd.HasRows Then
+                id = rd("idbuku")
+                rd.Close()
+            End If
             rd.Close()
         End If
-        rd.Close()
     End Sub
 
     Sub clear()
@@ -85,27 +99,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
         txtthun.Clear()
     End Sub
 
-    Private Sub btnbeli_Click(sender As Object, e As EventArgs) Handles btnbeli.Click
 
-        'Dim i As Integer
-        'i = Me.dgv1.CurrentRow.Index
-
-        'With dgv1.Rows.Item(i)
-        '    txtID.Text = .Cells(0).Value
-        '    txtjudul.Text = .Cells(1).Value
-        '    txtthun.Text = .Cells(2).Value
-        '    txtPengarang.Text = .Cells(3).Value
-        '    txtPenerbit.Text = .Cells(4).Value
-        '    txtjenis.Text = .Cells(5).Value
-        '    txtjumlah.Text = .Cells(6).Value
-        '    txtHarga.Text = .Cells(7).Value
-        'End With
-        pembelian.buku = id
-        pembelian.Show()
-
-        Me.Close()
-
-    End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs)
 
@@ -131,7 +125,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
     End Sub
 
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+    Private Sub Label8_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -139,7 +133,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
     End Sub
 
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+    Private Sub Label7_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -147,7 +141,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
     End Sub
 
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+    Private Sub Label6_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -159,7 +153,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
     End Sub
 
-    Private Sub Nama_Click(sender As Object, e As EventArgs) Handles Nama.Click
+    Private Sub Nama_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -167,11 +161,11 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -179,11 +173,11 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
 
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+    Private Sub Label5_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -252,10 +246,10 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
         Me.Close()
     End Sub
 
+
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Metode.Show()
         Me.Close()
-
     End Sub
 
     Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
@@ -291,5 +285,25 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
             Me.Refresh()
         End If
 
+    End Sub
+
+    Private Sub btnbeli_Click(sender As Object, e As EventArgs) Handles btnbeli.Click
+        'Dim i As Integer
+        'i = Me.dgv1.CurrentRow.Index
+
+        'With dgv1.Rows.Item(i)
+        '    txtID.Text = .Cells(0).Value
+        '    txtjudul.Text = .Cells(1).Value
+        '    txtthun.Text = .Cells(2).Value
+        '    txtPengarang.Text = .Cells(3).Value
+        '    txtPenerbit.Text = .Cells(4).Value
+        '    txtjenis.Text = .Cells(5).Value
+        '    txtjumlah.Text = .Cells(6).Value
+        '    txtHarga.Text = .Cells(7).Value
+        'End With
+        pembelian.buku = id
+        pembelian.Show()
+
+        Me.Close()
     End Sub
 End Class

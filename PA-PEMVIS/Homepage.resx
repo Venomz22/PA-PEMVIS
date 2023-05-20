@@ -118,75 +118,54 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BunifuThinButton23.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
-  <metadata name="Gambar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="btnHapus.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        iVBORw0KGgoAAAANSUhEUgAAAIMAAAA1CAYAAABiDlgOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKiSURBVHhe7Zw/aBNhGMY7OHbs2Mmxg1BwKLoVHAwULYoo
+        IrTY4hAQhC7BIopW8U9E+ye5hKqDFKW0BbXqJLRUaVEchKLFiIFAMYaztQfBFM29zXN3fTXk7J58z+94
+        IHC56f1x3/eFvG9T266IMAxCGRgNZWA0lIHRUAZGQxkYzY4y7GnuksMn+uTC7DW58f6OjOaTYv22mDoK
+        aobaXX51U470nJH2lkOhtUb+K8PBSI8kCpY8+flUMuWMrLqr4riOkPoCNUPtsuWsPN94IZadluP90dCa
+        18gAc85PD8lje1KKlYs0FpuV69narFx9E5e9rd1Vta+SASKMfE3Kcmk5eJQ0Kjk3J4lsWjp2Hw2XAW8E
+        imAOWD6wn6iRAXsELA3ELOaceem7NPBXBpwasFnkHsE8/lSue4UHsr/tmC8DjhzYaRIzebv5TqK3Y74M
+        OIPi6EHMxHZtuftlzJdhODcm6+56cIuYBpaK5C/Ll8FyUt75k5gLfq30Zah8IGZDGYhCGYhCGYhCGYhC
+        GYhCGYhCGYhCGYhCGYhCGYhCGYhCGYhCGYhCGYhCGYhCGYhCGYhCGYhCGYiiMuCfsfiHLDEXlQE9/Gy3
+        NxuVAe3Z6MolZoKeGfTOeDL0Dp6TheLr4BYxjZXyisQmr/gyoEc/bY9z32AoU2sz0tV92pcBid6KyfzG
+        QnCbmMLH0ie5+PJ69XwGtOXHP4xI3s0HXyONDkYwJL6ldOiXyoCgR3/8+3024RoARHhYmJADnae0/lUy
+        IJ37TnpznRaLS8FjpNH4XMp4b4R/RUBqZECwZJwdHpQJ+5G30+REl/oHXfYY4YhRjkNz8dB5kKEybAfm
+        4MiR+BE+cJKpozgpb7grhryG1RrZUQbGrFAGRkMZGA1lYDSUgQkSkS3rQnelNDab2gAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
-  <data name="btnTambah.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJQAAABBCAYAAAA3z41IAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKVSURBVHhe7d1fSxRRGMfx3v8rEISKxNhqwzL7h5Xd2ZpJ
-        dJGLKw0pC14sSIJQzDnzNL+z49iys+bOPnf7/cgDguXNfnHO7sV57uR2agzjNQTFuA5BMa5DUIzrEBTj
-        OgTFuM6NQf22n9aPPduOW/Y8PLX1sGYr+QqzZKPXXa//m7hp3+OuXVrW2ItmZlBZcZB+0bu4bYM4sGEx
-        tIviwrB89Lrr9c9iZjvxfepCYTV1MxWU6vsQX9nL8KL8/rL6lcC1P+WXwtoKG/bLjif6mQhKMXXDo/Ix
-        d1j9V2C2k+LENkLXzouj5qD0l4mYMA89CnW+mgpKZyY95oB59eIn248fr4PSuzkdtDgzoY1QfnXDYxsV
-        h+OgdGLXIQto6yB+sd2yoRSUPl/QW0KgrVExsiehMw6qE9bLk/p59SNgfnrsrear46Du5XfTZwvAIvSp
-        egpK3wCLIii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4
-        Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4qoPSzWO6gQxYRB2UbgBm7QYWVQel
-        FQu6FR9oS3e06q7WFJQuLdfl5UBb/dhPmzhSUNrV0QkPOUehtbfxtR3H/XFQml7csc9xr/oxcHuDeJR2
-        KqqjOiit59ASmLPirPpnwP9pnYuebldLGeugNNrVoZ0dXIKP21BMm+FZ+Ybua93QRFCaYfEt7czT7g5g
-        liz+SH+Z/o1JMxWURo8/LYJRfTq9s6UKom0bWhestcHaD9S0e7gxqKtRfXor+CC/nz60YpZ7tMJFh28t
-        Nm/qRXNjUAwz7xAU4zoExbgOQTGuQ1CM45zaX4I+sFdB7etCAAAAAElFTkSuQmCC
-</value>
+  <data name="BunifuCustomLabel1.Text" xml:space="preserve">
+    <value>Toko buku kekinian menawarkan opsi yang beragam, baik dari kategori
+buku hingga jadi destinasi membaca yang menyuguhkan sajian dan kopi
+di dalamnya. Transformasi wajah toko buku ini beriringan dengan pendekatan
+anak muda juga melanjutkan asa membaca. Kecintaan pada membaca tak jarang 
+menjadi pemacu semangat untuk hadirnya toko buku berkonsep menarik. Salah
+satunya Toko Buku Mantap, sebuah toko buku yang berlokasi di kawasan jalan 
+pramuka samarinda utara, Kalimantan Timur, Indonesia</value>
   </data>
-  <data name="btnClear.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJQAAABBCAYAAAA3z41IAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKVSURBVHhe7d1fSxRRGMfx3v8rEISKxNhqwzL7h5Xd2ZpJ
-        dJGLKw0pC14sSIJQzDnzNL+z49iys+bOPnf7/cgDguXNfnHO7sV57uR2agzjNQTFuA5BMa5DUIzrEBTj
-        OgTFuM6NQf22n9aPPduOW/Y8PLX1sGYr+QqzZKPXXa//m7hp3+OuXVrW2ItmZlBZcZB+0bu4bYM4sGEx
-        tIviwrB89Lrr9c9iZjvxfepCYTV1MxWU6vsQX9nL8KL8/rL6lcC1P+WXwtoKG/bLjif6mQhKMXXDo/Ix
-        d1j9V2C2k+LENkLXzouj5qD0l4mYMA89CnW+mgpKZyY95oB59eIn248fr4PSuzkdtDgzoY1QfnXDYxsV
-        h+OgdGLXIQto6yB+sd2yoRSUPl/QW0KgrVExsiehMw6qE9bLk/p59SNgfnrsrear46Du5XfTZwvAIvSp
-        egpK3wCLIii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4
-        Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4Iii4qoPSzWO6gQxYRB2UbgBm7QYWVQel
-        FQu6FR9oS3e06q7WFJQuLdfl5UBb/dhPmzhSUNrV0QkPOUehtbfxtR3H/XFQml7csc9xr/oxcHuDeJR2
-        KqqjOiit59ASmLPirPpnwP9pnYuebldLGeugNNrVoZ0dXIKP21BMm+FZ+Ybua93QRFCaYfEt7czT7g5g
-        liz+SH+Z/o1JMxWURo8/LYJRfTq9s6UKom0bWhestcHaD9S0e7gxqKtRfXor+CC/nz60YpZ7tMJFh28t
-        Nm/qRXNjUAwz7xAU4zoExbgOQTGuQ1CM45zaX4I+sFdB7etCAAAAAElFTkSuQmCC
-</value>
+  <data name="BunifuCustomLabel2.Text" xml:space="preserve">
+    <value>Tidak cuma buang waktu, membaca sebelum tidur ternyata mampu mengurangi
+tingkat stres Anda. Lewat buku, Anda bisa bersenang-senang, melihat dunia luar
+dan seolah berada di tanah yang berbeda. Peneliti dari University of Surrey, Inggris,
+mengatakan bahwa membaca mampu mengurangi tingkat stres seseorang sampai 68%.</value>
   </data>
 </root>

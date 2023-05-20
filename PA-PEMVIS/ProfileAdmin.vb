@@ -8,7 +8,7 @@ Public Class ProfileAdmin
         rd = cmd.ExecuteReader
         rd.Read()
         If rd.HasRows Then
-            txtID.Text = rd("kode")
+            txtid.Text = rd("kode")
             txtnama.Text = rd("nama")
             txtnomorHp.Text = rd("nohp")
             txtAlamat.Text = rd("alamat")
@@ -47,5 +47,13 @@ Public Class ProfileAdmin
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         login.Show()
         Me.Close()
+    End Sub
+
+    Private Sub txtID_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub txtID_OnValueChanged(sender As Object, e As EventArgs) Handles asas.OnValueChanged
+
     End Sub
 End Class

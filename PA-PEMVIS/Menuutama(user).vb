@@ -1,6 +1,18 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Menuutama_user_
+
+    Sub TampilJenis()
+        da = New MySqlDataAdapter("SELECT * FROM tbbuku WHERE judul_buku LIKE '%" & TextBox1.Text & "%' AND jumlah > 0", con)
+        ds = New DataSet
+        ds.Clear()
+        da.Fill(ds, "tbbuku")
+        For i As Integer = 0 To ds.Tables("tbbuku").Rows.Count - 1
+            belibuku.dgv1.Rows.Add(ds.Tables("tbbuku").Rows(i)(10), ds.Tables("tbbuku").Rows(i)(1), ds.Tables("tbbuku").Rows(i)(2), ds.Tables("tbbuku").Rows(i)(3), ds.Tables("tbbuku").Rows(i)(4), ds.Tables("tbbuku").Rows(i)(5),
+ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuku").Rows(i)(8), ds.Tables("tbbuku").Rows(i)(9))
+        Next
+        belibuku.dgv1.Refresh()
+    End Sub
     Private Sub Menuutama_user__Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If beli_lagi = 0 Then
             btnBack.Visible = False
@@ -12,6 +24,7 @@ Public Class Menuutama_user_
 
         Me.Refresh()
     End Sub
+
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         belibuku.jenis = "Horror"
         belibuku.Show()
@@ -97,12 +110,16 @@ Public Class Menuutama_user_
         Me.Close()
     End Sub
 
-    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+    Private Sub btnBatal_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Metode.Show()
         Me.Close()
     End Sub
 
-    Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
+    Private Sub BunifuThinButton23_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
         Dim answer = MsgBox("Yakin ingin membalkan pesanan ? ", vbQuestion + vbYesNo + vbDefaultButton2, "PERHATIAN")
         If answer = MsgBoxResult.Yes Then
             For i As Integer = 0 To arrbeliID.Count - 1
@@ -129,6 +146,21 @@ Public Class Menuutama_user_
         Else
             Me.Refresh()
         End If
+
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        belibuku.nomor = 1
+        belibuku.Show()
+        Me.Close()
 
     End Sub
 End Class

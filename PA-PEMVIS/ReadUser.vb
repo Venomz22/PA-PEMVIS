@@ -31,34 +31,9 @@ Public Class ReadUser
         txtnama.Text = ds.Tables("user").Rows(posisi)(1).ToString
         txtnomorHp.Text = ds.Tables("user").Rows(posisi)(2).ToString
         txtAlamat.Text = ds.Tables("user").Rows(posisi)(3).ToString
-        txtjk.Text = ds.Tables("user").Rows(posisi)(5).ToString
+        txtjk.Text = ds.Tables("user").Rows(posisi)("tanggal_lahir")
         txttglLahir.Text = ds.Tables("user").Rows(posisi)(6).ToString
         txtUsername.Text = ds.Tables("user").Rows(posisi)(0).ToString
-    End Sub
-
-    Private Sub btnprev_Click(sender As Object, e As EventArgs) Handles btnprev.Click
-        Index -= 1
-        Data(Index)
-        If Index = 0 Then
-            btnprev.Enabled = False
-        End If
-        btnNext.Enabled = True
-    End Sub
-
-    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
-        Index += 1
-        If Index = ds.Tables("user").Rows.Count - 1 Then
-            Data(Index)
-            btnNext.Enabled = False
-            btnprev.Enabled = True
-        ElseIf ds.Tables("user").Rows.Count = 1 Then
-            Data(0)
-            btnNext.Enabled = False
-            btnprev.Enabled = False
-        Else
-            Data(Index)
-            btnprev.Enabled = True
-        End If
     End Sub
 
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
@@ -86,5 +61,30 @@ Public Class ReadUser
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         login.Show()
         Me.Close()
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnprev.Click
+        index -= 1
+        Data(index)
+        If index = 0 Then
+            btnprev.Enabled = False
+        End If
+        btnNext.Enabled = True
+    End Sub
+
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        index += 1
+        If index = ds.Tables("user").Rows.Count - 1 Then
+            Data(index)
+            btnNext.Enabled = False
+            btnprev.Enabled = True
+        ElseIf ds.Tables("user").Rows.Count = 1 Then
+            Data(0)
+            btnNext.Enabled = False
+            btnprev.Enabled = False
+        Else
+            Data(index)
+            btnprev.Enabled = True
+        End If
     End Sub
 End Class

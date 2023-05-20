@@ -45,23 +45,6 @@ Public Class AddBuku
     End Function
 
 
-    Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
-        If cek_data_kosong() = True Then
-            Dim simpan As String = $"insert into tbbuku(idbuku,judul_buku,tahun_terbit, pengarang,penerbit,jenis_buku, jumlah,harga_buku, jumlah_terjual, gambar, kode)values (' ' , '" & txtjudul.Text & "', '" & txtthun.Text & "', '" & txtPengarang.Text & "', '" & txtPenerbit.Text & "', '" & cmbjenis.Text & "', '" & txtjumlah.Text & "', '" & txtHarga.Text & "', '" & txtterjual.Text & "', '" & txtGambar.Text & "', '" & txtID.Text & "')"
-            cmd = New MySqlCommand(simpan, con)
-            cmd.ExecuteNonQuery()
-            MsgBox("Simpan data sukses....|", MsgBoxStyle.Information, "Perhatian")
-            ReadBuku.dgv1.Rows.Clear()
-            ReadBuku.TampilJenis()
-            ReadBuku.Show()
-            Me.Close()
-        Else
-            Me.Refresh()
-
-        End If
-
-    End Sub
-
     Sub clear()
         cmbjenis.Text = ""
         txtjudul.Clear()
@@ -71,10 +54,6 @@ Public Class AddBuku
         txtHarga.Clear()
         txtterjual.Clear()
         txtthun.Clear()
-    End Sub
-    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-        clear()
-
     End Sub
 
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
@@ -144,6 +123,31 @@ Public Class AddBuku
 
     End Sub
 
+    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        login.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
+        If cek_data_kosong() = True Then
+            Dim simpan As String = $"insert into tbbuku(idbuku,judul_buku,tahun_terbit, pengarang,penerbit,jenis_buku, jumlah,harga_buku, jumlah_terjual, gambar, kode)values (' ' , '" & txtjudul.Text & "', '" & txtthun.Text & "', '" & txtPengarang.Text & "', '" & txtPenerbit.Text & "', '" & cmbjenis.Text & "', '" & txtjumlah.Text & "', '" & txtHarga.Text & "', '" & txtterjual.Text & "', '" & txtGambar.Text & "', '" & txtID.Text & "')"
+            cmd = New MySqlCommand(simpan, con)
+            cmd.ExecuteNonQuery()
+            MsgBox("Simpan data sukses....|", MsgBoxStyle.Information, "Perhatian")
+            ReadBuku.dgv1.Rows.Clear()
+            ReadBuku.TampilJenis()
+            ReadBuku.Show()
+            Me.Close()
+        Else
+            Me.Refresh()
+
+        End If
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        clear()
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim sSource As String
         Dim sFolder As String = "D:\Dunia Perkuliahan\Semester 4\Pratikum\Pemrograman Visual\PA-PEMVIS\Gambar"
@@ -154,10 +158,5 @@ Public Class AddBuku
         sFile = Path.Combine(sFolder, Path.GetFileName(sSource))
         File.Copy(sSource, sFile, True)
         txtGambar.Text = Path.GetFileName(sSource)
-    End Sub
-
-    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
-        login.Show()
-        Me.Close()
     End Sub
 End Class

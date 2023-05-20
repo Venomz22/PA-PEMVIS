@@ -32,21 +32,21 @@ Public Class register
             MessageBox.Show("Nama harus diisi", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             rnama.Focus()
             Return False
-        ElseIf rnomorHP.Text = "" Then
+        ElseIf rnama.Text = "" Then
             MessageBox.Show("Nomor HP harus diisi", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            rnomorHP.Focus()
+            rnama.Focus()
             Return False
-        ElseIf rusername.Text = "" Then
+        ElseIf rusernamea.Text = "" Then
             MessageBox.Show("Username harus diisi", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            rusername.Focus()
+            rusernamea.Focus()
             Return False
-        ElseIf rpass.Text = "" Then
+        ElseIf rnama.Text = "" Then
             MessageBox.Show("Password harus diisi", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            rpass.Focus()
+            rnama.Focus()
             Return False
-        ElseIf rAlamat.Text = "" Then
+        ElseIf rnama.Text = "" Then
             MessageBox.Show("Alamat harus diisi", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            rAlamat.Focus()
+            rnama.Focus()
             Return False
         ElseIf RbLaki.Checked = False And rbCewek.Checked = False Then
             MessageBox.Show("Jenis kelamin harus dipilih", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -56,15 +56,15 @@ Public Class register
         End If
     End Function
 
-    Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click_1(sender As Object, e As EventArgs)
         If cek_data_kosong() = True Then
-            cmd = New MySqlCommand("select * from user where username = '" & rusername.Text & "'", con)
+            cmd = New MySqlCommand("select * from user where username = '" & rusernamea.Text & "'", con)
             rd = cmd.ExecuteReader
             rd.Read()
             If rd.HasRows Then
                 MsgBox("Username telah tersedia")
-                rusername.Text = " "
-                rusername.Focus()
+                rusernamea.Text = " "
+                rusernamea.Focus()
                 rd.Close()
             Else
                 rd.Close()
@@ -75,7 +75,7 @@ Public Class register
                 End If
                 Dim role As String = "User"
                 Dim kode As String = "U-" + random()
-                Dim cmdd = New MySqlCommand("INSERT INTO user (username,nama,nohp,alamat,password,kelamin, tanggal_lahir, role, id, kode) values ('" & rusername.Text & "','" & rnama.Text & "','" & rnomorHP.Text & "','" & rAlamat.Text & "','" & rpass.Text & "','" & kelamin & "', '" & Format(tanggal.Value, "yyyy-MM-dd") & "', '" & role & "', ' ', '" & kode & "')", con)
+                Dim cmdd = New MySqlCommand("INSERT INTO user (username,nama,nohp,alamat,password,kelamin, tanggal_lahir, role, id, kode) values ('" & rusernamea.Text & "','" & rnama.Text & "','" & rnama.Text & "','" & rnama.Text & "','" & rnama.Text & "','" & kelamin & "', '" & Format(tanggal.Value, "yyyy-MM-dd") & "', '" & role & "', ' ', '" & kode & "')", con)
                 cmdd.ExecuteNonQuery()
                 MsgBox("Anda berhasil registrasi")
                 login.Show()
@@ -86,7 +86,7 @@ Public Class register
         End If
     End Sub
 
-    Private Sub rnomorHP_KeyPress(sender As Object, e As KeyPressEventArgs) Handles rnomorHP.KeyPress
+    Private Sub rnomorHP_KeyPress(sender As Object, e As KeyPressEventArgs)
         Dim keyascii As Short = Asc(e.KeyChar)
         If (e.KeyChar Like “[0-9]” OrElse keyascii = Keys.Back) Then
             keyascii = 0
@@ -94,5 +94,55 @@ Public Class register
             e.Handled = CBool(keyascii)
             MessageBox.Show("Wajib mengisi dengan angka", "PERINGATAN", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If cek_data_kosong() = True Then
+            cmd = New MySqlCommand("select * from user where username = '" & rusernamea.Text & "'", con)
+            rd = cmd.ExecuteReader
+            rd.Read()
+            If rd.HasRows Then
+                MsgBox("Username telah tersedia")
+                rusernamea.Text = " "
+                rusernamea.Focus()
+                rd.Close()
+            Else
+                rd.Close()
+                If rbCewek.Checked Then
+                    kelamin = rbCewek.Text
+                ElseIf RbLaki.Checked Then
+                    kelamin = RbLaki.Text
+                End If
+                Dim role As String = "User"
+                Dim kode As String = "U-" + random()
+                Dim cmdd = New MySqlCommand("INSERT INTO user (username,nama,nohp,alamat,password,kelamin, tanggal_lahir, role, id, kode) values ('" & rusernamea.Text & "','" & rnama.Text & "','" & rnama.Text & "','" & rnama.Text & "','" & rnama.Text & "','" & kelamin & "', '" & Format(tanggal.Value, "yyyy-MM-dd") & "', '" & role & "', ' ', '" & kode & "')", con)
+                cmdd.ExecuteNonQuery()
+                MsgBox("Anda berhasil registrasi")
+                login.Show()
+                Me.Close()
+
+
+            End If
+        End If
+    End Sub
+
+    Private Sub rusername_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub tanggal_ValueChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub rpass_TextChanged(sender As Object, e As EventArgs) 
+
     End Sub
 End Class

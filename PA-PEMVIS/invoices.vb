@@ -33,17 +33,20 @@ Public Class invoices
 
     End Sub
 
-    Private Sub id_Click(sender As Object, e As EventArgs) Handles id.Click
+    Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Menuutama_user_.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub judul_Click(sender As Object, e As EventArgs) 
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
-    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        Menuutama_user_.Show()
-        Me.Close()
 
     End Sub
 End Class

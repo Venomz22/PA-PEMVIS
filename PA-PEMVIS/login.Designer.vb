@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class login
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,202 +20,200 @@ Partial Class login
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.Button30 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.lname = New System.Windows.Forms.TextBox()
-        Me.lpass = New System.Windows.Forms.TextBox()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(login))
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.lnamed = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lpasss = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button5 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Button30
-        '
-        Me.Button30.FlatAppearance.BorderSize = 0
-        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button30.Font = New System.Drawing.Font("Arial Rounded MT Bold", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button30.Location = New System.Drawing.Point(101, 24)
-        Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(415, 53)
-        Me.Button30.TabIndex = 30
-        Me.Button30.Text = "SELAMAT DATANG"
-        Me.Button30.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(84, 77)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(454, 52)
-        Me.Button1.TabIndex = 75
-        Me.Button1.Text = "MANTAP BOOKSTORE"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'lname
-        '
-        Me.lname.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lname.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lname.Location = New System.Drawing.Point(52, 7)
-        Me.lname.Name = "lname"
-        Me.lname.Size = New System.Drawing.Size(314, 31)
-        Me.lname.TabIndex = 78
-        '
-        'lpass
-        '
-        Me.lpass.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lpass.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lpass.Location = New System.Drawing.Point(46, 7)
-        Me.lpass.Name = "lpass"
-        Me.lpass.Size = New System.Drawing.Size(323, 31)
-        Me.lpass.TabIndex = 80
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(155, 203)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(165, 48)
-        Me.Button5.TabIndex = 82
-        Me.Button5.Text = "Login"
-        Me.Button5.UseVisualStyleBackColor = False
         '
         'Button6
         '
-        Me.Button6.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(212, 633)
+        Me.Button6.Location = New System.Drawing.Point(221, 646)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(181, 30)
         Me.Button6.TabIndex = 83
         Me.Button6.Text = "Belum Punya Akun ?"
         Me.Button6.UseVisualStyleBackColor = False
         '
+        'lnamed
+        '
+        Me.lnamed.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lnamed.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lnamed.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lnamed.HintForeColor = System.Drawing.Color.Empty
+        Me.lnamed.HintText = ""
+        Me.lnamed.isPassword = False
+        Me.lnamed.LineFocusedColor = System.Drawing.Color.Blue
+        Me.lnamed.LineIdleColor = System.Drawing.Color.Gray
+        Me.lnamed.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.lnamed.LineThickness = 6
+        Me.lnamed.Location = New System.Drawing.Point(136, 349)
+        Me.lnamed.Margin = New System.Windows.Forms.Padding(6)
+        Me.lnamed.Name = "lnamed"
+        Me.lnamed.Size = New System.Drawing.Size(329, 57)
+        Me.lnamed.TabIndex = 94
+        Me.lnamed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Stencil", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.SandyBrown
+        Me.Label10.Location = New System.Drawing.Point(104, 33)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(386, 44)
+        Me.Label10.TabIndex = 96
+        Me.Label10.Text = "MANTAP BOOKSTORE"
+        '
+        'lpasss
+        '
+        Me.lpasss.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lpasss.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lpasss.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lpasss.HintForeColor = System.Drawing.Color.Empty
+        Me.lpasss.HintText = ""
+        Me.lpasss.isPassword = True
+        Me.lpasss.LineFocusedColor = System.Drawing.Color.Blue
+        Me.lpasss.LineIdleColor = System.Drawing.Color.Gray
+        Me.lpasss.LineMouseHoverColor = System.Drawing.Color.Blue
+        Me.lpasss.LineThickness = 6
+        Me.lpasss.Location = New System.Drawing.Point(136, 467)
+        Me.lpasss.Margin = New System.Windows.Forms.Padding(6)
+        Me.lpasss.Name = "lpasss"
+        Me.lpasss.Size = New System.Drawing.Size(329, 57)
+        Me.lpasss.TabIndex = 100
+        Me.lpasss.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Stencil", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(187, 35)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(240, 32)
+        Me.Label1.TabIndex = 101
+        Me.Label1.Text = "SELAMAT DATANG"
+        '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.Window
-        Me.Panel1.Controls.Add(Me.lname)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Location = New System.Drawing.Point(116, 369)
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(369, 43)
-        Me.Panel1.TabIndex = 87
+        Me.Panel1.Size = New System.Drawing.Size(599, 107)
+        Me.Panel1.TabIndex = 114
         '
-        'Panel2
+        'PictureBox3
         '
-        Me.Panel2.BackColor = System.Drawing.SystemColors.Window
-        Me.Panel2.Controls.Add(Me.lpass)
-        Me.Panel2.Controls.Add(Me.Button8)
-        Me.Panel2.Location = New System.Drawing.Point(116, 453)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(369, 43)
-        Me.Panel2.TabIndex = 88
+        Me.PictureBox3.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(221, 151)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(152, 156)
+        Me.PictureBox3.TabIndex = 99
+        Me.PictureBox3.TabStop = False
         '
-        'Panel3
+        'PictureBox2
         '
-        Me.Panel3.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel3.Controls.Add(Me.Button5)
-        Me.Panel3.Location = New System.Drawing.Point(72, 342)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(466, 275)
-        Me.Panel3.TabIndex = 89
+        Me.PictureBox2.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.lock
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(430, 477)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(35, 34)
+        Me.PictureBox2.TabIndex = 98
+        Me.PictureBox2.TabStop = False
         '
-        'Button8
+        'PictureBox1
         '
-        Me.Button8.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button8.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.lock
-        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!)
-        Me.Button8.Location = New System.Drawing.Point(12, 7)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(25, 27)
-        Me.Button8.TabIndex = 86
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.PictureBox1.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.icon_user2
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(430, 360)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(35, 34)
+        Me.PictureBox1.TabIndex = 97
+        Me.PictureBox1.TabStop = False
         '
-        'Button4
+        'Button5
         '
-        Me.Button4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.icon_user1
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!)
-        Me.Button4.Location = New System.Drawing.Point(12, 7)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(25, 28)
-        Me.Button4.TabIndex = 85
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button11
-        '
-        Me.Button11.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop1
-        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Font = New System.Drawing.Font("Stencil", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(231, 154)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(161, 160)
-        Me.Button11.TabIndex = 74
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.Button5.ActiveBorderThickness = 1
+        Me.Button5.ActiveCornerRadius = 20
+        Me.Button5.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Button5.ActiveForecolor = System.Drawing.Color.White
+        Me.Button5.ActiveLineColor = System.Drawing.Color.Cyan
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
+        Me.Button5.ButtonText = "LOGIN"
+        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button5.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Button5.IdleBorderThickness = 1
+        Me.Button5.IdleCornerRadius = 20
+        Me.Button5.IdleFillColor = System.Drawing.Color.White
+        Me.Button5.IdleForecolor = System.Drawing.Color.Black
+        Me.Button5.IdleLineColor = System.Drawing.Color.PaleGreen
+        Me.Button5.Location = New System.Drawing.Point(221, 565)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(5)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(181, 63)
+        Me.Button5.TabIndex = 93
+        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(599, 701)
-        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.lnamed)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button30)
-        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.lpasss)
         Me.Name = "login"
         Me.Text = "+"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button30 As System.Windows.Forms.Button
-    Friend WithEvents Button11 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents lname As System.Windows.Forms.TextBox
-    Friend WithEvents lpass As System.Windows.Forms.TextBox
-    Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents lnamed As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents lpasss As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents BindingSource1 As BindingSource
 End Class

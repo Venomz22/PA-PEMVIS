@@ -32,7 +32,35 @@ Public Class pembelian
         PictureBox1.ImageLocation = Path.Combine(sFolder, Path.GetFileName(gambar))
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+
+    Private Sub jumlah_KeyPress(sender As Object, e As KeyPressEventArgs) Handles jumlah.KeyPress
+        Dim keyascii As Short = Asc(e.KeyChar)
+        If (e.KeyChar Like “[0-9]” OrElse keyascii = Keys.Back) Then
+            keyascii = 0
+        Else
+            e.Handled = CBool(keyascii)
+            MessageBox.Show("Wajib mengisi dengan angka", "PERINGATAN", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
+    Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
+
+    End Sub
+
+    Private Sub btnbook_Click(sender As Object, e As EventArgs) Handles btnbook.Click
+
+    End Sub
+
+    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        login.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button30_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles Button5.Click
         If Val(jumlah.Text) > jumlahbuku Then
             MsgBox("Stok buku tidak cukup")
             jumlah.Text = ""
@@ -43,7 +71,7 @@ Public Class pembelian
             answer = MsgBox("ingin beli lagi ? ", vbQuestion + vbYesNo + vbDefaultButton2, "PERHATIAN")
             If beli_lagi = 0 Then
                 Dim kode As String = login.idlogin & "N-" & random()
-                Dim cmd_inseert = New MySqlCommand("INSERT INTO nota (id,judul,jumlah,harga,iduser,payment,kode) values (' ', '" & judul_buku & "','" & jumlah.Text & "','" & total.Text & "','" & login.idlogin & "','', '" & kode & "')", con)
+                Dim cmd_inseert = New MySqlCommand("INSERT INTO nota (id,judul,jumlah,harga,iduser,payment,kode,tgl) values (' ', '" & judul_buku & "','" & jumlah.Text & "','" & total.Text & "','" & login.idlogin & "','', '" & kode & "','')", con)
                 cmd_inseert.ExecuteNonQuery()
                 Dim cmbbb = New MySqlCommand("UPDATE tbbuku SET jumlah = " & jumlahbuku & " where idbuku = '" & buku & "'", con)
                 cmbbb.ExecuteNonQuery()
@@ -88,44 +116,16 @@ Public Class pembelian
                 arrbeliID.Add(buku)
                 arrbeliJML.Add(jumlah.Text)
                 Metode.Show()
-                Me.Close()
+                Me.Visible = False
+
 
             End If
         End If
 
-
     End Sub
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-
-    End Sub
-
-    Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
+    Private Sub BunifuThinButton23_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
         Menuutama_user_.Show()
-        Me.Close()
-
-    End Sub
-
-    Private Sub jumlah_KeyPress(sender As Object, e As KeyPressEventArgs) Handles jumlah.KeyPress
-        Dim keyascii As Short = Asc(e.KeyChar)
-        If (e.KeyChar Like “[0-9]” OrElse keyascii = Keys.Back) Then
-            keyascii = 0
-        Else
-            e.Handled = CBool(keyascii)
-            MessageBox.Show("Wajib mengisi dengan angka", "PERINGATAN", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        End If
-    End Sub
-
-    Private Sub btnTransaksi_Click(sender As Object, e As EventArgs) Handles btnTransaksi.Click
-
-    End Sub
-
-    Private Sub btnbook_Click(sender As Object, e As EventArgs) Handles btnbook.Click
-
-    End Sub
-
-    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
-        login.Show()
         Me.Close()
     End Sub
 End Class

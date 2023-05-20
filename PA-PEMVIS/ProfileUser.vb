@@ -42,4 +42,8 @@ Public Class ProfileUser
         login.Show()
         Me.Close()
     End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

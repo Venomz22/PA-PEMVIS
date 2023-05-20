@@ -7,14 +7,23 @@ Public Class Metode
 
     End Sub
 
-    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
-        cmd = New MySqlCommand("UPDATE nota SET payment = '" & cmbMetode.Text & "' where id = '" & idnota & "'", con)
+    Private Sub btnNext_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub cmbMetode_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbMetode.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub btnbeli_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        cmd = New MySqlCommand("UPDATE nota SET payment = '" & cmbMetode.Text & "', tgl = NOW() where id = '" & idnota & "'", con)
         cmd.ExecuteNonQuery()
         If beli_lagi = 0 Then
             cmd = New MySqlCommand("select * from tbbuku where idbuku = '" & pembelian.buku & "'", con)
             rd = cmd.ExecuteReader
             rd.Read()
             Dim terjual As Integer = rd("jumlah_terjual") + Val(pembelian.jumlah.Text)
+            rd.Close()
             Dim cmbbb = New MySqlCommand("UPDATE tbbuku SET jumlah_terjual = " & terjual & " where idbuku = '" & pembelian.buku & "'", con)
             cmbbb.ExecuteNonQuery()
         Else
