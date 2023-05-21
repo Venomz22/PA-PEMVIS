@@ -106,7 +106,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        login.Show()
+        Homepage.Show()
         Me.Close()
     End Sub
 

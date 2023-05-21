@@ -10,7 +10,7 @@ Public Class TransaksiUser
         ds.Clear()
         da.Fill(ds, "nota")
         For i As Integer = 0 To ds.Tables("nota").Rows.Count - 1
-            dgv1.Rows.Add(ds.Tables("nota").Rows(i)(6), ds.Tables("nota").Rows(i)(9), ds.Tables("nota").Rows(i)(1), ds.Tables("nota").Rows(i)(2), ds.Tables("nota").Rows(i)(3), ds.Tables("nota").Rows(i)(5), ds.Tables("nota").Rows(i)(7))
+            dgv1.Rows.Add(ds.Tables("nota").Rows(i)(6), ds.Tables("nota").Rows(i)(9), ds.Tables("nota").Rows(i)(1), ds.Tables("nota").Rows(i)(2), ds.Tables("nota").Rows(i)(3), ds.Tables("nota").Rows(i)(5), ds.Tables("nota").Rows(i)(7).ToString)
         Next
         dgv1.Refresh()
     End Sub
@@ -60,7 +60,7 @@ Public Class TransaksiUser
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        login.Show()
+        Homepage.Show()
         Me.Close()
     End Sub
 

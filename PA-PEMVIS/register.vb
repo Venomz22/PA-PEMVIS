@@ -86,15 +86,7 @@ Public Class register
         End If
     End Sub
 
-    Private Sub rnomorHP_KeyPress(sender As Object, e As KeyPressEventArgs)
-        Dim keyascii As Short = Asc(e.KeyChar)
-        If (e.KeyChar Like “[0-9]” OrElse keyascii = Keys.Back) Then
-            keyascii = 0
-        Else
-            e.Handled = CBool(keyascii)
-            MessageBox.Show("Wajib mengisi dengan angka", "PERINGATAN", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        End If
-    End Sub
+
 
     Private Sub Button7_Click(sender As Object, e As EventArgs)
 
@@ -134,15 +126,24 @@ Public Class register
         End If
     End Sub
 
-    Private Sub rusername_TextChanged(sender As Object, e As EventArgs)
+
+
+    Private Sub btnback_Click(sender As Object, e As EventArgs) Handles btnback.Click
+        Homepage.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub rnomorHP_OnValueChanged(sender As Object, e As EventArgs) Handles rnomorHP.OnValueChanged
 
     End Sub
 
-    Private Sub tanggal_ValueChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub rpass_TextChanged(sender As Object, e As EventArgs) 
-
+    Private Sub rnomorHP_KeyPress(sender As Object, e As KeyPressEventArgs) Handles rnomorHP.KeyPress
+        Dim keyascii As Short = Asc(e.KeyChar)
+        If (e.KeyChar Like “[0-9]” OrElse keyascii = Keys.Back) Then
+            keyascii = 0
+        Else
+            e.Handled = CBool(keyascii)
+            MessageBox.Show("Wajib mengisi dengan angka", "PERINGATAN", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
     End Sub
 End Class

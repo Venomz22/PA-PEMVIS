@@ -168,7 +168,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
     End Sub
 
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
-        login.Show()
+        Homepage.Show()
         Me.Close()
 
     End Sub

@@ -24,6 +24,7 @@ Partial Class Homepage
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Homepage))
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.BunifuThinButton22 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuThinButton23 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.BunifuThinButton21 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -43,16 +44,42 @@ Partial Class Homepage
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.BunifuThinButton22)
         Me.Panel3.Controls.Add(Me.BunifuThinButton23)
         Me.Panel3.Controls.Add(Me.BunifuThinButton21)
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.PictureBox1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1511, 86)
         Me.Panel3.TabIndex = 166
+        '
+        'BunifuThinButton22
+        '
+        Me.BunifuThinButton22.ActiveBorderThickness = 1
+        Me.BunifuThinButton22.ActiveCornerRadius = 20
+        Me.BunifuThinButton22.ActiveFillColor = System.Drawing.Color.Red
+        Me.BunifuThinButton22.ActiveForecolor = System.Drawing.Color.White
+        Me.BunifuThinButton22.ActiveLineColor = System.Drawing.Color.Cyan
+        Me.BunifuThinButton22.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(4, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.BunifuThinButton22.BackgroundImage = CType(resources.GetObject("BunifuThinButton22.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuThinButton22.ButtonText = "Exit"
+        Me.BunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuThinButton22.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuThinButton22.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.BunifuThinButton22.IdleBorderThickness = 1
+        Me.BunifuThinButton22.IdleCornerRadius = 20
+        Me.BunifuThinButton22.IdleFillColor = System.Drawing.Color.White
+        Me.BunifuThinButton22.IdleForecolor = System.Drawing.Color.Black
+        Me.BunifuThinButton22.IdleLineColor = System.Drawing.Color.PaleGreen
+        Me.BunifuThinButton22.Location = New System.Drawing.Point(1427, 17)
+        Me.BunifuThinButton22.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
+        Me.BunifuThinButton22.Name = "BunifuThinButton22"
+        Me.BunifuThinButton22.Size = New System.Drawing.Size(73, 53)
+        Me.BunifuThinButton22.TabIndex = 185
+        Me.BunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BunifuThinButton23
         '
@@ -72,7 +99,7 @@ Partial Class Homepage
         Me.BunifuThinButton23.IdleFillColor = System.Drawing.Color.White
         Me.BunifuThinButton23.IdleForecolor = System.Drawing.Color.Black
         Me.BunifuThinButton23.IdleLineColor = System.Drawing.Color.PaleGreen
-        Me.BunifuThinButton23.Location = New System.Drawing.Point(1180, 17)
+        Me.BunifuThinButton23.Location = New System.Drawing.Point(1123, 17)
         Me.BunifuThinButton23.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.BunifuThinButton23.Name = "BunifuThinButton23"
         Me.BunifuThinButton23.Size = New System.Drawing.Size(128, 53)
@@ -97,7 +124,7 @@ Partial Class Homepage
         Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.White
         Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.Black
         Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.PaleGreen
-        Me.BunifuThinButton21.Location = New System.Drawing.Point(1337, 17)
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(1276, 17)
         Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.BunifuThinButton21.Name = "BunifuThinButton21"
         Me.BunifuThinButton21.Size = New System.Drawing.Size(131, 53)
@@ -120,7 +147,7 @@ Partial Class Homepage
         Me.PictureBox1.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(16, 15)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(59, 53)
         Me.PictureBox1.TabIndex = 180
@@ -174,7 +201,7 @@ Partial Class Homepage
         '
         Me.PictureBox3.Image = Global.PA_PEMVIS.My.Resources.Resources.ManfaatBuku
         Me.PictureBox3.Location = New System.Drawing.Point(899, 714)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(551, 382)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -185,7 +212,7 @@ Partial Class Homepage
         '
         Me.PictureBox2.Image = Global.PA_PEMVIS.My.Resources.Resources.toko_buku
         Me.PictureBox2.Location = New System.Drawing.Point(35, 242)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(551, 382)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -206,7 +233,7 @@ Partial Class Homepage
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Panel3)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Homepage"
         Me.Text = "Homepage"
         Me.Panel3.ResumeLayout(False)
@@ -229,4 +256,5 @@ Partial Class Homepage
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents BunifuThinButton22 As Bunifu.Framework.UI.BunifuThinButton2
 End Class

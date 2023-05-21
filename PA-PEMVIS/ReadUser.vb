@@ -5,6 +5,7 @@ Imports System.Windows.Forms.DataFormats
 
 Public Class ReadUser
     Dim index As Integer
+    Dim tanggal As String
     Private Sub ReadUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call koneksi()
 
@@ -12,6 +13,7 @@ Public Class ReadUser
         rd = cmd.ExecuteReader
         rd.Read()
         If rd.HasRows Then
+            tanggal = rd("tanggal_lahir")
             rd.Close()
             Data(index)
             btnprev.Enabled = False
@@ -27,12 +29,12 @@ Public Class ReadUser
         da = New MySqlDataAdapter("Select * From user where role = 'User'", con)
         ds = New DataSet
         da.Fill(ds, "user")
-        txtID.Text = ds.Tables("user").Rows(posisi)(8).ToString
+        txtID.Text = ds.Tables("user").Rows(posisi)(9).ToString
         txtnama.Text = ds.Tables("user").Rows(posisi)(1).ToString
         txtnomorHp.Text = ds.Tables("user").Rows(posisi)(2).ToString
         txtAlamat.Text = ds.Tables("user").Rows(posisi)(3).ToString
-        txtjk.Text = ds.Tables("user").Rows(posisi)("tanggal_lahir")
-        txttglLahir.Text = ds.Tables("user").Rows(posisi)(6).ToString
+        txtjk.Text = ds.Tables("user").Rows(posisi)(5).ToString
+        txttglLahir.Text = ds.Tables("user").Rows(posisi)(6)
         txtUsername.Text = ds.Tables("user").Rows(posisi)(0).ToString
     End Sub
 
@@ -59,7 +61,7 @@ Public Class ReadUser
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        login.Show()
+        Homepage.Show()
         Me.Close()
     End Sub
 

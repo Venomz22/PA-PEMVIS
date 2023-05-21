@@ -7,7 +7,6 @@ Public Class AddBuku
         Call koneksi()
         txtID.Text = "BK-" & random()
         txtterjual.Text = 0
-
     End Sub
 
     Private Function cek_data_kosong() As Boolean
@@ -32,11 +31,11 @@ Public Class AddBuku
             txtPenerbit.Focus()
             Return False
         ElseIf txtjumlah.Text = "" Or txtjumlah.Text = 0 Then
-            MessageBox.Show("Jumlah buku harus diisi", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("Jumlah buku harus diisi dan tidak boleh bernilai 0", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             txtjumlah.Focus()
             Return False
         ElseIf txtHarga.Text = "" Or txtHarga.Text = 0 Then
-            MessageBox.Show("Harga buku harus diisi", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MessageBox.Show("Harga buku harus diisi dan tidak boleh bernilai 0", "Konfirmasi", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             txtHarga.Focus()
             Return False
         Else
@@ -124,12 +123,13 @@ Public Class AddBuku
     End Sub
 
     Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
-        login.Show()
+        Homepage.Show()
         Me.Close()
     End Sub
 
     Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
         If cek_data_kosong() = True Then
+
             Dim simpan As String = $"insert into tbbuku(idbuku,judul_buku,tahun_terbit, pengarang,penerbit,jenis_buku, jumlah,harga_buku, jumlah_terjual, gambar, kode)values (' ' , '" & txtjudul.Text & "', '" & txtthun.Text & "', '" & txtPengarang.Text & "', '" & txtPenerbit.Text & "', '" & cmbjenis.Text & "', '" & txtjumlah.Text & "', '" & txtHarga.Text & "', '" & txtterjual.Text & "', '" & txtGambar.Text & "', '" & txtID.Text & "')"
             cmd = New MySqlCommand(simpan, con)
             cmd.ExecuteNonQuery()
@@ -140,7 +140,6 @@ Public Class AddBuku
             Me.Close()
         Else
             Me.Refresh()
-
         End If
     End Sub
 

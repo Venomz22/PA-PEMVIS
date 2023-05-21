@@ -33,6 +33,7 @@ Partial Class login
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button5 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.btnback = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -77,7 +78,7 @@ Partial Class login
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Stencil", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.SandyBrown
-        Me.Label10.Location = New System.Drawing.Point(104, 33)
+        Me.Label10.Location = New System.Drawing.Point(109, 33)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(386, 44)
@@ -180,12 +181,38 @@ Partial Class login
         Me.Button5.TabIndex = 93
         Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnback
+        '
+        Me.btnback.ActiveBorderThickness = 1
+        Me.btnback.ActiveCornerRadius = 20
+        Me.btnback.ActiveFillColor = System.Drawing.Color.Red
+        Me.btnback.ActiveForecolor = System.Drawing.Color.White
+        Me.btnback.ActiveLineColor = System.Drawing.Color.Cyan
+        Me.btnback.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.btnback.BackgroundImage = CType(resources.GetObject("btnback.BackgroundImage"), System.Drawing.Image)
+        Me.btnback.ButtonText = "back"
+        Me.btnback.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnback.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnback.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.btnback.IdleBorderThickness = 1
+        Me.btnback.IdleCornerRadius = 20
+        Me.btnback.IdleFillColor = System.Drawing.Color.White
+        Me.btnback.IdleForecolor = System.Drawing.Color.Black
+        Me.btnback.IdleLineColor = System.Drawing.Color.PaleGreen
+        Me.btnback.Location = New System.Drawing.Point(14, 115)
+        Me.btnback.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnback.Name = "btnback"
+        Me.btnback.Size = New System.Drawing.Size(94, 41)
+        Me.btnback.TabIndex = 186
+        Me.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(599, 701)
+        Me.Controls.Add(Me.btnback)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox3)
@@ -216,4 +243,5 @@ Partial Class login
     Friend WithEvents lpasss As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnback As Bunifu.Framework.UI.BunifuThinButton2
 End Class

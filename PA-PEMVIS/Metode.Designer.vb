@@ -27,6 +27,8 @@ Partial Class Metode
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnNext = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -35,10 +37,10 @@ Partial Class Metode
         Me.cmbMetode.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbMetode.FormattingEnabled = True
         Me.cmbMetode.Items.AddRange(New Object() {"COD", "E-Wallet", "Transfer bank"})
-        Me.cmbMetode.Location = New System.Drawing.Point(40, 120)
-        Me.cmbMetode.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmbMetode.Location = New System.Drawing.Point(53, 148)
+        Me.cmbMetode.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbMetode.Name = "cmbMetode"
-        Me.cmbMetode.Size = New System.Drawing.Size(132, 26)
+        Me.cmbMetode.Size = New System.Drawing.Size(175, 32)
         Me.cmbMetode.TabIndex = 0
         '
         'Label3
@@ -47,10 +49,9 @@ Partial Class Metode
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Maroon
-        Me.Label3.Location = New System.Drawing.Point(13, 68)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(17, 84)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(188, 17)
+        Me.Label3.Size = New System.Drawing.Size(233, 22)
         Me.Label3.TabIndex = 126
         Me.Label3.Text = "METODE PEMBAYARAN"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -73,10 +74,10 @@ Partial Class Metode
         Me.btnNext.IdleFillColor = System.Drawing.Color.White
         Me.btnNext.IdleForecolor = System.Drawing.Color.Black
         Me.btnNext.IdleLineColor = System.Drawing.Color.PaleGreen
-        Me.btnNext.Location = New System.Drawing.Point(55, 214)
-        Me.btnNext.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnNext.Location = New System.Drawing.Point(73, 263)
+        Me.btnNext.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.btnNext.Name = "btnNext"
-        Me.btnNext.Size = New System.Drawing.Size(89, 40)
+        Me.btnNext.Size = New System.Drawing.Size(119, 49)
         Me.btnNext.TabIndex = 193
         Me.btnNext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -84,23 +85,37 @@ Partial Class Metode
         '
         Me.PictureBox1.BackgroundImage = Global.PA_PEMVIS.My.Resources.Resources.book_shop
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(82, 22)
+        Me.PictureBox1.Location = New System.Drawing.Point(109, 27)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(44, 43)
+        Me.PictureBox1.Size = New System.Drawing.Size(59, 53)
         Me.PictureBox1.TabIndex = 194
         Me.PictureBox1.TabStop = False
         '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
+        'PrintDocument1
+        '
+        '
         'Metode
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(212, 287)
+        Me.ClientSize = New System.Drawing.Size(283, 353)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.cmbMetode)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Metode"
         Me.Text = "Form2"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -113,4 +128,6 @@ Partial Class Metode
     Friend WithEvents Label3 As Label
     Friend WithEvents btnNext As Bunifu.Framework.UI.BunifuThinButton2
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

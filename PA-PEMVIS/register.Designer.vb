@@ -46,6 +46,7 @@ Partial Class register
         Me.Label10 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.btnback = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -340,7 +341,7 @@ Partial Class register
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(832, 131)
+        Me.Panel1.Size = New System.Drawing.Size(853, 131)
         Me.Panel1.TabIndex = 183
         '
         'Label10
@@ -377,13 +378,39 @@ Partial Class register
         Me.Label8.TabIndex = 183
         Me.Label8.Text = "BUAT AKUN"
         '
+        'btnback
+        '
+        Me.btnback.ActiveBorderThickness = 1
+        Me.btnback.ActiveCornerRadius = 20
+        Me.btnback.ActiveFillColor = System.Drawing.Color.Red
+        Me.btnback.ActiveForecolor = System.Drawing.Color.White
+        Me.btnback.ActiveLineColor = System.Drawing.Color.Cyan
+        Me.btnback.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.btnback.BackgroundImage = CType(resources.GetObject("btnback.BackgroundImage"), System.Drawing.Image)
+        Me.btnback.ButtonText = "back"
+        Me.btnback.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnback.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnback.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.btnback.IdleBorderThickness = 1
+        Me.btnback.IdleCornerRadius = 20
+        Me.btnback.IdleFillColor = System.Drawing.Color.White
+        Me.btnback.IdleForecolor = System.Drawing.Color.Black
+        Me.btnback.IdleLineColor = System.Drawing.Color.PaleGreen
+        Me.btnback.Location = New System.Drawing.Point(19, 142)
+        Me.btnback.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
+        Me.btnback.Name = "btnback"
+        Me.btnback.Size = New System.Drawing.Size(125, 50)
+        Me.btnback.TabIndex = 187
+        Me.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(227, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(853, 863)
+        Me.ClientSize = New System.Drawing.Size(874, 863)
+        Me.Controls.Add(Me.btnback)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel3)
@@ -424,4 +451,5 @@ Partial Class register
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents btnback As Bunifu.Framework.UI.BunifuThinButton2
 End Class
