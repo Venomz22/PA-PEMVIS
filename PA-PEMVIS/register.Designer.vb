@@ -222,6 +222,7 @@ Partial Class register
         '
         Me.tanggal.BackColor = System.Drawing.Color.Tomato
         Me.tanggal.BorderRadius = 0
+        Me.tanggal.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tanggal.ForeColor = System.Drawing.Color.White
         Me.tanggal.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.tanggal.FormatCustom = Nothing
