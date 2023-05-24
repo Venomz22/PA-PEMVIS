@@ -35,7 +35,6 @@ Partial Class register
         Me.Label2 = New System.Windows.Forms.Label()
         Me.rpass = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.rusernamea = New Bunifu.Framework.UI.BunifuMetroTextbox()
-        Me.tanggal = New Bunifu.Framework.UI.BunifuDatepicker()
         Me.rAlamat = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.rnomorHP = New Bunifu.Framework.UI.BunifuMetroTextbox()
         Me.rnama = New Bunifu.Framework.UI.BunifuMetroTextbox()
@@ -47,6 +46,7 @@ Partial Class register
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.btnback = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.tanggal = New System.Windows.Forms.DateTimePicker()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -97,6 +97,7 @@ Partial Class register
         '
         Me.Panel3.BackColor = System.Drawing.Color.LightSalmon
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel3.Controls.Add(Me.tanggal)
         Me.Panel3.Controls.Add(Me.Label7)
         Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.Label5)
@@ -106,7 +107,6 @@ Partial Class register
         Me.Panel3.Controls.Add(Me.rpass)
         Me.Panel3.Controls.Add(Me.Button1)
         Me.Panel3.Controls.Add(Me.rusernamea)
-        Me.Panel3.Controls.Add(Me.tanggal)
         Me.Panel3.Controls.Add(Me.rAlamat)
         Me.Panel3.Controls.Add(Me.rnomorHP)
         Me.Panel3.Controls.Add(Me.rnama)
@@ -217,21 +217,6 @@ Partial Class register
         Me.rusernamea.Size = New System.Drawing.Size(568, 47)
         Me.rusernamea.TabIndex = 129
         Me.rusernamea.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'tanggal
-        '
-        Me.tanggal.BackColor = System.Drawing.Color.Tomato
-        Me.tanggal.BorderRadius = 0
-        Me.tanggal.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tanggal.ForeColor = System.Drawing.Color.White
-        Me.tanggal.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.tanggal.FormatCustom = Nothing
-        Me.tanggal.Location = New System.Drawing.Point(108, 775)
-        Me.tanggal.Margin = New System.Windows.Forms.Padding(5)
-        Me.tanggal.Name = "tanggal"
-        Me.tanggal.Size = New System.Drawing.Size(568, 44)
-        Me.tanggal.TabIndex = 128
-        Me.tanggal.Value = New Date(2023, 5, 17, 22, 47, 14, 544)
         '
         'rAlamat
         '
@@ -404,6 +389,15 @@ Partial Class register
         Me.btnback.TabIndex = 187
         Me.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'tanggal
+        '
+        Me.tanggal.CalendarMonthBackground = System.Drawing.Color.PapayaWhip
+        Me.tanggal.CalendarTitleBackColor = System.Drawing.Color.LightSalmon
+        Me.tanggal.Location = New System.Drawing.Point(108, 796)
+        Me.tanggal.Name = "tanggal"
+        Me.tanggal.Size = New System.Drawing.Size(568, 22)
+        Me.tanggal.TabIndex = 138
+        '
         'register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -437,7 +431,6 @@ Partial Class register
     Friend WithEvents rnama As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents rnomorHP As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents rAlamat As Bunifu.Framework.UI.BunifuMetroTextbox
-    Friend WithEvents tanggal As Bunifu.Framework.UI.BunifuDatepicker
     Friend WithEvents rpass As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents rusernamea As Bunifu.Framework.UI.BunifuMetroTextbox
     Friend WithEvents Label3 As Label
@@ -453,4 +446,5 @@ Partial Class register
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents btnback As Bunifu.Framework.UI.BunifuThinButton2
+    Friend WithEvents tanggal As DateTimePicker
 End Class

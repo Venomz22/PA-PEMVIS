@@ -8,6 +8,8 @@ Public Class register
 
     Private Sub register_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call koneksi()
+        tanggal.MaxDate = Today
+        rnomorHP.M
     End Sub
 
     Private Sub rpass2_TextChanged(sender As Object, e As EventArgs)
@@ -56,35 +58,6 @@ Public Class register
         End If
     End Function
 
-    Private Sub Button5_Click_1(sender As Object, e As EventArgs)
-        If cek_data_kosong() = True Then
-            cmd = New MySqlCommand("select * from user where username = '" & rusernamea.Text & "'", con)
-            rd = cmd.ExecuteReader
-            rd.Read()
-            If rd.HasRows Then
-                MsgBox("Username telah tersedia")
-                rusernamea.Text = " "
-                rusernamea.Focus()
-                rd.Close()
-            Else
-                rd.Close()
-                If rbCewek.Checked Then
-                    kelamin = rbCewek.Text
-                ElseIf RbLaki.Checked Then
-                    kelamin = RbLaki.Text
-                End If
-                Dim role As String = "User"
-                Dim kode As String = "U-" + random()
-                Dim cmdd = New MySqlCommand("INSERT INTO user (username,nama,nohp,alamat,password,kelamin, tanggal_lahir, role, id, kode) values ('" & rusernamea.Text & "','" & rnama.Text & "','" & rnomorHP.Text & "','" & rAlamat.Text & "','" & rpass.Text & "','" & kelamin & "', '" & Format(tanggal.Value, "yyyy-MM-dd") & "', '" & role & "', ' ', '" & kode & "')", con)
-                cmdd.ExecuteNonQuery()
-                MsgBox("Anda berhasil registrasi")
-                login.Show()
-                Me.Close()
-
-
-            End If
-        End If
-    End Sub
 
 
 
@@ -115,7 +88,7 @@ Public Class register
                 End If
                 Dim role As String = "User"
                 Dim kode As String = "U-" + random()
-                Dim cmdd = New MySqlCommand("INSERT INTO user (username,nama,nohp,alamat,password,kelamin, tanggal_lahir, role, id, kode) values ('" & rusernamea.Text & "','" & rnama.Text & "','" & rnama.Text & "','" & rnama.Text & "','" & rnama.Text & "','" & kelamin & "', '" & Format(tanggal.Value, "yyyy-MM-dd") & "', '" & role & "', ' ', '" & kode & "')", con)
+                Dim cmdd = New MySqlCommand("INSERT INTO user (username,nama,nohp,alamat,password,kelamin, tanggal_lahir, role, id, kode) values ('" & rusernamea.Text & "','" & rnama.Text & "','" & rnomorHP.Text & "','" & rAlamat.Text & "','" & rpass.Text & "','" & kelamin & "', '" & Format(tanggal.Value, "yyyy-MM-dd") & "', '" & role & "', ' ', '" & kode & "')", con)
                 cmdd.ExecuteNonQuery()
                 MsgBox("Anda berhasil registrasi")
                 login.Show()

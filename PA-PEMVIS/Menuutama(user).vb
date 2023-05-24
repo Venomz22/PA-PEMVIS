@@ -26,7 +26,7 @@ ds.Tables("tbbuku").Rows(i)(6), ds.Tables("tbbuku").Rows(i)(7), ds.Tables("tbbuk
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-        belibuku.jenis = "Horror"
+        belibuku.jenis = "Horor"
         belibuku.Show()
         Me.Dispose()
     End Sub
